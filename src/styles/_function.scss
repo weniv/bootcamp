@@ -1,0 +1,12 @@
+$maxW: 1190;
+
+@mixin ellipse($num: 1) {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: $num;
+}
+
+@function fcSize($min, $max) {
+  @return clamp($min * 0.1rem, (100vw / $maxW) * $max, $max * 0.1rem);
+}

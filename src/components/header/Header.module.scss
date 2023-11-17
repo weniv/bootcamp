@@ -1,0 +1,27 @@
+@use '@/styles/function.scss' as *;
+@use '@/styles/theme.scss' as *;
+
+.header {
+  border-bottom: 1px solid var(--grayLv2);
+  .inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: fcSize(56, 70);
+  }
+
+  .logo {
+    width: auto;
+    height: fcSize(26, 34);
+  }
+  .nav {
+    ul {
+      display: flex;
+      gap: 1em;
+      align-items: center;
+    }
+    @media screen and (max-width: 640px) {
+      display: none;
+    }
+  }
+}
