@@ -2,11 +2,22 @@
 
 .container {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(28rem, auto));
+  grid-template-columns: repeat(auto-fill, minmax(28rem, 1fr));
   gap: 2.4rem 2.5rem;
+}
+
+.container,
+.nodata {
   margin: fcSize(20, 40) auto fcSize(40, 180);
 }
 
+.nodata {
+  text-align: center;
+  background-color: var(--grayLv1);
+  color: var(--grayLv3);
+  border-radius: 2rem;
+  padding: 8rem;
+}
 .item {
   a {
     display: block;

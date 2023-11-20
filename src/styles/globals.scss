@@ -141,3 +141,13 @@ body {
   margin: auto;
   max-width: calc(100% - 1.6rem * 2);
 }
+
+.layout-flex {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  .layout-grow {
+    flex-grow: 1;
+    align-items: flex-start;
+  }
+}

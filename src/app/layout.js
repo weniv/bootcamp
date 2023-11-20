@@ -12,10 +12,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="ko-KR">
-      <body>
+      <body className="layout-flex">
         <Header />
-        {children}
-
+        <div className="layout-grow">{children}</div>
         <Footer />
       </body>
     </html>
