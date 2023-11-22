@@ -17,7 +17,7 @@ export default function Header() {
         <nav className={styles.nav}>
           <ul>
             <li>
-              <Link href="#">위니브 부트캠프 소개</Link>
+              <Link href="/camp">위니브 부트캠프 소개</Link>
             </li>
             <li>
               <Link href="https://archive.weniv.co.kr/" target="_blank">

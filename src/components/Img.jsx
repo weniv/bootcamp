@@ -1,12 +1,19 @@
 'use client';
-import Image from 'next/image';
 
 export default function Img(props) {
-  const { src } = props;
+  const { src, alt, ...rest } = props;
+  const noimg = '/images/no-img.png';
 
   const onError = (e) => {
-    e.target.src = 'http://placehold.it/500x500';
+    e.target.src = noimg;
   };
 
-  return <Image src={src} alt="" onError={onError} {...props} />;
+  return (
+    <img
+      src={src ? src : noimg}
+      alt={alt ? alt : ''}
+      onError={onError}
+      {...rest}
+    />
+  );
 }

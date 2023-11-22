@@ -1,8 +1,8 @@
 'use client';
 import { useState } from 'react';
 import Banner from '@/components/banner/Banner';
-import CardList from '@/components/card/CardList';
 import CategoryList from '@/components/category/CategoryList';
+import CampList from '@/components/card/CampList';
 
 export const CATEGORIES = [
   { id: 0, text: '전체' },
@@ -24,7 +24,7 @@ export default function Home() {
           setState={setActiveID}
         />
         <h2 className="a11y-hidden">{CATEGORIES[activeID].text} 강의 목록</h2>
-        <CardList activeID={activeID} />
+        <CampList activeID={activeID} />
       </main>
     </>
   );

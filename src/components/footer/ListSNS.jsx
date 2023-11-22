@@ -7,7 +7,7 @@ import SVGInstar from './svg/SVGInstar';
 import SVGNaver from './svg/SVGNaver';
 import SVGYoutube from './svg/SVGYoutube';
 
-export default function ListSNS({ color = 'grayLv2' }) {
+export default function ListSNS({ color = 'grayLv3' }) {
   const SNSList = [
     {
       icon: <SVGHome color={color} />,

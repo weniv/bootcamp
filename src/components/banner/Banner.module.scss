@@ -1,6 +1,8 @@
 @import '@/styles/var.scss';
 @import '@/styles/function.scss';
 
+$bannerHeight: fcSize(240, 400);
+
 .banner {
   [class*='swiper-pagination'] {
     bottom: 1.6rem;
@@ -60,8 +62,10 @@
 
 @media screen and (max-width: map-get($breakPoint, mobile)) {
   .bannerItem {
-    justify-content: flex-end;
-    padding-bottom: 4rem;
+    & > div {
+      justify-content: flex-end;
+      padding-bottom: 4rem;
+    }
   }
 
   .description {

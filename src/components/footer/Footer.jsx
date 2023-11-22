@@ -11,12 +11,13 @@ export default function Footer() {
         <div className={styles.flex}>
           <h2>
             <Logo color="grayLv3" />
+            <span className="a11y-hidden">Weniv.bootcamp 정보</span>
           </h2>
           <p>Copyright © 2023 WENIV All Rights Reserved</p>
         </div>
 
         <WenivInfo />
-        <ListSNS color="grayLv3" />
+        <ListSNS />
       </div>
     </footer>
   );

@@ -1,10 +1,9 @@
-import classNames from 'classnames';
 import styles from './Card.module.scss';
 
 import CardItem from './CardItem';
 import { CATEGORIES } from '@/app/page';
 
-export default function CardList({ activeID }) {
+export default function CampList({ activeID }) {
   let camps = require('/public/data/camp.json');
 
   if (activeID) {

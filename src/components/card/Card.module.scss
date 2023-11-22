@@ -26,10 +26,14 @@
     box-shadow: 0px 4px 40px 0px rgba(0, 0, 0, 0.08);
   }
 
+  button {
+    border-radius: 50%;
+  }
   .item-thumbnail {
     width: 100%;
     aspect-ratio: 380/200;
     object-fit: cover;
+    border-bottom: 1px solid var(--grayLv2);
   }
   .item-content {
     padding: 2.8rem;
@@ -67,4 +71,9 @@
       align-items: center;
     }
   }
+}
+
+.flex-container {
+  display: flex;
+  gap: 0.8rem;
 }

@@ -1,10 +1,11 @@
 $maxW: 1190;
 
-@mixin ellipse($num: 1) {
+@mixin ellipse($num: 1, $lineHeight: 1.6) {
   overflow: hidden;
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: $num;
+  height: 1em * $num * $lineHeight;
 }
 
 @function fcSize($min, $max) {

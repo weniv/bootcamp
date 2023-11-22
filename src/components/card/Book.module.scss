@@ -1,0 +1,34 @@
+@use '@/styles/function.scss' as *;
+
+.item {
+  a {
+    display: block;
+    overflow: hidden;
+    border-radius: 2rem;
+  }
+
+  .item-thumbnail {
+    width: 100%;
+    aspect-ratio: 246/348;
+    object-fit: cover;
+    border-radius: 2rem;
+  }
+  .item-content {
+    padding: 1.6rem 0;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+
+    .item-content-title {
+      font-size: fcSize(16, 18);
+      @include ellipse(2);
+    }
+
+    .item-content-author {
+      font-size: fcSize(14, 16);
+      color: var(--grayLv3);
+      @include ellipse(1);
+    }
+  }
+}
