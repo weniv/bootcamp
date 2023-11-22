@@ -1,6 +1,8 @@
 import CardItem from '@/components/card/CardItem';
 import './camp.scss';
 import BookItem from '@/components/card/BookItem';
+import InfoSection from '@/components/InfoSection';
+import MessageSection from '@/components/MessageSection';
 
 export default function SubPage() {
   const {
@@ -33,52 +35,38 @@ export default function SubPage() {
             여러분을 지도합니다.
           </p>
 
-          <div className="info-box">
-            <img src="images/weniv.svg" alt="" />
-            <div>
-              <h3>주식회사 위니브</h3>
-              <h4>KDT 강의 이력</h4>
-              <ul>
-                <li>멋사 TECHIT 프론트엔드 스쿨 1기 · 메인 강사, 멘토진</li>
-                <li>멋사 TECHIT 프론트엔드 스쿨 2기 · 메인 강사, 멘토진</li>
-                <li>멋사 TECHIT 프론트엔드 스쿨 3기 · 메인 강사, 멘토진</li>
-                <li>멋사 TECHIT 프론트엔드 스쿨 5기 · 메인 강사, 멘토진</li>
-                <li>멋사 TECHIT 프론트엔드 스쿨 7기 · 메인 강사, 멘토진</li>
-                <li>멋사 TECHIT 데이터 분석 스쿨 1기 · 메인 강사, 멘토진</li>
-                <li>멋사 TECHIT AI 스쿨 1기 · 부분 강사진</li>
-                <li>EST 백엔드 스쿨 1기 · 메인 강사, 멘토진 </li>
-                <li>EST 백엔드 스쿨 3기 · 메인 강사, 멘토진 </li>
-              </ul>
-              <h4>KDC 콘텐츠 공급</h4>
-              <ul>
-                <li>멋사 리엑트(React) 콘텐츠 제작</li>
-                <li>고려아카데미 콘텐츠 제작</li>
-              </ul>
-              <h4>자체 캠프</h4>
-              <p>제주코딩베이스캠프 1~15기 주관</p>
-            </div>
-          </div>
+          <InfoSection img="images/weniv.svg">
+            <h3>주식회사 위니브</h3>
+            <h4>KDT 강의 이력</h4>
+            <ul>
+              <li>멋사 TECHIT 프론트엔드 스쿨 1기 · 메인 강사, 멘토진</li>
+              <li>멋사 TECHIT 프론트엔드 스쿨 2기 · 메인 강사, 멘토진</li>
+              <li>멋사 TECHIT 프론트엔드 스쿨 3기 · 메인 강사, 멘토진</li>
+              <li>멋사 TECHIT 프론트엔드 스쿨 5기 · 메인 강사, 멘토진</li>
+              <li>멋사 TECHIT 프론트엔드 스쿨 7기 · 메인 강사, 멘토진</li>
+              <li>멋사 TECHIT 데이터 분석 스쿨 1기 · 메인 강사, 멘토진</li>
+              <li>멋사 TECHIT AI 스쿨 1기 · 부분 강사진</li>
+              <li>EST 백엔드 스쿨 1기 · 메인 강사, 멘토진 </li>
+              <li>EST 백엔드 스쿨 3기 · 메인 강사, 멘토진 </li>
+            </ul>
+            <h4>KDC 콘텐츠 공급</h4>
+            <ul>
+              <li>멋사 리엑트(React) 콘텐츠 제작</li>
+              <li>고려아카데미 콘텐츠 제작</li>
+            </ul>
+            <h4>자체 캠프</h4>
+            <p>제주코딩베이스캠프 1~15기 주관</p>
+          </InfoSection>
+
           <p>
             100% 온라인 과정으로 진행되는 단기 부트캠프에서는 위니브의 실무
             경험을 바탕으로 만들어진 현실 도달 가능한 커리큘럼과 프로젝트,
             멘토링을 제공합니다.
           </p>
         </section>
-        <section>
-          <h3 className="title2">수강생의 메시지</h3>
-          <ol>
-            {messages.map((message, index) => (
-              <li key={index} className="emoji-box">
-                <span>{message.emoji}</span>
-                <div>
-                  {message.content.map((text) => (
-                    <p>{text}</p>
-                  ))}
-                </div>
-              </li>
-            ))}
-          </ol>
-        </section>
+
+        <MessageSection messages={messages} title="수강생의 메시지" />
+
         <section>
           <h3 className="title2">수강생 주도 오픈소스 프로젝트</h3>
           <ul className="project-container">

@@ -1,0 +1,20 @@
+@import '@/styles/var.scss';
+
+.message-box {
+  border: 2px solid var(--primary);
+  padding: 3.2rem;
+  border-radius: 1.6rem;
+
+  margin: 2.4rem 0;
+
+  display: flex;
+  gap: 2rem;
+  span {
+    font-size: fcSize(30, 42);
+    line-height: 1;
+  }
+
+  p:not(:first-child) {
+    margin-top: 1em;
+  }
+}

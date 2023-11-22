@@ -1,6 +1,11 @@
 @import '@/styles/var.scss';
 
 .btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+
   height: 4.2rem;
   padding: 0 2rem;
   border-radius: $borderRadius;
@@ -24,12 +29,14 @@
   }
 
   // hover
-  &:not(:disabled):hover {
-    color: var(--primary);
-    background-color: var(--grayLv1);
+  @media (hover: hover) {
+    &:not(:disabled):hover {
+      color: var(--primary);
+      background-color: var(--grayLv1);
 
-    svg path {
-      fill: var(--primary);
+      svg path {
+        fill: var(--primary);
+      }
     }
   }
 }

@@ -148,6 +148,11 @@ body {
   margin: auto;
   max-width: calc(100% - 1.6rem * 2);
 }
+.sub-max-width {
+  width: $subMaxWidth;
+  margin: auto;
+  max-width: calc(100% - 1.6rem * 2);
+}
 
 .layout-flex {
   display: flex;
@@ -157,4 +162,34 @@ body {
     flex-grow: 1;
     align-items: flex-start;
   }
+}
+
+hr {
+  border-top: 1px solid var(--grayLv2);
+  border-bottom: 0;
+  margin: fcSize(40, 80) 0;
+}
+
+.title1,
+.title2 {
+  margin-bottom: 1em;
+}
+.title1 {
+  font-size: fcSize(20, 40);
+}
+.title2 {
+  font-size: fcSize(24, 32);
+  margin-bottom: 1.2rem;
+
+  & + *:not(.p-des) {
+    margin-top: 4rem;
+  }
+}
+.p-des {
+  color: var(--primary);
+  text-align: center;
+  margin-bottom: 4rem;
+}
+.tac {
+  text-align: center;
 }

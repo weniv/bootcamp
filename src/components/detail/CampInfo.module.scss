@@ -1,0 +1,64 @@
+.camp-info {
+  background: var(--grayLv1);
+  padding: 3.5rem;
+  border-radius: 1.6rem;
+  line-height: 1.6;
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+
+    li {
+      color: var(--grayLv3);
+      display: flex;
+      gap: 1em;
+
+      @media screen and (max-width: 640px) {
+        flex-direction: column;
+        gap: 0;
+      }
+      .tit {
+        flex-shrink: 0;
+      }
+      .tit + span {
+        color: var(--surface);
+
+        &.price {
+          color: var(--primary);
+          font-weight: bold;
+        }
+      }
+    }
+  }
+
+  .btn-group {
+    margin-top: 2.4rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.2rem;
+
+    width: 37rem;
+    max-width: 100%;
+
+    a {
+      flex-grow: 1;
+    }
+
+    button {
+      background-color: var(--background);
+    }
+
+    @media screen and (max-width: 360px) {
+      a,
+      button {
+        width: 100%;
+      }
+    }
+
+    @media (hover: hover) {
+      button:hover {
+        background-color: #fff;
+      }
+    }
+  }
+}

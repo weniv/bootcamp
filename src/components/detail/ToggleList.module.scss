@@ -1,0 +1,49 @@
+@import '@/styles/var.scss';
+
+.toggleList {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+
+  li {
+    min-height: 8rem;
+    border: 1px solid var(--grayLv2);
+    border-radius: 1.6rem;
+    padding: 2.4rem;
+    position: relative;
+    transform: all 0.3s;
+    box-sizing: border-box;
+  }
+
+  .question {
+    display: flex;
+    align-items: center;
+    height: 3.2rem;
+
+    span {
+      color: var(--primary);
+      font-weight: 600;
+      @extend .fs24;
+      width: 2em;
+    }
+  }
+
+  .answer {
+    line-height: 1.6;
+    padding-top: 3rem;
+    box-sizing: border-box;
+    color: var(--grayLv4);
+    display: none;
+  }
+
+  .btnToggle {
+    position: absolute;
+    top: 2.4rem;
+    right: 2.4rem;
+
+    width: 3.2rem;
+    height: 3.2rem;
+    border-radius: 50%;
+    border: 1px solid var(--grayLv2);
+  }
+}

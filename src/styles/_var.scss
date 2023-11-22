@@ -10,6 +10,7 @@ $activation: #dee8ff;
 
 // size
 $maxWidth: 119rem;
+$subMaxWidth: 79rem;
 $padding: 2.4rem;
 
 $headerHeight: fcSize(60, 74);
@@ -21,3 +22,14 @@ $breakPoint: (
   tablet: 1024px,
   pc: 1190px,
 );
+
+// 폰트사이즈
+.fs16 {
+  font-size: fcSize(14, 16);
+}
+.fs18 {
+  font-size: fcSize(16, 18);
+}
+.fs24 {
+  font-size: fcSize(20, 24);
+}
