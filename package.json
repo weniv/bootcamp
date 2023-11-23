@@ -1,12 +1,15 @@
 {
+  "homepage": "https://weniv.github.com/bootcamp",
   "name": "bootcamp",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "build": "next build",
+    "predeploy": "npm run build",
+    "deploy": "touch out/.nojekyll && gh-pages -d out --dotfiles"
   },
   "dependencies": {
     "classnames": "^2.3.2",
@@ -15,5 +18,8 @@
     "react-dom": "^18",
     "sass": "^1.69.5",
     "swiper": "^11.0.4"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.1.0"
   }
 }

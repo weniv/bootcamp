@@ -1,4 +1,9 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {}
+const nextConfig = {
+  images: {
+    loader: 'imgix',
+    path: 'https://weniv.github.com/bootcamp/',
+  },
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;

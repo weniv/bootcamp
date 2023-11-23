@@ -13,9 +13,11 @@ export default function RootLayout({ children }) {
   return (
     <html lang="ko-KR">
       <body className="layout-flex">
-        <Header />
-        <div className="layout-grow">{children}</div>
-        <Footer />
+        <div>
+          <Header />
+          <div className="layout-grow">{children}</div>
+          <Footer />
+        </div>
       </body>
     </html>
   );

@@ -12,10 +12,15 @@ import styles from './page.module.scss';
 import classNames from 'classnames';
 import Notice from '@/components/detail/Notice';
 
+export async function generateStaticParams() {
+  return [{ id: 'python' }, { id: 'html' }, { id: 'data' }];
+}
+
 export default function SubPage({ params }) {
-  const { slug } = params;
+  const { id } = params;
+
   const campData = require('/public/data/camp.json').find(
-    (camp) => camp.url === `/${slug}`,
+    (camp) => camp.url === `/${id}`,
   );
 
   return (
