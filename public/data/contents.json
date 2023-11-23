@@ -55,28 +55,28 @@
       "description": "Flex&Grid 시스템을 웹에서 실습해 볼 수 있는 서비스(PDF 자료 제공)",
       "type": "오픈소스 프로젝트",
       "image": "/images/projects/flex-grid.png",
-      "url": "#"
+      "url": "https://flexngrid.com/"
     },
     {
       "title": "ALGO.VIEW",
       "description": "알고리즘 코딩 테스트 문제풀이 분석 서비스",
       "type": "오픈소스 프로젝트",
       "image": "/images/projects/algo-view.png",
-      "url": "#"
+      "url": "https://algoview.co.kr/"
     },
     {
       "title": "StopWar",
       "description": "우크라이나 전쟁관련 소식 제공 비영리 서비스",
       "type": "오픈소스 프로젝트",
       "image": "/images/projects/stop-war.png",
-      "url": "#"
+      "url": "https://stopwar.co.kr/"
     },
     {
       "title": "SQooL: SQL School",
       "description": "로그인, 설치 등 번거로운 과정 없이 웹에서 쉽게 SQL을 배울 수 있는 서비스",
       "type": "오픈소스 프로젝트",
       "image": "/images/projects/SQooL.png",
-      "url": "#"
+      "url": "https://sqlschool.co.kr/"
     }
   ],
   "books": [

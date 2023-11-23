@@ -47,17 +47,6 @@ blockquote {
   font-weight: 600;
 }
 
-[class$='-container'] {
-  a {
-    transition: transform 0.3s;
-    transform-origin: 50% 100%;
-  }
-  @media (hover: hover) {
-    a:hover {
-      transform: scale(1.02);
-    }
-  }
-}
 .project-container {
   @include grid(28rem);
 

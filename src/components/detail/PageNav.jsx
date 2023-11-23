@@ -1,7 +1,7 @@
 'use client';
 import { useState } from 'react';
 import styles from './PageNav.module.scss';
-import useIntersectionObservation from '@/hooks/useIntersectionObservation';
+import useIntersectionObservation from '@/utils/useIntersectionObservation';
 
 export default function PageNav() {
   const [activeId, setActiveId] = useState('section1');

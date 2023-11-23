@@ -6,10 +6,11 @@
   flex-direction: column;
   gap: fcSize(40, 60);
 
-  h3 {
-    margin-top: -8rem;
-    padding-top: 8rem;
+  [class^='section'] {
+    margin-top: -10rem;
+    padding-top: 10rem;
   }
+
   &__thumnail {
     width: 100%;
     aspect-ratio: 790/416;

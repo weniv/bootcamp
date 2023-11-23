@@ -31,6 +31,12 @@
           font-weight: 600;
           color: var(--primary);
         }
+
+        &[target='_blank'] {
+          padding-right: 1.6rem;
+          background: url(/images/icon-diagonal-arrow-blue.svg) no-repeat right
+            50% / 1.2rem;
+        }
       }
     }
   }

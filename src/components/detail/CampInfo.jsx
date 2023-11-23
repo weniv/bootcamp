@@ -1,8 +1,17 @@
+'use client';
+import { useEffect } from 'react';
+
+import styles from './CampInfo.module.scss';
+import { handleClipBoard } from '@/utils/handleClipBoard';
 import Btn from '../button/Btn';
 import SVGShare from '../card/svg/SVGShare';
 
-import styles from './CampInfo.module.scss';
 export default function CampInfo({ data }) {
+  let thisUrl;
+  useEffect(() => {
+    thisUrl = window.document.location.href;
+  }, []);
+
   return (
     <section className={styles['camp-info']}>
       <h3 className="a11y-hidden">교육 정보</h3>
@@ -26,7 +35,10 @@ export default function CampInfo({ data }) {
       </ul>
 
       <div className={styles['btn-group']}>
-        <Btn>
+        <Btn
+          onClick={() => {
+            handleClipBoard(thisUrl);
+          }}>
           <SVGShare />
           공유하기
         </Btn>
