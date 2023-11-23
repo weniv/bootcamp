@@ -8,6 +8,12 @@ $maxW: 1190;
   height: 1em * $num * $lineHeight;
 }
 
+@mixin grid($width, $gap1: 2.4rem, $gap2: 2.5rem) {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax($width, 1fr));
+  gap: $gap1 $gap2;
+}
+
 @function fcSize($min, $max) {
   @return clamp($min * 0.1rem, (100vw / $maxW) * $max, $max * 0.1rem);
 }

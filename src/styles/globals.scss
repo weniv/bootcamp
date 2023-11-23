@@ -167,7 +167,7 @@ body {
 hr {
   border-top: 1px solid var(--grayLv2);
   border-bottom: 0;
-  margin: fcSize(40, 80) 0;
+  margin: 0;
 }
 
 .title1,
@@ -192,4 +192,11 @@ hr {
 }
 .tac {
   text-align: center;
+}
+
+.fc-primary {
+  color: var(--primary);
+}
+.fc-gray3 {
+  color: var(--grayLv3);
 }

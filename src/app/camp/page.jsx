@@ -65,7 +65,10 @@ export default function SubPage() {
           </p>
         </section>
 
-        <MessageSection messages={messages} title="수강생의 메시지" />
+        <section>
+          <h3 className="title2">수강생의 메시지</h3>
+          <MessageSection messages={messages} />
+        </section>
 
         <section>
           <h3 className="title2">수강생 주도 오픈소스 프로젝트</h3>

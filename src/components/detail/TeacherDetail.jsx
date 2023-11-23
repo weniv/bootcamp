@@ -6,25 +6,27 @@ export default function TeacherDetail({ name }) {
 
   return (
     <InfoSection img={data?.image ? data?.image : noimg}>
-      <h3>
+      <h4 className="tit3">
         {data?.korName} <span>{data?.engName}</span>
-      </h3>
+      </h4>
       <ul>
         {data?.career.now.map((career) => (
           <li>
-            <span>現</span> {career}
+            <span className="fc-primary">現</span> {career}
           </li>
         ))}
         {data?.career.prev.map((career) => (
           <li>
-            <span>前</span> {career}
+            <span className="fc-gray3">前</span> {career}
           </li>
         ))}
       </ul>
-      <h4>강사 이력</h4>
-      {data?.education.map((edu) => (
-        <li>{edu}</li>
-      ))}
+      <h5>강사 이력</h5>
+      <ul>
+        {data?.education.map((edu) => (
+          <li>{edu}</li>
+        ))}
+      </ul>
     </InfoSection>
   );
 }

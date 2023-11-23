@@ -1,0 +1,29 @@
+@import '@/styles/var.scss';
+
+.notice {
+  background-color: var(--grayLv1);
+  border-radius: 1.2rem;
+  padding: 3.2rem;
+
+  h3 {
+    @extend .fs16;
+    font-weight: normal;
+    color: var(--grayLv3);
+    margin-bottom: 0.5em;
+    &::before {
+      content: '[';
+    }
+    &::after {
+      content: ']';
+    }
+  }
+
+  ul {
+    padding-left: 1em;
+    li {
+      line-height: 1.6;
+      margin: 0.4em 0;
+      list-style-type: '- ';
+    }
+  }
+}

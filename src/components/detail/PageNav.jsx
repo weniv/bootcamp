@@ -1,25 +1,35 @@
+'use client';
+import { useState } from 'react';
+import styles from './PageNav.module.scss';
+import useIntersectionObservation from '@/hooks/useIntersectionObservation';
+
 export default function PageNav() {
+  const [activeId, setActiveId] = useState('section1');
+  useIntersectionObservation(setActiveId, '.section');
+
+  const navList = [
+    '캠프 소개',
+    '후기',
+    '수료생 혜택',
+    '커리큘럼',
+    '강사소개',
+    'FAQ',
+  ];
+
   return (
-    <nav>
+    <nav className={styles.nav}>
       <ul>
-        <li>
-          <a href="#">캠프 소개</a>
-        </li>
-        <li>
-          <a href="#">후기</a>
-        </li>
-        <li>
-          <a href="#">수료생 혜택</a>
-        </li>
-        <li>
-          <a href="#">커리큘럼</a>
-        </li>
-        <li>
-          <a href="#">강사소개</a>
-        </li>
-        <li>
-          <a href="#">FAQ</a>
-        </li>
+        {navList.map((list, index) => (
+          <li key={index}>
+            <a
+              href={`#section${index + 1}`}
+              className={
+                activeId === `section${index + 1}` ? styles.active : ''
+              }>
+              {list}
+            </a>
+          </li>
+        ))}
         <li>
           <a href="#" target="_blank">
             신청하기

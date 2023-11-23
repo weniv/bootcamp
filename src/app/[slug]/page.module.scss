@@ -1,0 +1,27 @@
+@import '@/styles/var.scss';
+
+.camp {
+  margin-top: fcSize(40, 80);
+  display: flex;
+  flex-direction: column;
+  gap: fcSize(40, 60);
+
+  h3 {
+    margin-top: -8rem;
+    padding-top: 8rem;
+  }
+  &__thumnail {
+    width: 100%;
+    aspect-ratio: 790/416;
+    object-fit: cover;
+    border-radius: 1.2rem;
+  }
+  &__title {
+    @extend .fs40;
+    margin-top: 3.2rem;
+  }
+  &__desc {
+    margin-top: 1em;
+    color: var(--grayLv4);
+  }
+}

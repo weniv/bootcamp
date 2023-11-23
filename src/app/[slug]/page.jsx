@@ -1,13 +1,16 @@
 import Img from '@/components/Img';
 import CampInfo from '@/components/detail/CampInfo';
-import InfoSection from '@/components/InfoSection';
+
 import MessageSection from '@/components/MessageSection';
 import PageNav from '@/components/detail/PageNav';
 import TeacherInfo from '@/components/detail/TeacherInfo';
 import TeacherDetail from '@/components/detail/TeacherDetail';
-import FAQSection from '@/components/detail/FAQSection';
-import CurriculumSection from '@/components/detail/CurriculumSection';
 import ToggleList from '@/components/detail/ToggleList';
+import Benefit from '@/components/detail/Benefit';
+
+import styles from './page.module.scss';
+import classNames from 'classnames';
+import Notice from '@/components/detail/Notice';
 
 export default function SubPage({ params }) {
   const { slug } = params;
@@ -16,45 +19,58 @@ export default function SubPage({ params }) {
   );
 
   return (
-    <div className="sub-max-width">
-      <Img src={campData?.image} alt="" />
-      <h2>{campData?.title}</h2>
-      <p>{campData?.description}</p>
+    <div className={classNames('sub-max-width', styles.camp)}>
+      <section>
+        <Img className={styles.camp__thumnail} src={campData?.image} alt="" />
+        <h2 className={styles.camp__title}>{campData?.title}</h2>
+        <p className={styles.camp__desc}>{campData?.description}</p>
 
-      <TeacherInfo name={campData?.teacher} />
-      <CampInfo data={campData} />
+        <TeacherInfo name={campData?.teacher} />
+        <CampInfo data={campData} />
+      </section>
 
       <PageNav />
 
-      {/* 이런 걸 배울 수 있어요. */}
-      <h3>이런 걸 배울 수 있어요.</h3>
-
-      {/* 이런 분들께 추천해요. */}
-      <h3>이런 분들께 추천해요.</h3>
-
-      {/* 후기 */}
-      <MessageSection
-        messages={campData?.messages}
-        title="수강생분들의 생생한 후기"
-      />
+      <section id="section1" className="section">
+        <h3 className="title2 tac">캠프 소개</h3>
+        <div
+          style={{
+            height: '1000px',
+            backgroundColor: '#eee',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            color: '#999',
+            fontSize: '2rem',
+          }}>
+          작성중...
+        </div>
+      </section>
       <hr />
 
-      {/* 수강생 혜택 */}
-      <h3>수강생 혜택</h3>
+      {/* 후기 */}
+      <section id="section2" className="section">
+        <h3 className="title2 tac">수강생분들의 생생한 후기</h3>
+        <MessageSection messages={campData?.messages} />
+      </section>
+      <hr />
+
+      {/* 수료생 혜택 */}
+      <Benefit id="section3" className="section" />
 
       <hr />
 
       {/* 커리큘럼 */}
-      <section>
+      <section id="section4" className="section">
         <h3 className="title2 tac">커리큘럼</h3>
         <p className="p-des">{campData?.totalCurriculum} </p>
-        <ToggleList data={campData?.curriculum} />
+        <ToggleList data={campData?.curriculum} type="curriculum" />
       </section>
 
       <hr />
 
       {/* 강사소개 */}
-      <section>
+      <section id="section5" className="section">
         <h3 className="title2 tac">강사소개</h3>
         <p className="p-des">
           "부트캠프 수료율 100%의 비결은 수강생을 향한 ‘진심’입니다."
@@ -65,10 +81,12 @@ export default function SubPage({ params }) {
 
       <hr />
       {/* FAQ */}
-      <section>
+      <section id="section6" className="section">
         <h3 className="title2 tac">FAQ</h3>
-        <ToggleList data={campData?.faq} />
+        <ToggleList data={campData?.faq} type="faq" />
       </section>
+
+      <Notice />
     </div>
   );
 }

@@ -35,5 +35,16 @@
     "education": [
       "멋쟁이사자처럼 테킷(TECHIT) 프론트엔드 스쿨 1,2,3,5,7기 주강사"
     ]
+  },
+  "woongi": {
+    "image": "",
+    "korName": "김진환",
+    "engName": "Jaehyun Kim",
+    "position": "",
+    "career": {
+      "now": [],
+      "prev": []
+    },
+    "education": ["멋쟁이사자처럼 테킷(TECHIT) 데이터분석 스쿨 1기 주강사"]
   }
 }
