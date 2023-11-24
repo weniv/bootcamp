@@ -7,18 +7,17 @@ import BtnIcon from '../button/BtnIcon';
 import SVGShare from './svg/SVGShare';
 import { handleClipBoard } from '@/utils/handleClipBoard';
 
-import Image from 'next/image';
-const noimg = '/bootcamp/images/no-img.png';
+import { noimg } from '@/utils/noimg';
 
 export default function CardItem({ data, share, titleStart }) {
   const { url, image, type, title, description, recruitmentPeriod } = data;
 
   return (
     <article className={styles.item}>
-      <Image
+      <img
         width="380"
         height="200"
-        src={image ? `/bootcamp${image}` : noimg}
+        src={image ? image : noimg}
         alt=""
         className={styles['item-thumbnail']}
       />

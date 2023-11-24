@@ -1,7 +1,6 @@
 import styles from './BaseItem.module.scss';
 
-import Image from 'next/image';
-const noimg = '/bootcamp/images/no-img.png';
+import { noimg } from '@/utils/noimg';
 
 export default function BaseItem({ data }) {
   return (
@@ -9,7 +8,7 @@ export default function BaseItem({ data }) {
       {data.map((data, index) => (
         <li key={index}>
           <article className={styles.item}>
-            <Image
+            <img
               width="385"
               height="240"
               alt=""

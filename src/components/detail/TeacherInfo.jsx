@@ -1,7 +1,7 @@
 import styles from './TeacherInfo.module.scss';
+import { noimg } from '@/utils/noimg';
 
 export default function TeacherInfo({ name }) {
-  const noimg = './images/no-img.png';
   const data = require('/public/data/teachers.json')[name];
   return (
     <section className={styles['teacher-info']}>

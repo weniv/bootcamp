@@ -42,7 +42,7 @@ export default function SubPage() {
             여러분을 지도합니다.
           </p>
 
-          <InfoSection img="images/weniv.svg">
+          <InfoSection img="/bootcamp/images/weniv.svg">
             <h3>주식회사 위니브</h3>
             <h4>KDT 강의 이력</h4>
             <ul>

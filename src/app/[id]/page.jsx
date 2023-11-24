@@ -11,8 +11,7 @@ import styles from './page.module.scss';
 import classNames from 'classnames';
 import Notice from '@/components/detail/Notice';
 
-import Image from 'next/image';
-const noimg = '/bootcamp/images/no-img.png';
+import { noimg } from '@/utils/noimg';
 
 export async function generateStaticParams() {
   return [{ id: 'python' }, { id: 'html' }, { id: 'data' }];
@@ -48,7 +47,7 @@ export default function SubPage({ params }) {
   return (
     <div className={classNames('sub-max-width', styles.camp)}>
       <section>
-        <Image
+        <img
           width="790"
           height="416"
           className={styles.camp__thumnail}
