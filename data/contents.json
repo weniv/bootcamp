@@ -54,28 +54,28 @@
       "title": "FLEXxGRID",
       "description": "Flex&Grid 시스템을 웹에서 실습해 볼 수 있는 서비스(PDF 자료 제공)",
       "type": "오픈소스 프로젝트",
-      "image": "/images/projects/flex-grid.png",
+      "image": "./images/projects/flex-grid.png",
       "url": "https://flexngrid.com/"
     },
     {
       "title": "ALGO.VIEW",
       "description": "알고리즘 코딩 테스트 문제풀이 분석 서비스",
       "type": "오픈소스 프로젝트",
-      "image": "/images/projects/algo-view.png",
+      "image": "./images/projects/algo-view.png",
       "url": "https://algoview.co.kr/"
     },
     {
       "title": "StopWar",
       "description": "우크라이나 전쟁관련 소식 제공 비영리 서비스",
       "type": "오픈소스 프로젝트",
-      "image": "/images/projects/stop-war.png",
+      "image": "./images/projects/stop-war.png",
       "url": "https://stopwar.co.kr/"
     },
     {
       "title": "SQooL: SQL School",
       "description": "로그인, 설치 등 번거로운 과정 없이 웹에서 쉽게 SQL을 배울 수 있는 서비스",
       "type": "오픈소스 프로젝트",
-      "image": "/images/projects/SQooL.png",
+      "image": "./images/projects/SQooL.png",
       "url": "https://sqlschool.co.kr/"
     }
   ],
@@ -83,19 +83,19 @@
     {
       "title": "알아서 잘 딱 깔끔하고 센스있게 정리하는 TypeScript 핵심 개념",
       "author": "김민석, 김민영 외 8명",
-      "image": "/images/books/typescript.png",
+      "image": "./images/books/typescript.png",
       "url": "#"
     },
     {
       "title": "웹 접근성 왭(why-web)?",
       "author": "고은영, 고지연 외 12명",
-      "image": "/images/books/why-web.png",
+      "image": "./images/books/why-web.png",
       "url": "#"
     },
     {
       "title": "프론트엔드 개발자를 위한 SEO 가이드",
       "author": "김도경, 김미정 외 6명",
-      "image": "/images/books/frontend-seo.png",
+      "image": "./images/books/frontend-seo.png",
       "url": "#"
     }
   ],
