@@ -9,7 +9,7 @@
     "lint": "next lint",
     "build": "next build",
     "predeploy": "npm run build",
-    "deploy": "next build && touch out/.nojekyll && git add -f out/ && git commit -m 'deploy to gh-pages' && git subtree push --prefix out origin gh-pages"
+    "deploy": "touch out/.nojekyll && gh-pages -d out --dotfiles"
   },
   "dependencies": {
     "classnames": "^2.3.2",
