@@ -9,7 +9,7 @@
     "lint": "next lint",
     "build": "next build",
     "predeploy": "npm run build",
-    "deploy": "touch out/.nojekyll && gh-pages -d out --dotfiles"
+    "deploy": "next build && touch out/.nojekyll && git add -f out/ && git commit -m 'deploy to gh-pages' && git subtree push --prefix out origin gh-pages"
   },
   "dependencies": {
     "classnames": "^2.3.2",
@@ -17,6 +17,7 @@
     "react": "^18",
     "react-dom": "^18",
     "sass": "^1.69.5",
+    "sharp": "^0.32.6",
     "swiper": "^11.0.4"
   },
   "devDependencies": {
