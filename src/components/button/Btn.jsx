@@ -11,6 +11,7 @@ export default function Btn(props) {
     className,
     solid,
     bordernone,
+    target,
   } = props;
 
   const btnStyle = classNames(
@@ -22,7 +23,11 @@ export default function Btn(props) {
 
   if (href) {
     return (
-      <Link {...props} href={href} className={btnStyle}>
+      <Link
+        {...props}
+        href={href}
+        className={btnStyle}
+        title={target === '_blank' ? '새창' : ''}>
         {children}
       </Link>
     );

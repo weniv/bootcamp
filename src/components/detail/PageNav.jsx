@@ -2,6 +2,7 @@
 import { useState } from 'react';
 import styles from './PageNav.module.scss';
 import useIntersectionObservation from '@/utils/useIntersectionObservation';
+import SVGArrow from '@/svg/SVGArrow';
 
 export default function PageNav() {
   const [activeId, setActiveId] = useState('section1');
@@ -31,8 +32,9 @@ export default function PageNav() {
           </li>
         ))}
         <li>
-          <a href="#" target="_blank">
+          <a href="#" target="_blank" title="새창">
             신청하기
+            <SVGArrow color="primary" />
           </a>
         </li>
       </ul>

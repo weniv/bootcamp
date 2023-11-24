@@ -30,12 +30,8 @@
         &[target='_blank'] {
           font-weight: 600;
           color: var(--primary);
-        }
-
-        &[target='_blank'] {
-          padding-right: 1.6rem;
-          background: url('/bootcamp/images/icon-diagonal-arrow-blue.svg')
-            no-repeat right 50% / 1.2rem;
+          display: flex;
+          gap: 0.4em;
         }
       }
     }

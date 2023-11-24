@@ -51,7 +51,10 @@ export default function CardItem({ data, share, titleStart }) {
           </p>
         )}
       </div>
-      <Link href={url} target={share ? '_blank' : '_self'}>
+      <Link
+        href={url}
+        target={share ? '_blank' : '_self'}
+        title={share ? '새창' : ''}>
         <span className="a11y-hidden">{title}로 이동하기</span>
       </Link>
     </article>

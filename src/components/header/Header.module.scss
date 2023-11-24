@@ -23,11 +23,11 @@
     @media screen and (max-width: 640px) {
       display: none;
     }
-  }
 
-  a[target='_blank'] {
-    padding-right: 1.6rem;
-    background: url('/bootcamp/images/icon-diagonal-arrow.svg') no-repeat right
-      50% / 1.2rem;
+    a {
+      display: flex;
+      align-items: center;
+      gap: 0.4em;
+    }
   }
 }
