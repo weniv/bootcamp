@@ -29,8 +29,10 @@
   .list__title {
     display: flex;
     align-items: center;
-    height: 3.2rem;
+    // height: 3.2rem;
     gap: 1.2rem;
+    padding-right: 4.6rem;
+    flex-wrap: wrap;
 
     .q,
     .day {

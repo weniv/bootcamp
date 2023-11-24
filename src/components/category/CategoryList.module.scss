@@ -1,6 +1,7 @@
 @import '@/styles/var.scss';
 .tab_wrap {
   display: flex;
+  flex-wrap: wrap;
   gap: 0.8rem;
 
   margin: 6rem 0 4rem;

@@ -78,13 +78,3 @@
     }
   }
 }
-
-.container {
-  @media screen and (max-width: 640px) {
-    [class~='info-box'] img {
-      position: absolute;
-      bottom: 4rem;
-      right: 4rem;
-    }
-  }
-}

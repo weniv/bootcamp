@@ -12,6 +12,9 @@ $maxW: 1190;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax($width, 1fr));
   gap: $gap1 $gap2;
+  @media screen and (max-width: 480px) {
+    grid-template-columns: 1fr;
+  }
 }
 
 @function fcSize($min, $max) {

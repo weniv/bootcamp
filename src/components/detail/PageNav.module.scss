@@ -12,8 +12,11 @@
     justify-content: center;
     flex-wrap: wrap;
     gap: 2rem;
+    padding: 1.3rem 0;
 
-    padding: 1.3rem;
+    @media screen and (max-width: 480px) {
+      gap: 1rem;
+    }
     li {
       a {
         display: flex;
