@@ -1,8 +1,15 @@
+import styles from './page.module.scss';
+
 import CardItem from '@/components/card/CardItem';
-import './camp.scss';
 import BookItem from '@/components/card/BookItem';
 import InfoSection from '@/components/InfoSection';
 import MessageSection from '@/components/MessageSection';
+
+import Image from 'next/image';
+
+export const metadata = {
+  title: '소개 | 위니브 부트캠프',
+};
 
 export default function SubPage() {
   const {
@@ -13,8 +20,14 @@ export default function SubPage() {
   } = require('/public/data/contents.json');
   return (
     <>
-      <img src="./images/subimg.jpg" alt="" className="sub-visual" />
-      <div className="container">
+      <img
+        width="1920"
+        height="600"
+        src="/bootcamp/images/subimg.webp"
+        alt=""
+        className={styles.sub__visual}
+      />
+      <div className={styles.container}>
         <section>
           <h2 className="title1">위니브 부트캠프가 추구하는 가치</h2>
           <blockquote>
@@ -25,7 +38,7 @@ export default function SubPage() {
             강사진과 멘토진으로 참여하며 수많은 수강생분들을 만나 함께
             성장했습니다.
           </p>
-          <div className="blue-box">
+          <div className={styles.blue__box}>
             <strong className="fs24">"부트캠프 수료율 100%"</strong>
             믿기지 않는 수치이지만 가능했던 이유는 다름 아닌 수강생을 향한
             <strong>'진심'</strong>이었습니다.
@@ -72,7 +85,7 @@ export default function SubPage() {
 
         <section>
           <h3 className="title2">수강생 주도 오픈소스 프로젝트</h3>
-          <ul className="project-container">
+          <ul className={styles.project__container}>
             {projects.map((project, index) => (
               <li key={index}>
                 <CardItem data={project} titleStart={4} share />
@@ -83,7 +96,7 @@ export default function SubPage() {
 
         <section>
           <h3 className="title2">수강생 주도 ICT 전자책 집필</h3>
-          <ul className="book-container">
+          <ul className={styles.book__container}>
             {books.map((book, index) => (
               <li key={index}>
                 <BookItem data={book} />
@@ -96,7 +109,7 @@ export default function SubPage() {
 
         <section>
           <h3 className="title2">위니브 더 알아보기</h3>
-          <ul className="link-list">
+          <ul className={styles.link__list}>
             {links.map((link, index) => (
               <li key={index}>
                 <a href={link.url}>{link.text}</a>

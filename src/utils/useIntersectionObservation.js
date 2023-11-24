@@ -23,7 +23,7 @@ const useIntersectionObservation = (setActiveId, contentsClass) => {
     */
     const observer = new IntersectionObserver(callback, {
       rootMargin: '0px 0px',
-      threshold: 0.5,
+      threshold: [0, 0.5, 1],
     });
 
     const contents = [...document.querySelectorAll(contentsClass)];

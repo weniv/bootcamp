@@ -18,6 +18,7 @@
 
   .item-thumbnail {
     width: 100%;
+    height: auto;
     aspect-ratio: 246/348;
     object-fit: cover;
     border-radius: 2rem;
@@ -36,7 +37,7 @@
 
     .item-content-author {
       font-size: fcSize(14, 16);
-      color: var(--grayLv3);
+      color: var(--grayLv3A11y);
       @include ellipse(1);
     }
   }

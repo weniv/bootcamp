@@ -9,7 +9,7 @@
     gap: 1.2rem;
 
     li {
-      color: var(--grayLv3);
+      color: var(--grayLv3A11y);
       display: flex;
       gap: 1em;
 
@@ -24,7 +24,7 @@
         color: var(--surface);
 
         &.price {
-          color: var(--primary);
+          color: var(--primaryA11y);
           font-weight: bold;
         }
       }

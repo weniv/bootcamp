@@ -1,4 +1,3 @@
-import Img from '@/components/Img';
 import CampInfo from '@/components/detail/CampInfo';
 
 import MessageSection from '@/components/MessageSection';
@@ -12,8 +11,31 @@ import styles from './page.module.scss';
 import classNames from 'classnames';
 import Notice from '@/components/detail/Notice';
 
+import Image from 'next/image';
+const noimg = '/bootcamp/images/no-img.png';
+
 export async function generateStaticParams() {
   return [{ id: 'python' }, { id: 'html' }, { id: 'data' }];
+}
+
+export async function generateMetadata({ params }) {
+  const { id } = params;
+
+  let title = ' ';
+  switch (id) {
+    case 'python':
+      title = '파이썬 | ';
+      break;
+    case 'html':
+      title = 'HTML/CSS | ';
+      break;
+    case 'data':
+      title = '데이터분석 | ';
+      break;
+  }
+  return {
+    title: `${title}위니브 부트캠프`,
+  };
 }
 
 export default function SubPage({ params }) {
@@ -26,7 +48,13 @@ export default function SubPage({ params }) {
   return (
     <div className={classNames('sub-max-width', styles.camp)}>
       <section>
-        <Img className={styles.camp__thumnail} src={campData?.image} alt="" />
+        <Image
+          width="790"
+          height="416"
+          className={styles.camp__thumnail}
+          src={campData?.image ? campData?.image : noimg}
+          alt=""
+        />
         <h2 className={styles.camp__title}>{campData?.title}</h2>
         <p className={styles.camp__desc}>{campData?.description}</p>
 

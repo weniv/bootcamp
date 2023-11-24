@@ -7,8 +7,8 @@ export default function MessageSection({ messages }) {
         <li key={index} className={styles['message-box']}>
           <span>{message.emoji}</span>
           <div>
-            {message.content.map((text) => (
-              <p>{text}</p>
+            {message.content.map((text, index) => (
+              <p key={index}>{text}</p>
             ))}
           </div>
         </li>

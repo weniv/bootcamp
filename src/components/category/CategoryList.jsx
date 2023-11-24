@@ -12,8 +12,8 @@ export default function CategoryList({ list, state, setState }) {
     <div className={styles.tab_wrap}>
       {list.map((item, index) => (
         <button
-          type="button"
           key={item.id}
+          type="button"
           value={index}
           className={classNames(
             styles.tab,

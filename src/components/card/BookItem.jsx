@@ -1,7 +1,8 @@
 import Link from 'next/link';
 import styles from './Book.module.scss';
 
-import Img from '../Img';
+import Image from 'next/image';
+const noimg = '/bootcamp/images/no-img.png';
 
 export default function BookItem({ data }) {
   const { url, image, title, author } = data;
@@ -9,7 +10,14 @@ export default function BookItem({ data }) {
   return (
     <article className={styles.item}>
       <Link href={url}>
-        <Img src={image ? image : null} className={styles['item-thumbnail']} />
+        <Image
+          width="246"
+          height="450"
+          src={image ? `/bootcamp${image}` : noimg}
+          alt=""
+          className={styles['item-thumbnail']}
+        />
+
         <div className={styles['item-content']}>
           <h4 className={styles['item-content-title']}>{title}</h4>
           <p className={styles['item-content-author']}>{author}</p>

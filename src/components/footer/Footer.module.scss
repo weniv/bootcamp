@@ -2,11 +2,10 @@
 @use '@/styles/theme.scss' as *;
 
 .footer {
-  // align-self: stretch;
   padding: fcSize(40, 60) 2rem;
   border-top: 1px solid var(--grayLv2);
   background-color: var(--grayLv1);
-  color: var(--grayLv3);
+  color: var(--grayLv3A11y);
   font-size: fcSize(12, 14);
   text-align: center;
 

@@ -1,8 +1,9 @@
 @import '@/styles/var.scss';
 @import '@/styles/function.scss';
 
-.sub-visual {
+.sub__visual {
   width: 100%;
+  height: auto;
   max-height: 60rem;
   object-fit: cover;
   aspect-ratio: 1920/600;
@@ -23,38 +24,39 @@
   & > section > p {
     margin: 4rem 0;
   }
+
+  blockquote {
+    @extend .fs24;
+    margin: 1em 0;
+    border-left: 4px solid var(--primary);
+    color: var(--primary);
+    padding: 0 1.2em;
+    font-weight: 600;
+  }
 }
 
-.blue-box {
-  color: var(--primary);
+.blue__box {
+  color: #2861d2;
   background-color: var(--activation);
   padding: 2.4rem;
   text-align: center;
   border-radius: 1.6rem;
 
-  .fs24 {
+  strong[class] {
+    // color: var(--primary);
     display: block;
     margin-bottom: 0.5em;
   }
 }
 
-blockquote {
-  @extend .fs24;
-  margin: 1em 0;
-  border-left: 4px solid var(--primary);
-  color: var(--primary);
-  padding: 0 1.2em;
-  font-weight: 600;
-}
-
-.project-container {
+.project__container {
   @include grid(28rem);
 
   @media (min-width: 530px) and (max-width: 640px) {
     grid-template-columns: repeat(2, 1fr);
   }
 }
-.book-container {
+.book__container {
   @include grid(24.6rem);
 
   @media (min-width: 300px) and (max-width: 640px) {
@@ -62,11 +64,11 @@ blockquote {
   }
 }
 
-.link-list {
+.link__list {
   li {
     list-style-type: disc;
     list-style-position: inside;
-    color: var(--primary);
+    color: var(--primaryA11y);
     &:not(:first-child) {
       margin: 0.2em 0;
     }
@@ -77,10 +79,12 @@ blockquote {
   }
 }
 
-@media screen and (max-width: 640px) {
-  [class~='info-box'] img {
-    position: absolute;
-    bottom: 4rem;
-    right: 4rem;
+.container {
+  @media screen and (max-width: 640px) {
+    [class~='info-box'] img {
+      position: absolute;
+      bottom: 4rem;
+      right: 4rem;
+    }
   }
 }

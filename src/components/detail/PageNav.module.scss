@@ -22,7 +22,7 @@
 
         height: 2.4rem;
         padding: 0 1rem;
-        color: var(--grayLv3);
+        color: var(--grayLv3A11y);
         &.active {
           font-weight: 600;
           color: var(--surface);
@@ -34,8 +34,8 @@
 
         &[target='_blank'] {
           padding-right: 1.6rem;
-          background: url(/images/icon-diagonal-arrow-blue.svg) no-repeat right
-            50% / 1.2rem;
+          background: url('/bootcamp/images/icon-diagonal-arrow-blue.svg')
+            no-repeat right 50% / 1.2rem;
         }
       }
     }

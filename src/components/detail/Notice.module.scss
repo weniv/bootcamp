@@ -8,7 +8,7 @@
   h3 {
     @extend .fs16;
     font-weight: normal;
-    color: var(--grayLv3);
+    color: var(--grayLv3A11y);
     margin-bottom: 0.5em;
     &::before {
       content: '[';

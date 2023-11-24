@@ -3,27 +3,36 @@ import Link from 'next/link';
 import styles from './Card.module.scss';
 import SVGCalendar from './svg/SVGCalendar';
 
-import Img from '../Img';
 import BtnIcon from '../button/BtnIcon';
 import SVGShare from './svg/SVGShare';
 import { handleClipBoard } from '@/utils/handleClipBoard';
+
+import Image from 'next/image';
+const noimg = '/bootcamp/images/no-img.png';
 
 export default function CardItem({ data, share, titleStart }) {
   const { url, image, type, title, description, recruitmentPeriod } = data;
 
   return (
     <article className={styles.item}>
-      <Img src={image ? image : null} className={styles['item-thumbnail']} />
+      <Image
+        width="380"
+        height="200"
+        src={image ? `/bootcamp${image}` : noimg}
+        alt=""
+        className={styles['item-thumbnail']}
+      />
       <div className={styles['item-content']}>
         <div className={styles['flex-container']}>
           <p className={styles['item-content-tag']}>{type}</p>
           {share && (
             <BtnIcon
-              children={<SVGShare />}
               onClick={() => {
                 handleClipBoard(url);
-              }}
-            />
+              }}>
+              <SVGShare />
+              <span className="a11y-hidden">주소복사</span>
+            </BtnIcon>
           )}
         </div>
         {titleStart === 4 ? (

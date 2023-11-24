@@ -62,6 +62,7 @@ address {
     format('woff');
   font-weight: 400;
   font-style: normal;
+  font-display: swap;
 }
 @font-face {
   font-family: 'Pretendard';
@@ -69,6 +70,7 @@ address {
     format('woff');
   font-weight: 600;
   font-style: bold;
+  font-display: swap;
 }
 @font-face {
   font-family: 'Pretendard';
@@ -76,6 +78,7 @@ address {
     format('woff');
   font-weight: 700;
   font-style: bold;
+  font-display: swap;
 }
 
 /* 폰트*/
@@ -99,6 +102,7 @@ body {
   --grayLv2: #{$W-grayLv2};
   --grayLv3: #{$W-grayLv3};
   --grayLv4: #{$W-grayLv4};
+
   --error: #{$W-error};
   --warn: #{$W-warn};
   --activation: #{$W-activation};
@@ -108,6 +112,9 @@ body {
   --code-blue: #{$W-code-blue};
   --code-green: #{$W-code-green};
   --code-orange: #{$W-code-orange};
+
+  --primaryA11y: #{$W-primaryA11y};
+  --grayLv3A11y: #{$W-grayLv3A11y};
 }
 
 @media (prefers-color-scheme: dark) {
@@ -128,6 +135,9 @@ body {
     --code-blue: #{$D-code-blue};
     --code-green: #{$D-code-green};
     --code-orange: #{$D-code-orange};
+
+    --primaryA11y: #{$D-primary};
+    --grayLv3A11y: #{$D-grayLv3};
   }
 }
 
@@ -186,7 +196,7 @@ hr {
   }
 }
 .p-des {
-  color: var(--primary);
+  color: var(--primaryA11y);
   text-align: center;
   margin-bottom: 4rem;
 }
