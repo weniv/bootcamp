@@ -5,12 +5,6 @@ import BookItem from '@/components/card/BookItem';
 import InfoSection from '@/components/InfoSection';
 import MessageSection from '@/components/MessageSection';
 
-import Image from 'next/image';
-
-export const metadata = {
-  title: '소개 | 위니브 부트캠프',
-};
-
 export default function SubPage() {
   const {
     messages,
