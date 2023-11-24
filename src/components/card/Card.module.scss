@@ -75,7 +75,7 @@
     }
     .item-content-title {
       font-size: fcSize(20, 24);
-      @include ellipse(1);
+      @include ellipse(1, 1.4);
     }
 
     .item-content-desc {
