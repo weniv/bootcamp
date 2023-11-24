@@ -7,7 +7,7 @@ export default function CampList({ activeID }) {
   let camps = require('/public/data/camp.json');
 
   if (activeID) {
-    camps = camps.filter((camp) => camp.tag === CATEGORIES[activeID].text);
+    camps = camps.filter((camp) => camp.type === CATEGORIES[activeID].text);
   }
   return camps.length > 0 ? (
     <ul className={styles.container}>

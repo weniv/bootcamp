@@ -1,7 +1,7 @@
 'use client';
 import Link from 'next/link';
 import styles from './Card.module.scss';
-import SVGCalendar from './SVGCalendar';
+import SVGCalendar from './svg/SVGCalendar';
 
 import Img from '../Img';
 import BtnIcon from '../button/BtnIcon';

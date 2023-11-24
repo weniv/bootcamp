@@ -1,7 +1,7 @@
 import InfoSection from '../InfoSection';
 
 export default function TeacherDetail({ name }) {
-  const noimg = '/images/no-img.png';
+  const noimg = './images/no-img.png';
   const data = require('/public/data/teachers.json')[name];
 
   return (

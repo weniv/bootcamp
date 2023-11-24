@@ -1,6 +1,6 @@
 {
   "licat": {
-    "image": "/images/teacher/licat.jpg",
+    "image": "./images/teacher/licat.jpg",
     "korName": "이호준",
     "engName": "Hojun Lee",
     "position": "CPO",
@@ -24,7 +24,7 @@
     ]
   },
   "wade": {
-    "image": "/images/teacher/wade.jpg",
+    "image": "./images/teacher/wade.jpg",
     "korName": "한재현",
     "engName": "Jaehyun Han",
     "position": "CPO",
