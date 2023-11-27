@@ -1,5 +1,5 @@
 'use client';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 
 import styles from './CampInfo.module.scss';
 import { handleClipBoard } from '@/utils/handleClipBoard';
@@ -7,9 +7,9 @@ import Btn from '../button/Btn';
 import SVGShare from '../card/svg/SVGShare';
 
 export default function CampInfo({ data }) {
-  let thisUrl;
+  const [thisUrl, setThisUrl] = useState('');
   useEffect(() => {
-    thisUrl = window.document.location.href;
+    setThisUrl(window.document.location.href);
   }, []);
 
   return (
