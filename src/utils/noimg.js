@@ -1,1 +1,1 @@
-export const noimg = '/bootcamp/images/no-img.png';
+export const noimg = '/images/no-img.png';
