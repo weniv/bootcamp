@@ -1,9 +1,9 @@
 {
   "licat": {
-    "image": "/bootcamp/images/teacher/licat.jpg",
+    "image": "/images/teacher/licat.jpg",
     "korName": "이호준",
     "engName": "Hojun Lee",
-    "position": "CPO",
+    "position": "CEO",
     "career": {
       "now": [
         "데이터분석 mini 부트캠프",
@@ -24,7 +24,7 @@
     ]
   },
   "wade": {
-    "image": "/bootcamp/images/teacher/wade.jpg",
+    "image": "/images/teacher/wade.jpg",
     "korName": "한재현",
     "engName": "Jaehyun Han",
     "position": "CPO",

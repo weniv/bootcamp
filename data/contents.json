@@ -54,28 +54,28 @@
       "title": "FLEXxGRID",
       "description": "Flex&Grid 시스템을 웹에서 실습해 볼 수 있는 서비스(PDF 자료 제공)",
       "type": "오픈소스 프로젝트",
-      "image": "/bootcamp/images/projects/flex-grid.png",
+      "image": "/images/projects/flex-grid.png",
       "url": "https://flexngrid.com/"
     },
     {
       "title": "ALGO.VIEW",
       "description": "알고리즘 코딩 테스트 문제풀이 분석 서비스",
       "type": "오픈소스 프로젝트",
-      "image": "/bootcamp/images/projects/algo-view.png",
+      "image": "/images/projects/algo-view.png",
       "url": "https://algoview.co.kr/"
     },
     {
       "title": "StopWar",
       "description": "우크라이나 전쟁관련 소식 제공 비영리 서비스",
       "type": "오픈소스 프로젝트",
-      "image": "/bootcamp/images/projects/stop-war.png",
+      "image": "/images/projects/stop-war.png",
       "url": "https://stopwar.co.kr/"
     },
     {
       "title": "SQooL: SQL School",
       "description": "로그인, 설치 등 번거로운 과정 없이 웹에서 쉽게 SQL을 배울 수 있는 서비스",
       "type": "오픈소스 프로젝트",
-      "image": "/bootcamp/images/projects/SQooL.png",
+      "image": "/images/projects/SQooL.png",
       "url": "https://sqlschool.co.kr/"
     }
   ],
@@ -83,27 +83,33 @@
     {
       "title": "알아서 잘 딱 깔끔하고 센스있게 정리하는 TypeScript 핵심 개념",
       "author": "김민석, 김민영 외 8명",
-      "image": "/bootcamp/images/books/typescript.jpg",
+      "image": "/images/books/typescript.jpg",
       "url": "#"
     },
     {
       "title": "웹 접근성 왭(why-web)?",
       "author": "고은영, 고지연 외 12명",
-      "image": "/bootcamp/images/books/why-web.jpg",
+      "image": "/images/books/why-web.jpg",
       "url": "#"
     },
     {
       "title": "프론트엔드 개발자를 위한 SEO 가이드",
       "author": "김도경, 김미정 외 6명",
-      "image": "/bootcamp/images/books/frontend-seo.jpg",
+      "image": "/images/books/frontend-seo.jpg",
       "url": "#"
     }
   ],
   "links": [
-    { "text": "위니브 콘텐츠 아카이브", "url": "" },
+    { "text": "위니브 콘텐츠 아카이브", "url": "https://archive.weniv.co.kr/" },
     { "text": "제주코딩베이스캠프 공식 홈페이지", "url": "" },
-    { "text": "제주코딩베이스캠프 유튜브 채널", "url": "" },
-    { "text": "제주코딩베이스캠프 인프런 강의 목록", "url": "" },
+    {
+      "text": "제주코딩베이스캠프 유튜브 채널",
+      "url": "https://archive.weniv.co.kr/"
+    },
+    {
+      "text": "제주코딩베이스캠프 인프런 강의 목록",
+      "url": "https://www.inflearn.com/users/170213/courses"
+    },
     { "text": "더오름 인프런 강의 목록", "url": "" }
   ]
 }
