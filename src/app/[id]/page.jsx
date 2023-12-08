@@ -15,7 +15,7 @@ import { noimg } from '@/utils/noimg';
 import Python from '@/components/contents/Python';
 
 export async function generateStaticParams() {
-  return [{ id: 'python' }, { id: 'html' }, { id: 'data' }];
+  return [{ id: 'python' }, { id: 'javascript' }, { id: 'react' }];
 }
 
 export async function generateMetadata({ params }) {
@@ -26,11 +26,11 @@ export async function generateMetadata({ params }) {
     case 'python':
       title = '파이썬 | ';
       break;
-    case 'html':
-      title = 'HTML/CSS | ';
+    case 'javascript':
+      title = '자바스크립트 | ';
       break;
-    case 'data':
-      title = '데이터분석 | ';
+    case 'react':
+      title = '리액트 | ';
       break;
   }
   return {
