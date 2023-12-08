@@ -13,10 +13,10 @@
       "content": ["강사님 덕분에 분석가로 밥벌이하고 있습니다. ㅎㅎㅎ"]
     },
     {
-      "emoji": "🥹",
+      "emoji": "🥰",
       "content": [
         "안녕하세요 대표님~~ 잘 지내고 계신가요?? 다름이 아니라 제가 방금 OOO 합격 연락을 받아서 연락드립니다..!",
-        "제주 웹 컨퍼런스에서 발표했던 게 이렇게까지 이어진 것 같아서 대표님한테 너무 감사드려요 🥹 프론트엔드 스쿨에서 열심히 수업해 주신 것부터 웹 컨퍼런스, 워케이션 등등 전부 너무 감사드립니다!! 다 대표님 덕분이에요..🙏",
+        "제주 웹 컨퍼런스에서 발표했던 게 이렇게까지 이어진 것 같아서 대표님한테 너무 감사드려요 ☺️ 프론트엔드 스쿨에서 열심히 수업해 주신 것부터 웹 컨퍼런스, 워케이션 등등 전부 너무 감사드립니다!! 다 대표님 덕분이에요..🙏",
         "저는 이제 게임 개발자로 또 열심히 성장해나가보도록 하겠습니다!! 💪💪"
       ]
     },
@@ -33,7 +33,7 @@
       ]
     },
     {
-      "emoji": "🥹",
+      "emoji": "🥰",
       "content": [
         "안녕하세요 호준님..!!! 저 떨어질 거라고 생각했던 회사에 최종 합격돼서 이렇게 연락드려요..!!!",
         "... 사실 오늘 오퍼레터를 받고 호준님께 너무 감사하단 말씀드리고 싶어서 이렇게 연락드려요!! 아직 뭐가 뭔지도 잘 모르겠고 어렵지만 일단 프론트엔드 개발자로 이렇게 시작할 수 있었던 게 호준님의 '출석을 했다는 것 자체가 잘하고 있다는 증거'라는 말씀을 듣고 하루하루 최선을 다해 해나갔기 때문이라고 생각합니다.",
@@ -84,19 +84,37 @@
       "title": "알아서 잘 딱 깔끔하고 센스있게 정리하는 TypeScript 핵심 개념",
       "author": "김민석, 김민영 외 8명",
       "image": "/images/books/typescript.jpg",
-      "url": "#"
+      "url": "https://ridibooks.com/books/2773000057?_s=search&_q=%EC%95%8C%EC%95%84%EC%84%9C+%EC%9E%98+%EB%94%B1+%EA%B9%94%EB%81%94%ED%95%98%EA%B3%A0&_rdt_sid=search&_rdt_idx=1"
+    },
+    {
+      "title": "알아서 잘 딱 깔끔하고 센스있게 정리하는 flex & grid - flex가 grid 어렵드나",
+      "author": "김민찬, 강혜진 외 12명",
+      "image": "/images/books/flex-grid.webp",
+      "url": "https://ridibooks.com/books/2773000058?_s=search&_q=%EC%95%8C%EC%95%84%EC%84%9C+%EC%9E%98+%EB%94%B1+%EA%B9%94%EB%81%94%ED%95%98%EA%B3%A0&_rdt_sid=search&_rdt_idx=4"
+    },
+    {
+      "title": "알아서 잘 딱 깔끔하고 센스있게 정리하는 JavaScript 핵심 개념",
+      "author": "김지수, 곽성재 외 19명",
+      "image": "/images/books/javascript.webp",
+      "url": "https://ridibooks.com/books/2773000055?_s=search&_q=%EC%95%8C%EC%95%84%EC%84%9C+%EC%9E%98+%EB%94%B1+%EA%B9%94%EB%81%94%ED%95%98%EA%B3%A0&_rdt_sid=search&_rdt_idx=2"
     },
     {
       "title": "웹 접근성 왭(why-web)?",
       "author": "고은영, 고지연 외 12명",
-      "image": "/images/books/why-web.jpg",
-      "url": "#"
+      "image": "/images/books/why-web.webp",
+      "url": "https://ridibooks.com/books/2773000060?_s=search&_q=%EC%82%AC%EB%8F%84%EC%B6%9C%ED%8C%90&_rdt_sid=search&_rdt_idx=4"
     },
     {
-      "title": "프론트엔드 개발자를 위한 SEO 가이드",
-      "author": "김도경, 김미정 외 6명",
-      "image": "/images/books/frontend-seo.jpg",
-      "url": "#"
+      "title": "DOM - 잡았다, 요 돔!",
+      "author": "이재영, 서윤정 외 12명",
+      "image": "/images/books/dom.webp",
+      "url": "https://ridibooks.com/books/2773000061?_s=search&_q=%EC%82%AC%EB%8F%84%EC%B6%9C%ED%8C%90&_rdt_sid=search&_rdt_idx=3"
+    },
+    {
+      "title": "타입스크립트 넌 내 타입",
+      "author": "김대엽, 김대운 외 12명",
+      "image": "/images/books/my-type.webp",
+      "url": "https://ridibooks.com/books/2773000062?_s=search&_q=%EC%82%AC%EB%8F%84%EC%B6%9C%ED%8C%90&_rdt_sid=search&_rdt_idx=2"
     }
   ],
   "links": [

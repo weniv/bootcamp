@@ -1,32 +1,38 @@
 [
   {
-    "bgcolor": "#B6F187",
+    "bgColor": "#282A2C",
+    "textColor": "#fff",
+    "categoryColor": "#121314",
     "thumbnail": "/images/banner/main-banner-img1.png",
+    "category": "모두의 연구소 X 제주코딩베이스캠프",
+    "title": "Python&Django 백엔드 개발 부트캠프",
+    "description": ["탄탄한 백엔드 기본기에 AI 활용 능력까지 한 번에!"],
+    "link": "https://camp.orm.im/backend-ai?utm_source=modulabs&utm_medium=on_banner_all&utm_campaign=kdt_23_10&utm_content=m_bran_bk_home-main-bn-seminar_1206"
+  },
+  {
+    "bgColor": "#B6F187",
+    "textColor": null,
+    "categoryColor": null,
+    "thumbnail": "/images/banner/main-banner-img0.png",
     "category": "위니북스 새/소/식",
     "title": "신규 온라인 강의 출시!",
     "description": [
-      "위니브와 함께하는 파이썬 완전 정복 온라인 강의가 출시되었습니다.",
-      "얼리버드 20% 할인 혜택을 놓치지 마세요!"
-    ]
-  },
-  {
-    "thumbnail": "",
-    "category": "Badge",
-    "title": "배너의 제목이 들어갑니다.",
-    "description": [
-      "배너의 내용이 들어갑니다",
-      "두번째 줄은 굵은 글자로 들어갑니다"
+      "위니브 신규 강의 '데이터분석(유료)', '게임으로 배우는 파이썬(무료)'이 출시되었습니다.",
+      "얼리버드 할인 혜택을 놓치지 마세요!"
     ],
-    "link": "#"
+    "link": null
   },
   {
-    "bgcolor": "#B6F187",
-    "thumbnail": "/images/banner/main-banner-img1.png",
+    "bgColor": null,
+    "textColor": null,
+    "categoryColor": null,
+    "thumbnail": null,
     "category": "위니북스 새/소/식",
     "title": "신규 온라인 강의 출시!",
     "description": [
-      "위니브와 함께하는 파이썬 완전 정복 온라인 강의가 출시되었습니다.",
-      "얼리버드 20% 할인 혜택을 놓치지 마세요!"
-    ]
+      "위니브 신규 강의 '데이터분석(유료)', '게임으로 배우는 파이썬(무료)'이 출시되었습니다.",
+      "얼리버드 할인 혜택을 놓치지 마세요!"
+    ],
+    "link": null
   }
 ]
