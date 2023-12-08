@@ -10,7 +10,8 @@ import { handleClipBoard } from '@/utils/handleClipBoard';
 import { noimg } from '@/utils/noimg';
 
 export default function CardItem({ data, share, titleStart }) {
-  const { url, image, type, title, description, recruitmentPeriod } = data;
+  const { url, image, type, title, subtitle, description, recruitmentPeriod } =
+    data;
 
   return (
     <article className={styles.item}>
@@ -34,11 +35,23 @@ export default function CardItem({ data, share, titleStart }) {
             </BtnIcon>
           )}
         </div>
-        {titleStart === 4 ? (
-          <h4 className={styles['item-content-title']}>{title}</h4>
-        ) : (
-          <h3 className={styles['item-content-title']}>{title}</h3>
-        )}
+        <div>
+          {titleStart === 4 ? (
+            <>
+              <h4 className={styles['item-content-title']}>{title}</h4>
+              {subtitle && (
+                <h5 className={styles['item-content-subtitle']}>{subtitle}</h5>
+              )}
+            </>
+          ) : (
+            <>
+              <h3 className={styles['item-content-title']}>{title}</h3>
+              {subtitle && (
+                <h4 className={styles['item-content-subtitle']}>{subtitle}</h4>
+              )}
+            </>
+          )}
+        </div>
 
         <p className={styles['item-content-desc']}>{description}</p>
 

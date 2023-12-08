@@ -4,6 +4,11 @@
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(28rem, 1fr));
   gap: 2.4rem 2.5rem;
+
+  li {
+    display: flex;
+    align-items: stretch;
+  }
 }
 
 .container,
@@ -73,8 +78,17 @@
       padding: 1rem 1.6rem;
       border-radius: 2rem;
     }
+
     .item-content-title {
       font-size: fcSize(20, 24);
+      @include ellipse(1, 1.4);
+    }
+
+    .item-content-subtitle {
+      font-size: fcSize(16, 18);
+      color: var(--grayLv4);
+      font-weight: 600;
+      margin-top: 0.4em;
       @include ellipse(1, 1.4);
     }
 

@@ -24,7 +24,12 @@ export default function ToggleList({ data, type = 'faq' }) {
 
   if (data?.length > 0) {
     return (
-      <ol ref={olRef} className={styles.toggleList}>
+      <ol
+        ref={olRef}
+        className={classNames(
+          styles.toggleList,
+          type === 'curriculum' && styles.curriculum,
+        )}>
         {data.map((cont, index) => (
           <li key={index}>
             {type === 'curriculum' && (
@@ -34,11 +39,29 @@ export default function ToggleList({ data, type = 'faq' }) {
                   <span className={styles.tech}>{cont.tech}</span> {cont.period}
                 </p>
                 <div className={classNames('cont', styles.list__content)}>
-                  <ol>
-                    {cont.contents.map((list, index) => (
-                      <li key={index}>{list}</li>
-                    ))}
-                  </ol>
+                  {cont.objectives && (
+                    <div>
+                      <h4>학습 목표</h4>
+                      <ul>
+                        {cont.objectives.map((list, index) => (
+                          <li key={index}>{list}</li>
+                        ))}
+                      </ul>
+                    </div>
+                  )}
+                  {cont.contents && (
+                    <div>
+                      <h4>주요 내용</h4>
+                      <ul>
+                        {cont.contents.map((list, index) => (
+                          <li key={index}>{list}</li>
+                        ))}
+                      </ul>
+                    </div>
+                  )}
+                  {cont.notice && (
+                    <p className={styles.notice}>{cont.notice}</p>
+                  )}
                 </div>
               </>
             )}

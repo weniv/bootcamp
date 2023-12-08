@@ -33,6 +33,7 @@
     .item-content-title {
       font-size: fcSize(16, 18);
       @include ellipse(2);
+      height: auto;
     }
 
     .item-content-author {

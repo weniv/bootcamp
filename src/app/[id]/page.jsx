@@ -12,6 +12,7 @@ import classNames from 'classnames';
 import Notice from '@/components/detail/Notice';
 
 import { noimg } from '@/utils/noimg';
+import Python from '@/components/contents/Python';
 
 export async function generateStaticParams() {
   return [{ id: 'python' }, { id: 'html' }, { id: 'data' }];
@@ -64,19 +65,24 @@ export default function SubPage({ params }) {
       <PageNav />
 
       <section id="section1" className="section">
-        <h3 className="title2 tac">캠프 소개</h3>
-        <div
-          style={{
-            height: '1000px',
-            backgroundColor: '#eee',
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
-            color: '#999',
-            fontSize: '2rem',
-          }}>
-          작성중...
-        </div>
+        <h3 className="a11y-hidden">캠프 소개</h3>
+
+        {id === 'python' ? (
+          <Python />
+        ) : (
+          <div
+            style={{
+              height: '1000px',
+              backgroundColor: '#eee',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              color: '#999',
+              fontSize: '2rem',
+            }}>
+            작성중...
+          </div>
+        )}
       </section>
       <hr />
 

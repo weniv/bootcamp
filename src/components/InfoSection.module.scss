@@ -12,16 +12,13 @@
 
   box-sizing: border-box;
   gap: 4rem;
-  flex-wrap: wrap;
-  word-break: break-all;
+
+  word-break: keep-all;
   img {
     width: min(24rem, 30vw);
     aspect-ratio: 1/1;
     border-radius: 50%;
     object-fit: cover;
-  }
-
-  & > div {
   }
 
   h3,
@@ -60,5 +57,11 @@
 
   [class^='fc-'] {
     margin-right: 0.3em;
+  }
+}
+
+@media screen and (width < 800px) {
+  .info-box {
+    flex-wrap: wrap;
   }
 }

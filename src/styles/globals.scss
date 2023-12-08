@@ -19,6 +19,15 @@ li {
   padding: 0;
   margin: 0;
 }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+}
 button,
 input {
   box-sizing: border-box;
@@ -87,7 +96,8 @@ html {
 }
 body {
   min-width: 320px;
-  font-size: fcSize(14, 16);
+  font-size: fcSize(15, 16);
+  line-height: 1.6;
   font-family: 'Pretendard', sans-serif;
   color: var(--surface);
   background-color: var(--background);
@@ -166,11 +176,11 @@ body {
 
 .layout-flex {
   display: flex;
+
   flex-direction: column;
   min-height: 100vh;
   .layout-grow {
     flex-grow: 1;
-    align-items: flex-start;
   }
 }
 
@@ -210,4 +220,21 @@ hr {
 }
 .fc-gray3 {
   color: var(--grayLv3);
+}
+
+.header,
+.title {
+  @extend .fs32;
+  text-align: center;
+  word-break: keep-all;
+  margin-bottom: 5rem;
+}
+
+.header {
+  line-height: 1.6;
+
+  p {
+    @extend .fs16;
+    color: var(--primaryA11y);
+  }
 }
