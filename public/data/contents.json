@@ -84,19 +84,37 @@
       "title": "알아서 잘 딱 깔끔하고 센스있게 정리하는 TypeScript 핵심 개념",
       "author": "김민석, 김민영 외 8명",
       "image": "/images/books/typescript.jpg",
-      "url": "#"
+      "url": "https://ridibooks.com/books/2773000057?_s=search&_q=%EC%95%8C%EC%95%84%EC%84%9C+%EC%9E%98+%EB%94%B1+%EA%B9%94%EB%81%94%ED%95%98%EA%B3%A0&_rdt_sid=search&_rdt_idx=1"
+    },
+    {
+      "title": "알아서 잘 딱 깔끔하고 센스있게 정리하는 flex & grid - flex가 grid 어렵드나",
+      "author": "김민찬, 강혜진 외 12명",
+      "image": "/images/books/flex-grid.webp",
+      "url": "https://ridibooks.com/books/2773000058?_s=search&_q=%EC%95%8C%EC%95%84%EC%84%9C+%EC%9E%98+%EB%94%B1+%EA%B9%94%EB%81%94%ED%95%98%EA%B3%A0&_rdt_sid=search&_rdt_idx=4"
+    },
+    {
+      "title": "알아서 잘 딱 깔끔하고 센스있게 정리하는 JavaScript 핵심 개념",
+      "author": "김지수, 곽성재 외 19명",
+      "image": "/images/books/javascript.webp",
+      "url": "https://ridibooks.com/books/2773000055?_s=search&_q=%EC%95%8C%EC%95%84%EC%84%9C+%EC%9E%98+%EB%94%B1+%EA%B9%94%EB%81%94%ED%95%98%EA%B3%A0&_rdt_sid=search&_rdt_idx=2"
     },
     {
       "title": "웹 접근성 왭(why-web)?",
       "author": "고은영, 고지연 외 12명",
-      "image": "/images/books/why-web.jpg",
-      "url": "#"
+      "image": "/images/books/why-web.webp",
+      "url": "https://ridibooks.com/books/2773000060?_s=search&_q=%EC%82%AC%EB%8F%84%EC%B6%9C%ED%8C%90&_rdt_sid=search&_rdt_idx=4"
     },
     {
-      "title": "프론트엔드 개발자를 위한 SEO 가이드",
-      "author": "김도경, 김미정 외 6명",
-      "image": "/images/books/frontend-seo.jpg",
-      "url": "#"
+      "title": "DOM - 잡았다, 요 돔!",
+      "author": "이재영, 서윤정 외 12명",
+      "image": "/images/books/dom.webp",
+      "url": "https://ridibooks.com/books/2773000061?_s=search&_q=%EC%82%AC%EB%8F%84%EC%B6%9C%ED%8C%90&_rdt_sid=search&_rdt_idx=3"
+    },
+    {
+      "title": "타입스크립트 넌 내 타입",
+      "author": "김대엽, 김대운 외 12명",
+      "image": "/images/books/my-type.webp",
+      "url": "https://ridibooks.com/books/2773000062?_s=search&_q=%EC%82%AC%EB%8F%84%EC%B6%9C%ED%8C%90&_rdt_sid=search&_rdt_idx=2"
     }
   ],
   "links": [
