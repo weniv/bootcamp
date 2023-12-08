@@ -1,9 +1,5 @@
 import '@/styles/globals.scss';
 
-// components
-import Header from '@/components/header/Header';
-import Footer from '@/components/footer/Footer';
-
 export const metadata = {
   title: '위니브 부트캠프',
   description:
@@ -12,6 +8,8 @@ export const metadata = {
 
   icons: {
     icon: '/favicon.ico',
+    shortcut: '/favicon.ico',
+    apple: '/favicon.ico',
   },
   openGraph: {
     title: '위니브 부트캠프',
