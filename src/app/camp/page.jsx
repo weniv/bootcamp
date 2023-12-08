@@ -4,6 +4,10 @@ import CardItem from '@/components/card/CardItem';
 import BookItem from '@/components/card/BookItem';
 import InfoSection from '@/components/InfoSection';
 import MessageSection from '@/components/MessageSection';
+import SVGPencil from '@/svg/SVGPencil';
+import SVGPeoples from '@/svg/SVGPeoples';
+import SVGtime from '@/svg/SVGtime';
+import SVGBook from '@/svg/SVGBook';
 
 export default function SubPage() {
   const {
@@ -34,13 +38,14 @@ export default function SubPage() {
           </p>
           <div className={styles.blue__box}>
             <strong className="fs24">"부트캠프 수료율 100%"</strong>
-            믿기지 않는 수치가 가능했던 이유는 수강생을 향한 
+            믿기지 않는 수치가 가능했던 이유는 수강생을 향한
             <strong>'진심'</strong>이었습니다.
           </div>
           <p>
-            경력과 노하우, 타 부트캠프에 없는 책 출판 프로젝트 등 '진심'을 전달하기 위한 여러 프로그램과 실무자의 실무위주 교육으로 여러분들과 함께합니다.
+            경력과 노하우, 타 부트캠프에 없는 책 출판 프로젝트 등 '진심'을
+            전달하기 위한 여러 프로그램과 실무자의 실무위주 교육으로 여러분들과
+            함께합니다.
           </p>
-
           <InfoSection img="/images/weniv.svg">
             <h3>주식회사 위니브</h3>
             <h4>KDT 강의 이력</h4>
@@ -72,17 +77,34 @@ export default function SubPage() {
               <li>제주대학교, SK 그룹 등 다양한 필드에서 교육</li>
             </ul>
           </InfoSection>
-
           <p>
-            100% 온라인 과정으로 진행되는 단기 부트캠프에서 위니브의 실무
-            경험을 바탕으로 만들어진 현실 도달 가능한 커리큘럼과 프로젝트,
-            멘토링을 제공합니다.
+            100% 온라인 과정으로 진행되는 단기 부트캠프에서
+            <strong>
+              위니브의 실무 경험을 바탕으로 만들어진 현실 도달 가능한 커리큘럼과
+              프로젝트, 멘토링을 제공합니다.
+            </strong>
           </p>
-        </section>
 
-        <section>
-          <h3 className="title2">수강생의 메시지</h3>
-          <MessageSection messages={messages} />
+          <ul className={styles.icon__ul}>
+            <li>
+              <SVGPencil />
+              주니어 프론트엔드/백엔드 개발자에게 가장 필요한 요소를 중심으로
+              커리큘럼 개발
+            </li>
+            <li>
+              <SVGPeoples />
+              모두에게 필요한 부분을 세심하게 채울 수 있도록 레벨별 스터디 운영
+            </li>
+            <li>
+              <SVGtime />
+              강의와 과외활동의 적절한 배치로 모두가 만족하며 성장하는 경험 제공
+            </li>
+            <li>
+              <SVGBook />
+              오픈 소스, 책 출판 프로젝트 등 타 부트캠프에서는 얻을 수 없는
+              특별한 경험 제공
+            </li>
+          </ul>
         </section>
 
         <section>
@@ -105,6 +127,11 @@ export default function SubPage() {
               </li>
             ))}
           </ul>
+        </section>
+
+        <section>
+          <h3 className="title2">수강생의 메시지</h3>
+          <MessageSection messages={messages} />
         </section>
 
         <hr />
