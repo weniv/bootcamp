@@ -55,7 +55,13 @@ export default function SubPage({ params }) {
           src={campData?.image ? campData?.image : noimg}
           alt=""
         />
-        <h2 className={styles.camp__title}>{campData?.title}</h2>
+        <h2 className={styles.camp__title}>
+          {campData?.title}
+          {campData?.subtitle && (
+            <span className={styles.camp__subtitle}>{campData?.subtitle}</span>
+          )}
+        </h2>
+
         <p className={styles.camp__desc}>{campData?.description}</p>
 
         <TeacherInfo name={campData?.teacher} />
@@ -88,7 +94,7 @@ export default function SubPage({ params }) {
 
       {/* 후기 */}
       <section id="section2" className="section">
-        <h3 className="title2 tac">수강생분들의 생생한 후기</h3>
+        <h3 className="title2 tac">수강생 후기를 살펴보세요!</h3>
         <MessageSection messages={campData?.messages} />
       </section>
       <hr />

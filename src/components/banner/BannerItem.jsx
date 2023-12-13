@@ -1,21 +1,27 @@
+import useWindowSize from '@/utils/useWindowSize';
 import styles from './Banner.module.scss';
-
-import Btn from '../button/Btn';
 
 const Content = ({
   categoryColor,
   thumbnail,
+  thumbnailMobile,
   category,
   title,
   description,
 }) => {
+  const { windowWidth } = useWindowSize();
+
   return (
     <div className="max-width">
       <div className={styles.content}>
         <p className={styles.category} style={{ color: categoryColor }}>
           {category}
         </p>
-        <h3 className={styles.title}>{title}</h3>
+        <h3 className={styles.title}>
+          {title.map((tit) => (
+            <span>{tit}</span>
+          ))}
+        </h3>
 
         <p className={styles.description}>
           {description[0]}
@@ -24,7 +30,17 @@ const Content = ({
         </p>
       </div>
 
-      {thumbnail && <img className={styles.thumbnail} src={thumbnail} alt="" />}
+      {thumbnail && (
+        <img
+          className={styles.thumbnail}
+          src={
+            windowWidth !== null && windowWidth < 640 && thumbnailMobile
+              ? thumbnailMobile
+              : thumbnail
+          }
+          alt=""
+        />
+      )}
     </div>
   );
 };

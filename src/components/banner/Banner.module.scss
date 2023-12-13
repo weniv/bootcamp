@@ -49,8 +49,8 @@ $bannerHeight: fcSize(240, 400);
 .title {
   font-size: fcSize(18, 40);
   margin: 1.2rem 0;
-  width: 10em;
-  word-break: keep-all;
+  display: flex;
+  flex-direction: column;
 }
 
 .description {

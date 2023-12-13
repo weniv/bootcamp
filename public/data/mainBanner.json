@@ -1,38 +1,23 @@
 [
   {
+    "bgColor": "#1555E5",
+    "textColor": "#fff",
+    "categoryColor": "#1555E5",
+    "thumbnail": "/images/banner/main-banner-img2.png",
+    "thumbnailMobile": "/images/banner/main-banner-img2-m.jpg",
+    "category": "신규 부트캠프 오픈",
+    "title": ["파이썬 부트캠프 1기", ": 기본 문법부터 코테까지"],
+    "description": ["파이썬 기초부터 코딩테스트까지 속성으로 함께해요!"],
+    "link": "/python"
+  },
+  {
     "bgColor": "#282A2C",
     "textColor": "#fff",
     "categoryColor": "#121314",
     "thumbnail": "/images/banner/main-banner-img1.png",
     "category": "모두의 연구소 X 제주코딩베이스캠프",
-    "title": "Python&Django 백엔드 개발 부트캠프",
+    "title": ["Python&Django ", "백엔드 개발 부트캠프"],
     "description": ["탄탄한 백엔드 기본기에 AI 활용 능력까지 한 번에!"],
     "link": "https://camp.orm.im/backend-ai?utm_source=modulabs&utm_medium=on_banner_all&utm_campaign=kdt_23_10&utm_content=m_bran_bk_home-main-bn-seminar_1206"
-  },
-  {
-    "bgColor": "#B6F187",
-    "textColor": null,
-    "categoryColor": null,
-    "thumbnail": "/images/banner/main-banner-img0.png",
-    "category": "위니북스 새/소/식",
-    "title": "신규 온라인 강의 출시!",
-    "description": [
-      "위니브 신규 강의 '데이터분석(유료)', '게임으로 배우는 파이썬(무료)'이 출시되었습니다.",
-      "얼리버드 할인 혜택을 놓치지 마세요!"
-    ],
-    "link": null
-  },
-  {
-    "bgColor": null,
-    "textColor": null,
-    "categoryColor": null,
-    "thumbnail": null,
-    "category": "위니북스 새/소/식",
-    "title": "신규 온라인 강의 출시!",
-    "description": [
-      "위니브 신규 강의 '데이터분석(유료)', '게임으로 배우는 파이썬(무료)'이 출시되었습니다.",
-      "얼리버드 할인 혜택을 놓치지 마세요!"
-    ],
-    "link": null
   }
 ]

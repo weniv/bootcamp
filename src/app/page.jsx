@@ -11,7 +11,6 @@ export const CATEGORIES = [
   { id: 1, text: '프론트엔드' },
   { id: 2, text: '백엔드' },
   { id: 3, text: '데이터분석' },
-  { id: 4, text: 'AI' },
 ];
 
 export default function Home() {
