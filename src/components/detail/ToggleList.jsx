@@ -36,7 +36,8 @@ export default function ToggleList({ data, type = 'faq' }) {
               <>
                 <p className={styles.list__title}>
                   <span className={styles.day}>Day{index + 1}</span>
-                  <span className={styles.tech}>{cont.tech}</span> {cont.period}
+                  <span className={styles.tech}>{cont.tech}</span>{' '}
+                  <span className={styles.period}>{cont.period}</span>
                 </p>
                 <div className={classNames('cont', styles.list__content)}>
                   {cont.objectives && (
