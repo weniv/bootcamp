@@ -22,7 +22,9 @@ export default function CampInfo({ data }) {
         </li>
         <li>
           <span className={styles.tit}>교육 기간</span>
-          <span>{data?.trainingPeriod}</span>
+          <span>
+            {data?.trainingPeriod} | {data?.totalCurriculum} | {data?.time}
+          </span>
         </li>
         <li>
           <span className={styles.tit}>교육 방식</span>

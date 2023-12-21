@@ -10,7 +10,7 @@ import { handleClipBoard } from '@/utils/handleClipBoard';
 import { noimg } from '@/utils/noimg';
 
 export default function CardItem({ data, share, titleStart }) {
-  const { url, image, type, title, subtitle, description, recruitmentPeriod } =
+  const { url, image, type, title, subtitle, description, trainingPeriod } =
     data;
 
   return (
@@ -55,11 +55,11 @@ export default function CardItem({ data, share, titleStart }) {
 
         <p className={styles['item-content-desc']}>{description}</p>
 
-        {recruitmentPeriod && (
+        {trainingPeriod && (
           <p className={styles['item-content-period']}>
             <SVGCalendar />
             <span className="a11y-hidden">수강기간</span>
-            <time>{recruitmentPeriod}</time>
+            <time>{trainingPeriod}</time>
           </p>
         )}
       </div>
