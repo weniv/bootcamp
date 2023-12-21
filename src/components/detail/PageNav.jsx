@@ -4,7 +4,7 @@ import styles from './PageNav.module.scss';
 import useIntersectionObservation from '@/utils/useIntersectionObservation';
 import SVGArrow from '@/svg/SVGArrow';
 
-export default function PageNav() {
+export default function PageNav({ url }) {
   const [activeId, setActiveId] = useState('section1');
   useIntersectionObservation(setActiveId, '.section');
 
@@ -32,7 +32,7 @@ export default function PageNav() {
           </li>
         ))}
         <li>
-          <a href="#" target="_blank" title="새창">
+          <a href={url} target="_blank" title="새창">
             신청하기
             <SVGArrow color="primary" />
           </a>

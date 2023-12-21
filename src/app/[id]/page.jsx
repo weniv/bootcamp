@@ -68,7 +68,7 @@ export default function SubPage({ params }) {
         <CampInfo data={campData} />
       </section>
 
-      <PageNav />
+      <PageNav url={campData?.applyUrl} />
 
       <section id="section1" className="section">
         <h3 className="a11y-hidden">캠프 소개</h3>
@@ -130,7 +130,7 @@ export default function SubPage({ params }) {
         <ToggleList data={campData?.faq} type="faq" />
       </section>
 
-      <Notice />
+      <Notice day={campData?.day} />
     </div>
   );
 }
