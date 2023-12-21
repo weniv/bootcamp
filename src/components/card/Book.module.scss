@@ -1,4 +1,4 @@
-@use '@/styles/function.scss' as *;
+@import '@/styles/var.scss';
 
 .item {
   a {
@@ -31,13 +31,12 @@
     gap: 1.6rem;
 
     .item-content-title {
-      font-size: fcSize(16, 18);
       @include ellipse(2);
       height: auto;
     }
 
     .item-content-author {
-      font-size: fcSize(14, 16);
+      @extend .fs16;
       color: var(--grayLv3A11y);
       @include ellipse(1);
     }

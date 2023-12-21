@@ -45,16 +45,16 @@ $bannerHeight: fcSize(240, 400);
   z-index: 10;
 }
 .category {
+  @extend .fs16;
   display: inline-block;
   background-color: #fff;
   color: var(--primaryA11y);
   font-weight: bold;
-  font-size: 1.4rem;
   padding: 0.1em 0.3em;
 }
 
 .title {
-  font-size: fcSize(18, 40);
+  @extend .fs40;
   margin: 1.2rem 0;
   display: flex;
   flex-direction: column;
