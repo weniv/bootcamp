@@ -29,29 +29,29 @@ export default function Python() {
       <section>
         <div className="header">
           😥
-          <p>파이썬, 혼자서 마음먹고 공부하기 어려우시죠?</p>
-          <h4>작심 4일이면 충분합니다!</h4>
+          <p>빠르게 학습하고 싶지만 수 개월의 시간을 투자하기 어려우신가요?</p>
+          <h4>작심 4일이면 '큰 그림'을 그리기엔 충분합니다!</h4>
         </div>
         <ol className="step">
           <li>
             <SVGPencil />
             <strong>1일차(월)</strong>
-            {curriculum[0].tech}
+            <p> {curriculum[0].tech}</p>
           </li>
           <li>
             <SVGCode />
             <strong>2일차(화)</strong>
-            {curriculum[1].tech}
+            <p>{curriculum[1].tech}</p>
           </li>
           <li>
             <SVGCode />
             <strong>3일차(수)</strong>
-            {curriculum[2].tech}
+            <p>{curriculum[2].tech}</p>
           </li>
           <li>
             <SVGCheck />
             <strong>4일차(목)</strong>
-            {curriculum[3].tech}
+            <p>{curriculum[3].tech}</p>
           </li>
         </ol>
       </section>
@@ -207,8 +207,10 @@ export default function Python() {
         <img src="/images/camps/python/wenivworld.jpg" alt="" />
         <p>
           별도의 설치 없이, 어디서나 접속 가능한 웹 기반 파이썬 코딩 교육 플랫폼{' '}
-          <a href="#">‘위니브월드’</a>를 총괄한 개발자가 직접 여러분을
-          지도합니다.
+          <a href="https://world.weniv.co.kr/" target="_blank">
+            '위니브월드'
+          </a>
+          를 총괄한 개발자가 직접 여러분을 지도합니다.
         </p>
       </section>
 
