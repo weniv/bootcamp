@@ -13,6 +13,8 @@ import Notice from '@/components/detail/Notice';
 
 import { noimg } from '@/utils/noimg';
 import Python from '@/components/contents/Python';
+import JavaScript from '@/components/contents/JavaScript';
+import React from '@/components/contents/React';
 
 export async function generateStaticParams() {
   return [{ id: 'python' }, { id: 'javascript' }, { id: 'react' }];
@@ -73,22 +75,9 @@ export default function SubPage({ params }) {
       <section id="section1" className="section">
         <h3 className="a11y-hidden">캠프 소개</h3>
 
-        {id === 'python' ? (
-          <Python />
-        ) : (
-          <div
-            style={{
-              height: '1000px',
-              backgroundColor: '#eee',
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'center',
-              color: '#999',
-              fontSize: '2rem',
-            }}>
-            작성중...
-          </div>
-        )}
+        {id === 'python' && <Python />}
+        {id === 'javascript' && <JavaScript />}
+        {id === 'react' && <React />}
       </section>
       <hr />
 
