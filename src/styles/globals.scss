@@ -96,7 +96,7 @@ html {
 }
 body {
   min-width: 320px;
-  font-size: fcSize(15, 16);
+  font-size: fcSize(15, 18);
   line-height: 1.6;
   font-family: 'Pretendard', sans-serif;
   color: var(--surface);
@@ -234,7 +234,7 @@ hr {
   line-height: 1.6;
 
   p {
-    @extend .fs16;
+    @extend .fs18;
     color: var(--primaryA11y);
   }
 }

@@ -34,11 +34,12 @@
   }
 
   .list__title {
+    @extend .fs16;
     display: flex;
     align-items: center;
-    // height: 3.2rem;
     gap: 1.2rem;
     padding-right: 3.6rem;
+    color: var(--grayLv4);
 
     @media screen and (max-width: 640px) {
       word-break: keep-all;
@@ -57,12 +58,12 @@
       }
     }
     .tech {
-      @extend .fs14;
+      @extend .fs18;
       font-weight: 600;
       background-color: var(--activation);
       color: var(--primaryA11y);
       border-radius: 0.8rem;
-      padding: 0.6em 1em;
+      padding: 0.4em 1em;
     }
   }
 

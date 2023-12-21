@@ -1,7 +1,7 @@
 @import '@/styles/var.scss';
 
 .info-box {
-  @extend .fs16;
+  // @extend .fs16;
   position: relative;
   background: var(--grayLv1);
   padding: 4rem;
@@ -28,7 +28,7 @@
     align-items: center;
     gap: 0.5em;
     span {
-      @extend .fs16;
+      // @extend .fs16;
       font-weight: normal;
       color: var(--grayLv3A11y);
     }
@@ -38,7 +38,7 @@
   }
   h3 ~ h4,
   h4 ~ h5 {
-    @extend .fs16;
+    // @extend .fs16;
     margin-top: 2.4rem;
 
     &::before {
