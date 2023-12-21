@@ -15,8 +15,8 @@ export default function SVGCodeBox({ color = 'surface' }) {
         fill="#121314"
       />
       <path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
+        fillRule="evenodd"
+        clipRule="evenodd"
         d="M2.5 12C2.5 6.75329 6.75329 2.5 12 2.5H28C33.2467 2.5 37.5 6.75329 37.5 12V28C37.5 33.2467 33.2467 37.5 28 37.5H12C6.75329 37.5 2.5 33.2467 2.5 28V12ZM12 5.5C8.41015 5.5 5.5 8.41015 5.5 12V28C5.5 31.5899 8.41015 34.5 12 34.5H28C31.5899 34.5 34.5 31.5899 34.5 28V12C34.5 8.41015 31.5899 5.5 28 5.5H12Z"
         fill="#121314"
       />
