@@ -10,39 +10,36 @@ import SVGTalk from '@/svg/SVGTalk';
 import { noimg } from '@/utils/noimg';
 
 export default function Python() {
+  const { curriculum } = require('/public/data/camp.json')[0];
+
   return (
     <div className="camp-contents">
       <section>
         <div className="header">
           😥
           <p>파이썬, 혼자서 마음먹고 공부하기 어려우시죠?</p>
-          <h4>작심 5일이면 충분합니다!</h4>
+          <h4>작심 4일이면 충분합니다!</h4>
         </div>
         <ol className="step">
           <li>
             <SVGPencil />
             <strong>1일차(월)</strong>
-            파이썬 기초와 환경 설정
+            {curriculum[0].tech}
           </li>
           <li>
             <SVGCode />
             <strong>2일차(화)</strong>
-            컬렉션 자료형과 함수
+            {curriculum[1].tech}
           </li>
           <li>
             <SVGCode />
             <strong>3일차(수)</strong>
-            조건문과 반복문
-          </li>
-          <li>
-            <SVGCode />
-            <strong>4일차(목)</strong>
-            클래스와 Python 심화 과정
+            {curriculum[2].tech}
           </li>
           <li>
             <SVGCheck />
-            <strong>5일차(금)</strong>
-            코딩테스트를 통한 이해 점검하기
+            <strong>4일차(목)</strong>
+            {curriculum[3].tech}
           </li>
         </ol>
       </section>

@@ -38,7 +38,7 @@ export default function SubPage() {
           </p>
           <div className={styles.blue__box}>
             <strong className="fs24">"부트캠프 수료율 100%"</strong>
-            믿기지 않는 수치가 가능했던 이유는 수강생을 향한
+            믿기지 않는 수치가 가능했던 이유는 수강생을 향한{' '}
             <strong>'진심'</strong>이었습니다.
           </div>
           <p>
@@ -78,7 +78,7 @@ export default function SubPage() {
             </ul>
           </InfoSection>
           <p>
-            100% 온라인 과정으로 진행되는 단기 부트캠프에서
+            100% 온라인 과정으로 진행되는 단기 부트캠프에서{' '}
             <strong>
               위니브의 실무 경험을 바탕으로 만들어진 현실 도달 가능한 커리큘럼과
               프로젝트, 멘토링을 제공합니다.
@@ -141,7 +141,9 @@ export default function SubPage() {
           <ul className={styles.link__list}>
             {links.map((link, index) => (
               <li key={index}>
-                <a href={link.url}>{link.text}</a>
+                <a href={link.url} target="_blank">
+                  {link.text}
+                </a>
               </li>
             ))}
           </ul>
