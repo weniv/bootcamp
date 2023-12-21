@@ -7,13 +7,25 @@ import SVGPeoples from '@/svg/SVGPeoples';
 import SVGCodeBox from '@/svg/SVGCodeBox';
 import SVGLocation from '@/svg/SVGLocation';
 import SVGTalk from '@/svg/SVGTalk';
-import { noimg } from '@/utils/noimg';
 
 export default function Python() {
   const { curriculum } = require('/public/data/camp.json')[0];
 
   return (
     <div className="camp-contents">
+      <section>
+        <h4 className="title">
+          2023, 프로그래밍 언어 중
+          <br />
+          가장 인기 있는 언어 1위 Python
+        </h4>
+
+        <figure>
+          <img src="/images/camps/python/tiobe.jpg" alt="" />
+          <figcaption>TIOBE</figcaption>
+        </figure>
+      </section>
+
       <section>
         <div className="header">
           😥
@@ -109,77 +121,6 @@ export default function Python() {
             코딩테스트 대비를 어떻게 해야 할지 막막하신 분
           </li>
         </ul>
-      </section>
-      <section>
-        <h4 className="title">
-          2023, 프로그래밍 언어 중
-          <br />
-          가장 인기 있는 언어 1위 Python
-        </h4>
-
-        <figure>
-          <img src="/images/camps/python/tiobe.jpg" alt="" />
-          <figcaption>TIOBE</figcaption>
-        </figure>
-
-        <h5 className="title">Python을 배우면 어떤 걸 할 수 있을까요?</h5>
-
-        <ul className="grid-2">
-          <li>
-            <img src={noimg} alt="" />
-            <strong>웹 개발</strong>
-            <p>
-              Django, Flask 등의 웹 프레임워크를 사용해 웹 사이트 및 웹
-              애플리케이션을 개발할 수 있습니다.
-            </p>
-          </li>
-          <li>
-            <img src={noimg} alt="" />
-            <strong>인공지능 개발</strong>
-            <p>
-              자연어 처리, 음성 인식, 이미지 인식 등 인공지능 기술을 구현할 수
-              있습니다.
-            </p>
-          </li>
-          <li>
-            <img src={noimg} alt="" />
-            <strong>게임 개발</strong>
-            <p>
-              Pygame, Panda3D 등의 게임 프레임워크를 사용해 간단한 게임을 개발할
-              수 있습니다.
-            </p>
-          </li>
-          <li>
-            <img src={noimg} alt="" />
-            <strong>데이터 분석</strong>
-            <p>
-              Numpy, pandas, Matplotlib 등의 라이브러리를 사용해 데이터를 처리,
-              분석하고 시각화할 수 있습니다.
-            </p>
-          </li>
-          <li>
-            <img src={noimg} alt="" />
-            <strong>업무 자동화</strong>
-            <p>
-              데이터 처리, 엑셀, 메일과 문자 전송 등 반복 업무를 보다 효율적으로
-              처리할 수 있습니다.
-            </p>
-          </li>
-          <li>
-            <img src={noimg} alt="" />
-            <strong>데스크톱 애플리케이션 개발</strong>
-            <p>
-              PyQt, Tkinter 등의 GUI 라이브러리를 사용해 데스크톱 애플리케이션을
-              개발할 수 있습니다.
-            </p>
-          </li>
-        </ul>
-
-        <h5 className="title">
-          ...
-          <br />
-          파이썬으로 할 수 있는 것이 이렇게나 많습니다!
-        </h5>
       </section>
 
       <div className="tobe">
@@ -313,10 +254,10 @@ export default function Python() {
             <li className="fc-blue">총 25시간 분량의 실시간 온라인 강의</li>
             <li>
               <p className="fc-blue">
-                제주코딩베이스캠프 Python 토픽 인기 강의
+                제주코딩베이스캠프 Python 토픽 인기 강의 5종
               </p>
               <p>
-                <del>5종 10 ~ 15만 원 상당</del> &gt; 무료 제공
+                <del>10 ~ 15만 원 상당</del> &gt; 무료 제공
               </p>
             </li>
             <li>
