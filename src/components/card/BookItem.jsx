@@ -8,7 +8,7 @@ export default function BookItem({ data }) {
 
   return (
     <article className={styles.item}>
-      <Link href={url}>
+      <Link href={url} target="_blank">
         <img
           width="246"
           height="450"
