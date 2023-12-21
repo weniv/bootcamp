@@ -1,4 +1,4 @@
-export default function Logo(props) {
+export default function LogoBootcamp(props) {
   const { color } = props;
   return (
     <svg
