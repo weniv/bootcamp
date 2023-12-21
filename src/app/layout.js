@@ -1,3 +1,4 @@
+import BtnTop from '@/components/button/BtnTop';
 import '@/styles/globals.scss';
 
 export const metadata = {
@@ -32,7 +33,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="ko-KR">
-      <body className="layout-flex">{children}</body>
+      <body className="layout-flex">
+        {children}
+
+        <BtnTop />
+      </body>
     </html>
   );
 }

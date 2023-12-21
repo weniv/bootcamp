@@ -1,0 +1,45 @@
+@import '@/styles/var.scss';
+
+.topBtn {
+  position: fixed;
+  bottom: 3.2rem;
+  right: 3.2rem;
+
+  width: 5rem;
+  height: 5rem;
+  padding: 0;
+  border-radius: 2.5rem;
+  border: 1px solid var(--grayLv2);
+  background-color: var(--background);
+  transition: all 0.3s;
+
+  z-index: 10;
+  svg path {
+    transition: all 0.3s;
+  }
+  &:not(:disabled):active {
+    color: var(--primary);
+    background-color: var(--grayLv1);
+
+    svg path {
+      fill: var(--primary);
+    }
+  }
+  @media (hover: hover) {
+    &:not(:disabled):hover {
+      color: var(--primary);
+      background-color: var(--grayLv1);
+
+      svg path {
+        fill: var(--primary);
+      }
+    }
+  }
+}
+
+@media screen and (max-width: map-get($breakPoint, tablet)) {
+  .topBtn {
+    bottom: 1.6rem;
+    right: 1.6rem;
+  }
+}
