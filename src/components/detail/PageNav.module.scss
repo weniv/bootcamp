@@ -19,6 +19,7 @@
     }
     li {
       a {
+        @extend .fs16;
         display: flex;
         align-items: center;
         justify-content: center;
