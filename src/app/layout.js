@@ -30,12 +30,25 @@ export const metadata = {
   },
 };
 
+const GA_ID = process.env.GA_ID;
+
 export default function RootLayout({ children }) {
   return (
     <html lang="ko-KR">
+      <head>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', '${GA_ID}');
+        `,
+          }}
+        />
+      </head>
       <body className="layout-flex">
         {children}
-
         <BtnTop />
       </body>
     </html>
