@@ -253,7 +253,7 @@ export default function Python() {
         <section>
           <h5 className="title">드릴 수 있는 모든 것을 꾹꾹 눌러 담았습니다</h5>
           <ul className="border__list">
-            <li className="fc-blue">총 25시간 분량의 실시간 온라인 강의</li>
+            <li className="fc-blue">총 20시간 분량의 실시간 온라인 강의</li>
             <li>
               <p className="fc-blue">
                 제주코딩베이스캠프 Python 토픽 인기 강의 5종

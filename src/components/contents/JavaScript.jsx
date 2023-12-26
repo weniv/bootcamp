@@ -7,13 +7,24 @@ import SVGPeoples from '@/svg/SVGPeoples';
 import SVGCodeBox from '@/svg/SVGCodeBox';
 import SVGLocation from '@/svg/SVGLocation';
 import SVGTalk from '@/svg/SVGTalk';
-import { noimg } from '@/utils/noimg';
 
 export default function JavaScript() {
   const { curriculum } = require('/public/data/camp.json')[1];
 
   return (
     <div className="camp-contents">
+      <section>
+        <h4 className="title">
+          웹 개발 필수! 폭 넓게 사용되는
+          <br />
+          인기 언어 JavaScript
+        </h4>
+
+        <img
+          src="/images/camps/javascript/javascript.jpg"
+          alt="자바스크립트로 할 수 있는 것: 웹페이지 제작, 게임 프로그래밍, 앱 개발, 서버 프로그래밍, 데스크톱 앱 개발 인터랙티브 콘텐츠 제작"
+        />
+      </section>
       <section>
         <div className="header">
           😥
@@ -192,11 +203,11 @@ export default function JavaScript() {
         <h4 className="title">
           여러 교육 플랫폼을 개발한 개발자에게 직접 배워보세요!
         </h4>
-        <img src={noimg} alt="" />
+        <img src="/images/camps/javascript/jsalgo.jpg" alt="" />
         <p>
-          JavaScript 알고리즘 테스트 서비스{' '}
-          <a href="https://jsalgo.co.kr/">JS Algo</a> 기획 및 개발을 총괄한
-          개발자가 알려주는 JavaScript
+          JavaScript 알고리즘 테스트 서비스인{' '}
+          <a href="https://jsalgo.co.kr/">'JS 알고리즘 베스트 20(JS Algo)'</a>의
+          기획 및 개발을 총괄한 개발자가 직접 여러분을 지도합니다.
         </p>
       </section>
 
@@ -239,10 +250,10 @@ export default function JavaScript() {
         <section>
           <h5 className="title">드릴 수 있는 모든 것을 꾹꾹 눌러 담았습니다</h5>
           <ul className="border__list">
-            <li className="fc-blue">총 30시간 분량의 온라인 강의</li>
+            <li className="fc-blue">총 20시간 분량의 온라인 강의</li>
             <li>
               <p className="fc-blue">
-                제주코딩베이스캠프 인기 유/무료 강의 5종
+                제주코딩베이스캠프 JS 토픽 인기 강의 5종
               </p>
               <p>
                 <del>약 10 ~ 15만 원 상당</del> &gt; 무료 제공
