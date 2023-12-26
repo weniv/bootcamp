@@ -34,7 +34,7 @@
   }
 
   .list__title {
-    @extend .fs18;
+    @extend .fs16;
     display: flex;
     align-items: center;
     gap: 1.2rem;
@@ -57,6 +57,7 @@
       }
     }
     .tech {
+      @extend .fs14;
       font-weight: 600;
       background-color: var(--activation);
       color: var(--primaryA11y);
@@ -74,6 +75,7 @@
   }
 
   .list__content {
+    @extend .fs16;
     line-height: 1.6;
     padding-top: 3rem;
     box-sizing: border-box;
