@@ -1,3 +1,5 @@
+import { GoogleTagManager, GoogleAnalytics } from '@next/third-parties/google';
+
 import BtnTop from '@/components/button/BtnTop';
 import '@/styles/globals.scss';
 
@@ -35,22 +37,11 @@ const GA_ID = process.env.GA_ID;
 export default function RootLayout({ children }) {
   return (
     <html lang="ko-KR">
-      <head>
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', '${GA_ID}');
-        `,
-          }}
-        />
-      </head>
       <body className="layout-flex">
         {children}
         <BtnTop />
       </body>
+      <GoogleTagManager gtmId={GA_ID} />
     </html>
   );
 }
