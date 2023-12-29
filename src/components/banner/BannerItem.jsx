@@ -3,9 +3,11 @@ import styles from './Banner.module.scss';
 
 const Content = ({
   categoryColor,
+  categoryBg,
   thumbnail,
   thumbnailMobile,
   category,
+
   title,
   description,
 }) => {
@@ -14,7 +16,12 @@ const Content = ({
   return (
     <div className="max-width">
       <div className={styles.content}>
-        <p className={styles.category} style={{ color: categoryColor }}>
+        <p
+          className={styles.category}
+          style={{
+            color: categoryColor,
+            backgroundColor: categoryBg,
+          }}>
           {category}
         </p>
         <h3 className={styles.title}>
