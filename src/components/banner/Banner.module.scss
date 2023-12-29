@@ -30,9 +30,8 @@ $bannerHeight: fcSize(240, 400);
 
   & > a > div,
   & > div {
-    width: 100%;
-
     @media screen and (max-width: 500px) {
+      width: 100%;
       aspect-ratio: 390/240;
     }
 
@@ -91,11 +90,6 @@ $bannerHeight: fcSize(240, 400);
 
   .description {
     display: none;
-  }
-  .title {
-    span {
-      mix-blend-mode: darken;
-    }
   }
 
   .thumbnail {
