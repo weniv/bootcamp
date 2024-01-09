@@ -22,6 +22,9 @@ export async function generateStaticParams() {
 
 export async function generateMetadata({ params }) {
   const { id } = params;
+  const campData = require('/public/data/camp.json').find(
+    (camp) => camp.url === `/${id}`,
+  );
 
   let title = ' ';
   switch (id) {
@@ -35,8 +38,15 @@ export async function generateMetadata({ params }) {
       title = '리액트 | ';
       break;
   }
+
   return {
     title: `${title}위니브 부트캠프`,
+    description: `위니브 campData.description`,
+    openGraph: {
+      title: `${title}위니브 부트캠프`,
+      description: campData.description,
+      images: [campData.image],
+    },
   };
 }
 
