@@ -1,3 +1,5 @@
+@import '@/styles/var.scss';
+
 .teacher-info {
   display: flex;
   gap: 1.2rem;
@@ -17,9 +19,11 @@
     gap: 0.4rem;
 
     strong {
+      @extend .fs16;
       font-weight: 600;
     }
     span {
+      @extend .fs14;
       color: var(--grayLv4);
     }
   }

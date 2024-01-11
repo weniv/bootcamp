@@ -1,4 +1,7 @@
+@import '@/styles/var.scss';
+
 .camp-info {
+  @extend .fs16;
   background: var(--grayLv1);
   padding: 3.5rem;
   border-radius: 1.6rem;

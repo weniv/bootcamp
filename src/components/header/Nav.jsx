@@ -9,6 +9,9 @@ export default function Nav(props) {
           <a href="/camp">위니브 부트캠프 소개</a>
         </li>
         <li>
+          <a href="/review">수강생 후기</a>
+        </li>
+        <li>
           <a href="https://archive.weniv.co.kr/" target="_blank" title="새창">
             콘텐츠 아카이브
             <SVGArrow />

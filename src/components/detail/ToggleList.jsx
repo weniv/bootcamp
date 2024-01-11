@@ -87,6 +87,27 @@ export default function ToggleList({ data, type = 'faq' }) {
             </button>
           </li>
         ))}
+        {type === 'faq' && (
+          <li>
+            <p className={styles.list__title}>
+              <span className={styles.q}>Q{data.length + 1}</span>
+              위니브의 부트캠프를 수강했던 수강생의 후기가 궁금해요.
+            </p>
+            <p className={classNames('cont', styles.list__content)}>
+              <span>
+                위니브 부트캠프 <a href="/review">수강생 후기 살펴보기</a>
+              </span>
+            </p>
+            <button
+              value={data.length}
+              type="button"
+              className={styles.btnToggle}
+              onClick={toggleAnswer}>
+              <SVGArrowDown />
+              <span className="a11y-hidden">열기</span>
+            </button>
+          </li>
+        )}
       </ol>
     );
   }

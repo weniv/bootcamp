@@ -1,0 +1,44 @@
+@import '@/styles/var.scss';
+
+.card {
+  display: inline-flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+
+  border-radius: 3.2rem;
+  border: 1px solid var(--grayLv2);
+  background: var(--background);
+  box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.04);
+  padding: 3.2rem;
+
+  margin-bottom: 2.4rem;
+
+  box-sizing: border-box;
+
+  img {
+    width: 8.6rem;
+    margin-bottom: -1.6rem;
+  }
+
+  .type {
+    @extend .fs16;
+    color: var(--grayLv3);
+  }
+
+  .title_wrap {
+    text-align: center;
+    .title {
+      margin-top: 0.8rem;
+      font-weight: bold;
+      color: var(--primary);
+    }
+  }
+
+  .content {
+    text-align: left;
+    p + p {
+      margin-top: 1em;
+    }
+  }
+}

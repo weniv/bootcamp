@@ -1,0 +1,32 @@
+@import '@/styles/var.scss';
+@import '@/styles/function.scss';
+
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin: 8rem auto 2.4rem;
+  background-color: var(--activation);
+  width: 12rem;
+  height: 12rem;
+  border-radius: 50%;
+  svg {
+    width: 4.6rem;
+    height: 4.6rem;
+  }
+}
+.title,
+.desc {
+  text-align: center;
+}
+.title {
+  @extend .fs40;
+}
+
+.container {
+  margin-top: 6rem;
+  column-width: 38rem;
+  column-gap: 2.4rem;
+  column-fill: balance;
+}

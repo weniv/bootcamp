@@ -1,0 +1,36 @@
+.flex_ul {
+  display: flex;
+  gap: 10rem;
+  margin-bottom: 5.2rem;
+
+  li {
+    flex-basis: 0;
+    flex-grow: 1;
+    text-align: center;
+    word-break: keep-all;
+
+    img {
+      display: block;
+      width: 16rem;
+      margin: 0 auto 2.4rem;
+    }
+  }
+  @media screen and (max-width: 640px) {
+    flex-direction: column;
+    gap: 2rem;
+    margin: 0 auto 5.2rem;
+    max-width: max-content;
+    li {
+      display: flex;
+      align-items: center;
+      gap: 1em;
+      text-align: left;
+
+      img {
+        width: 10rem;
+        flex-grow: 0;
+        margin: 0;
+      }
+    }
+  }
+}

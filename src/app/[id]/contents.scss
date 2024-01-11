@@ -1,0 +1,180 @@
+.camp_contents {
+  display: flex;
+  flex-direction: column;
+  gap: 5.2rem;
+
+  img {
+    border-radius: 1.6rem;
+    & + .title {
+      margin-top: 5rem;
+    }
+  }
+  a {
+    color: var(--primaryA11y);
+    text-decoration: underline;
+  }
+
+  .border__list {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+    li {
+      min-height: 8rem;
+      padding: 2rem;
+      border: 1px solid var(--primary);
+      border-radius: 1.6rem;
+      box-sizing: border-box;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      gap: 0.2em;
+      flex-wrap: wrap;
+
+      p + * {
+        margin-left: 0.5em;
+      }
+      strong {
+        color: var(--primary);
+        margin-right: 1em;
+      }
+    }
+  }
+
+  del {
+    color: var(--grayLv3);
+  }
+}
+
+.title {
+  line-height: 1.4;
+}
+
+.tobe {
+  text-align: center;
+}
+
+hr.short {
+  width: 20rem;
+  border-top: 4px solid var(--activation);
+  border-bottom: 0;
+  margin: 0 auto;
+}
+
+.fc-text {
+  color: var(--surface) !important;
+}
+
+.fc-blue {
+  color: var(--primary);
+  font-weight: bold;
+}
+
+.bg-ul {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+
+  li {
+    background-color: var(--grayLv1);
+    border-radius: 1.6rem;
+    min-height: 8rem;
+    padding: 2rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+
+    box-sizing: border-box;
+
+    @media screen and (max-width: 640px) {
+      flex-direction: column;
+    }
+  }
+
+  &.columns {
+    li {
+      flex-direction: column;
+      text-align: center;
+
+      svg {
+        width: 4rem;
+        height: 4rem;
+      }
+    }
+  }
+
+  & + .title {
+    margin-top: 5.2rem;
+  }
+}
+
+.step {
+  display: flex;
+  flex-direction: column;
+  gap: 4.4rem;
+
+  li {
+    min-height: 8rem;
+    padding: 2rem;
+    border: 1px solid var(--primary);
+    border-radius: 1.6rem;
+    box-sizing: border-box;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.2em;
+
+    position: relative;
+    p + * {
+      margin-left: 0.5em;
+    }
+    strong {
+      color: var(--primary);
+      margin-right: 1em;
+    }
+
+    @media screen and (max-width: 640px) {
+      padding: 2rem 3rem;
+      p {
+        flex-basis: 100%;
+        text-align: center;
+        word-break: keep-all;
+        margin-top: 0.5em;
+      }
+    }
+  }
+
+  li:not(:last-child)::after {
+    content: '';
+    display: block;
+    width: 2.4rem;
+    height: 1.2rem;
+    background: url(/images/step_arrow.png) no-repeat 50% 50% / contain;
+
+    position: absolute;
+    bottom: -3rem;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+.figure {
+  margin: 5.2rem 0 0 0;
+  img {
+    margin: 0;
+  }
+  figcaption {
+    color: var(--grayLv3);
+    text-align: center;
+    margin: 0.5em;
+  }
+
+  & + .title {
+    margin-top: 5.2rem;
+  }
+}

@@ -8,14 +8,7 @@ export default function PageNav({ url }) {
   const [activeId, setActiveId] = useState('section1');
   useIntersectionObservation(setActiveId, '.section');
 
-  const navList = [
-    '캠프 소개',
-    '후기',
-    '수료생 혜택',
-    '커리큘럼',
-    '강사소개',
-    'FAQ',
-  ];
+  const navList = ['캠프 소개', '수료생 혜택', '커리큘럼', '강사소개', 'FAQ'];
 
   return (
     <nav className={styles.nav}>

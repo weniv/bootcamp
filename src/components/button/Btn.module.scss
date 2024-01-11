@@ -1,6 +1,7 @@
 @import '@/styles/var.scss';
 
 .btn {
+  @extend .fs14;
   display: flex;
   align-items: center;
   justify-content: center;

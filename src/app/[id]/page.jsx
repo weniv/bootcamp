@@ -1,6 +1,5 @@
 import CampInfo from '@/components/detail/CampInfo';
 
-import MessageSection from '@/components/MessageSection';
 import PageNav from '@/components/detail/PageNav';
 import TeacherInfo from '@/components/detail/TeacherInfo';
 import TeacherDetail from '@/components/detail/TeacherDetail';
@@ -8,13 +7,20 @@ import ToggleList from '@/components/detail/ToggleList';
 import Benefit from '@/components/detail/Benefit';
 
 import styles from './page.module.scss';
+import './contents.scss';
+
 import classNames from 'classnames';
 import Notice from '@/components/detail/Notice';
 
 import { noimg } from '@/utils/noimg';
-import Python from '@/components/contents/Python';
-import JavaScript from '@/components/contents/JavaScript';
-import React from '@/components/contents/React';
+import Python, { Python2 } from '@/components/contents/Python';
+import JavaScript, { JavaScript2 } from '@/components/contents/JavaScript';
+import React, { React2 } from '@/components/contents/React';
+import Live from '@/components/detail/Live';
+import Need from '@/components/detail/Need';
+import KDT100 from '@/components/detail/KDT100';
+import Step from '@/components/detail/Step';
+import SVGTobe from '@/svg/SVGTobe';
 
 export async function generateStaticParams() {
   return [{ id: 'python' }, { id: 'javascript' }, { id: 'react' }];
@@ -79,57 +85,66 @@ export default function SubPage({ params }) {
         <TeacherInfo name={campData?.teacher} />
         <CampInfo data={campData} />
       </section>
-
       <PageNav url={campData?.applyUrl} />
 
-      <section id="section1" className="section">
-        <h3 className="a11y-hidden">캠프 소개</h3>
+      <div className="camp_contents">
+        <section id="section1" className="section">
+          <h3 className="a11y-hidden">캠프 소개</h3>
 
-        {id === 'python' && <Python />}
-        {id === 'javascript' && <JavaScript />}
-        {id === 'react' && <React />}
-      </section>
-      <hr />
+          {id === 'python' && <Python />}
+          {id === 'javascript' && <JavaScript />}
+          {id === 'react' && <React />}
+        </section>
 
-      {/* 후기 */}
-      <section id="section2" className="section">
-        <h3 className="title2 tac">수강생 후기를 살펴보세요!</h3>
-        <MessageSection messages={campData?.messages} />
-      </section>
-      <hr />
+        {/* 작심 5일 */}
+        <Step day={campData.day} curriculum={campData.curriculum} />
 
-      {/* 수료생 혜택 */}
-      <Benefit id="section3" className="section" />
+        <hr className="short" />
 
-      <hr />
+        {/* KDT 100% */}
+        <KDT100 />
 
-      {/* 커리큘럼 */}
-      <section id="section4" className="section">
-        <h3 className="title2 tac">커리큘럼</h3>
-        <p className="p-des">{campData?.totalCurriculum} </p>
-        <ToggleList data={campData?.curriculum} type="curriculum" />
-      </section>
+        <div className="tobe">
+          <SVGTobe />
+        </div>
 
-      <hr />
+        {/* 이런분에게 꼭 필요합니다. */}
+        <Need title={campData.title} contents={campData.need} />
+        {/* 라이브 */}
+        <Live />
 
-      {/* 강사소개 */}
-      <section id="section5" className="section">
-        <h3 className="title2 tac">강사소개</h3>
-        <p className="p-des">
-          "부트캠프 수료율 100%의 비결은 수강생을 향한 ‘진심’입니다."
-        </p>
+        {/* 괜찮습니다 */}
+        {id === 'python' && <Python2 />}
+        {id === 'javascript' && <JavaScript2 />}
+        {id === 'react' && <React2 />}
 
-        <TeacherDetail name={campData?.teacher} />
-      </section>
+        {/* 혜택 */}
+        <Benefit id="section2" className="section" type={id} />
+        <hr />
+        {/* 커리큘럼 */}
+        <section id="section3" className="section">
+          <h3 className="title2 tac">커리큘럼</h3>
+          <p className="p-des">{campData?.totalCurriculum} </p>
+          <ToggleList data={campData?.curriculum} type="curriculum" />
+        </section>
+        <hr />
+        {/* 강사소개 */}
+        <section id="section4" className="section">
+          <h3 className="title2 tac">강사소개</h3>
+          <p className="p-des">
+            "부트캠프 수료율 100%의 비결은 수강생을 향한 ‘진심’입니다."
+          </p>
 
-      <hr />
-      {/* FAQ */}
-      <section id="section6" className="section">
-        <h3 className="title2 tac">FAQ</h3>
-        <ToggleList data={campData?.faq} type="faq" />
-      </section>
-
-      <Notice day={campData?.day} />
+          <TeacherDetail name={campData?.teacher} />
+        </section>
+        <hr />
+        {/* FAQ */}
+        <section id="section5" className="section">
+          <h3 className="title2 tac">FAQ</h3>
+          <ToggleList data={campData?.faq} type="faq" />
+        </section>
+        <Notice day={campData?.day} />
+      </div>
     </div>
   );
 }
