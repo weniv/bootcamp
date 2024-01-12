@@ -1,5 +1,3 @@
-import Image from 'next/image';
-
 import styles from './page.module.scss';
 
 import CardItem from '@/components/card/CardItem';
@@ -20,13 +18,7 @@ export default function SubPage() {
   } = require('/public/data/contents.json');
   return (
     <>
-      <Image
-        width="1920"
-        height="600"
-        src="/images/subimg.webp"
-        alt=""
-        className={styles.sub__visual}
-      />
+      <img src="/images/subimg.webp" alt="" className={styles.sub__visual} />
       <div className={styles.container}>
         <section>
           <h2 className="title1">위니브 부트캠프가 추구하는 가치</h2>

@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import styles from './BaseItem.module.scss';
 
 import { noimg } from '@/utils/noimg';
@@ -9,9 +8,7 @@ export default function BaseItem({ data }) {
       {data.map((data, index) => (
         <li key={index}>
           <article className={styles.item}>
-            <Image
-              width={385}
-              height={240}
+            <img
               alt=""
               src={data?.image ? data.image : noimg}
               className={styles['item-thumbnail']}

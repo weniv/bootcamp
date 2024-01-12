@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import styles from './Need.module.scss';
 
 export default function Need({ title, contents }) {
@@ -11,12 +10,7 @@ export default function Need({ title, contents }) {
       <ul className={styles.flex_ul}>
         {contents.map((content, i) => (
           <li key={i}>
-            <Image
-              width={160}
-              height={160}
-              src={`/images/camps/img${i + 1}.webp`}
-              alt=""
-            />
+            <img src={`/images/camps/img${i + 1}.webp`} alt="" />
             {content}
           </li>
         ))}

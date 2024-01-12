@@ -1,5 +1,3 @@
-import Image from 'next/image';
-
 import BaseItem from '../card/BaseItem';
 import styles from './Benefit.module.scss';
 
@@ -16,12 +14,7 @@ export default function Benefit(props) {
           <h4>소장 가능한 VOD 강의 5개를 무료로 제공합니다.</h4>
         </div>
 
-        <Image
-          width={790}
-          height={402}
-          src="/images/camps/free-VOD.webp"
-          alt=""
-        />
+        <img src="/images/camps/free-VOD.webp" alt="" />
 
         <h5 className="title">오직 부트캠프 참여자에게만 드리는 혜택!</h5>
         <p>

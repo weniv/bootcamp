@@ -1,6 +1,4 @@
 'use client';
-import Image from 'next/image';
-
 import Link from 'next/link';
 import styles from './Card.module.scss';
 import SVGCalendar from './svg/SVGCalendar';
@@ -17,9 +15,7 @@ export default function CardItem({ data, share, titleStart }) {
 
   return (
     <article className={styles.item}>
-      <Image
-        width={380}
-        height={200}
+      <img
         src={image ? image : noimg}
         alt=""
         className={styles['item-thumbnail']}

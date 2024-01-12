@@ -1,5 +1,3 @@
-import Image from 'next/image';
-
 import SVGCodeBox from '@/svg/SVGCodeBox';
 import SVGLocation from '@/svg/SVGLocation';
 import SVGPeoples from '@/svg/SVGPeoples';
@@ -22,12 +20,7 @@ export default function Live() {
         </p>
 
         <figure className="figure">
-          <Image
-            width={790}
-            height={402}
-            src="/images/camps/zoom.webp"
-            alt=""
-          />
+          <img src="/images/camps/zoom.webp" alt="" />
           <figcaption>100% 라이브로 진행되는 강의</figcaption>
         </figure>
 
@@ -67,12 +60,7 @@ export default function Live() {
         </ul>
 
         <figure className="figure">
-          <Image
-            width={790}
-            height={402}
-            src="/images/camps/discord.webp"
-            alt=""
-          />
+          <img src="/images/camps/discord.webp" alt="" />
           <figcaption>디스코드 커뮤니티 운영</figcaption>
         </figure>
       </section>

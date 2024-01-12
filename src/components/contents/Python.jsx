@@ -1,5 +1,3 @@
-import Image from 'next/image';
-
 import SVGCode from '@/svg/SVGCode';
 import SVGPencil from '@/svg/SVGPencil';
 
@@ -14,12 +12,7 @@ export default function Python() {
         </h4>
 
         <figure className="figure">
-          <Image
-            width={790}
-            height={402}
-            src="/images/camps/python/tiobe.webp"
-            alt=""
-          />
+          <img src="/images/camps/python/tiobe.webp" alt="" />
           <figcaption>TIOBE</figcaption>
         </figure>
       </section>
@@ -49,7 +42,7 @@ export function Python2() {
         <h4 className="title">
           Python 교육 플랫폼 개발자에게 직접 배워보세요!
         </h4>
-        <Image
+        <img
           width={790}
           height={402}
           src="/images/camps/python/wenivworld.webp"
