@@ -5,7 +5,9 @@ export default function TeacherDetail({ name }) {
   const data = require('/public/data/teachers.json')[name];
 
   return (
-    <InfoSection img={data?.image ? data?.image : noimg}>
+    <InfoSection
+      img={data?.image ? data?.image : noimg}
+      img_m={data?.image_m ? data?.image_m : data?.image}>
       <h4 className="tit3">
         {data?.korName} <span>{data?.engName}</span>
       </h4>

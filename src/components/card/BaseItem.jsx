@@ -12,6 +12,7 @@ export default function BaseItem({ data }) {
               alt=""
               src={data?.image ? data.image : noimg}
               className={styles['item-thumbnail']}
+              loading="lazy"
             />
             <div className={styles['item-content']}>
               <h4 className={styles['item-content-title']}>{data?.title}</h4>

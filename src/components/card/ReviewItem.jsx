@@ -4,7 +4,11 @@ export default function ReviewItem({ data }) {
   const { character, type, title, contents } = data;
   return (
     <li className={styles.card}>
-      <img src={`/images/character/${character}.png`} alt="수강생" />
+      <img
+        src={`/images/character/${character}.png`}
+        alt="수강생 후기"
+        loading="lazy"
+      />
       <p className={styles.type}>#{type}</p>
 
       <div className={styles.title_wrap}>

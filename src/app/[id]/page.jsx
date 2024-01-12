@@ -66,11 +66,18 @@ export default function SubPage({ params }) {
   return (
     <div className={classNames('sub-max-width', styles.camp)}>
       <section>
-        <img
-          className={styles.camp__thumnail}
-          src={campData?.image ? campData?.image : noimg}
-          alt=""
-        />
+        <picture>
+          <source
+            srcSet={campData?.image_m ? campData?.image_m : campData?.image}
+            media="(max-width: 640px)"
+          />
+          <img
+            className={styles.camp__thumnail}
+            src={campData?.image ? campData?.image : noimg}
+            alt=""
+          />
+        </picture>
+
         <h2 className={styles.camp__title}>
           {campData?.title}
           {campData?.subtitle && (

@@ -1,6 +1,7 @@
 {
   "licat": {
     "image": "/images/teacher/licat.webp",
+    "image_m": "/images/teacher/licat_m.webp",
     "korName": "이호준",
     "engName": "Hojun Lee",
     "position": "CEO",
@@ -22,6 +23,7 @@
   },
   "wade": {
     "image": "/images/teacher/wade.webp",
+    "image_m": "/images/teacher/wade_m.webp",
     "korName": "한재현",
     "engName": "Jaehyun Han",
     "position": "CPO",

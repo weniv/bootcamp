@@ -10,8 +10,16 @@ export default function React() {
           <br />
           혁신적인 웹/앱 개발을 위한 필수 도구, React
         </h4>
-
-        <img src="/images/camps/react/react.webp" alt="" />
+        <picture>
+          <source
+            srcSet="/images/camps/react/react_m.webp"
+            media="(max-width: 640px)"
+          />
+          <img
+            src="/images/camps/react/react.webp"
+            alt="재사용 가능한 컴포넌트, 가상돔 활용/효율적인 업데이트, 풍부하고 강력한 개발자 도구, React Native를 통한 네이트브 앱 개발 지원, 큰 규모의 커뮤니티와 생태계"
+          />
+        </picture>
       </section>
     </>
   );

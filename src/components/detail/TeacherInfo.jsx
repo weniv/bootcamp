@@ -6,7 +6,7 @@ export default function TeacherInfo({ name }) {
   return (
     <section className={styles['teacher-info']}>
       <h3 className="a11y-hidden">강사 정보</h3>
-      <img src={data?.image ? data?.image : noimg} alt="" />
+      <img src={data?.image_m ? data?.image_m : noimg} alt="" loading="lazy" />
       <p>
         <strong>
           {data?.korName} {data?.engName}

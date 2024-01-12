@@ -28,7 +28,7 @@ export default function Banner() {
         pagination={{ clickable: true }}>
         {bannerData.map((banner, index) => (
           <SwiperSlide key={index}>
-            <BannerItem data={banner} />
+            <BannerItem index={index} data={banner} />
           </SwiperSlide>
         ))}
       </Swiper>

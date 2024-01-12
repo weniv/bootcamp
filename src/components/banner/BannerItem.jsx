@@ -1,16 +1,17 @@
 import useWindowSize from '@/utils/useWindowSize';
 import styles from './Banner.module.scss';
 
-const Content = ({
-  categoryColor,
-  categoryBg,
-  thumbnail,
-  thumbnailMobile,
-  category,
-
-  title,
-  description,
-}) => {
+const Content = (props) => {
+  const {
+    categoryColor,
+    categoryBg,
+    thumbnail,
+    thumbnailMobile,
+    category,
+    title,
+    description,
+    index,
+  } = props;
   const { windowWidth } = useWindowSize();
 
   return (
@@ -46,12 +47,13 @@ const Content = ({
               : thumbnail
           }
           alt=""
+          loading={index > 0 ? 'lazy' : null}
         />
       )}
     </div>
   );
 };
-export default function BannerItem({ data }) {
+export default function BannerItem({ data, index }) {
   const { bgColor, textColor, link, ...rest } = data;
 
   const isBlank = link ? link.includes('http') : null;
@@ -62,10 +64,10 @@ export default function BannerItem({ data }) {
       style={{ backgroundColor: bgColor, color: textColor }}>
       {link && link ? (
         <a href={link} target={isBlank ? '_blank' : ''}>
-          <Content {...rest} />
+          <Content {...rest} index={index} />
         </a>
       ) : (
-        <Content {...rest} />
+        <Content {...rest} index={index} />
       )}
     </article>
   );

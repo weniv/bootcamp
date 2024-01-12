@@ -13,6 +13,7 @@ export default function BookItem({ data }) {
           src={image ? image : noimg}
           alt=""
           className={styles['item-thumbnail']}
+          loading="lazy"
         />
 
         <div className={styles['item-content']}>

@@ -10,16 +10,29 @@ import { handleClipBoard } from '@/utils/handleClipBoard';
 import { noimg } from '@/utils/noimg';
 
 export default function CardItem({ data, share, titleStart }) {
-  const { url, image, type, title, subtitle, description, trainingPeriod } =
-    data;
+  const {
+    url,
+    image,
+    image_m,
+    type,
+    title,
+    subtitle,
+    description,
+    trainingPeriod,
+  } = data;
 
   return (
     <article className={styles.item}>
-      <img
-        src={image ? image : noimg}
-        alt=""
-        className={styles['item-thumbnail']}
-      />
+      <picture>
+        <source srcSet={image_m ? image_m : image} media="(max-width: 640px)" />
+        <img
+          src={image ? image : noimg}
+          alt=""
+          className={styles['item-thumbnail']}
+          loading="lazy"
+        />
+      </picture>
+
       <div className={styles['item-content']}>
         <div className={styles['flex-container']}>
           <p className={styles['item-content-tag']}>{type}</p>

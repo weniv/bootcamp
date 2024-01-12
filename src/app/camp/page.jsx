@@ -18,7 +18,11 @@ export default function SubPage() {
   } = require('/public/data/contents.json');
   return (
     <>
-      <img src="/images/subimg.webp" alt="" className={styles.sub__visual} />
+      <picture>
+        <source srcSet="/images/subimg_m.webp" media="(max-width: 640px)" />
+        <img src="/images/subimg.webp" alt="" className={styles.sub__visual} />
+      </picture>
+
       <div className={styles.container}>
         <section>
           <h2 className="title1">위니브 부트캠프가 추구하는 가치</h2>
