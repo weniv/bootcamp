@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 import styles from './page.module.scss';
 
 import CardItem from '@/components/card/CardItem';
@@ -18,7 +20,7 @@ export default function SubPage() {
   } = require('/public/data/contents.json');
   return (
     <>
-      <img
+      <Image
         width="1920"
         height="600"
         src="/images/subimg.webp"

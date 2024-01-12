@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import Link from 'next/link';
 import styles from './Book.module.scss';
 
@@ -9,9 +10,9 @@ export default function BookItem({ data }) {
   return (
     <article className={styles.item}>
       <Link href={url} target="_blank">
-        <img
-          width="246"
-          height="450"
+        <Image
+          width={246}
+          height={450}
           src={image ? image : noimg}
           alt=""
           className={styles['item-thumbnail']}

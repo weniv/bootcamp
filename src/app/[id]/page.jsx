@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 import CampInfo from '@/components/detail/CampInfo';
 
 import PageNav from '@/components/detail/PageNav';
@@ -66,7 +68,7 @@ export default function SubPage({ params }) {
   return (
     <div className={classNames('sub-max-width', styles.camp)}>
       <section>
-        <img
+        <Image
           width="790"
           height="416"
           className={styles.camp__thumnail}

@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import SVGPencil from '@/svg/SVGPencil';
 import SVGCheck from '@/svg/SVGCheck';
 
@@ -11,7 +12,12 @@ export default function React() {
           혁신적인 웹/앱 개발을 위한 필수 도구, React
         </h4>
 
-        <img src="/images/camps/react/react.jpg" alt="" />
+        <Image
+          width={790}
+          height={830}
+          src="/images/camps/react/react.jpg"
+          alt=""
+        />
       </section>
     </>
   );
