@@ -19,7 +19,7 @@ export default function Benefit(props) {
         <Image
           width={790}
           height={402}
-          src="/images/camps/python/free-VOD.jpg"
+          src="/images/camps/free-VOD.webp"
           alt=""
         />
 

@@ -17,7 +17,7 @@ export default function JavaScript() {
         <Image
           width={790}
           height={482}
-          src="/images/camps/javascript/javascript.jpg"
+          src="/images/camps/javascript/javascript.webp"
           alt="자바스크립트로 할 수 있는 것: 웹페이지 제작, 게임 프로그래밍, 앱 개발, 서버 프로그래밍, 데스크톱 앱 개발 인터랙티브 콘텐츠 제작"
         />
       </section>
@@ -51,7 +51,7 @@ export function JavaScript2() {
         <Image
           width={790}
           height={402}
-          src="/images/camps/javascript/jsalgo.jpg"
+          src="/images/camps/javascript/jsalgo.webp"
           alt=""
         />
         <p>

@@ -16,8 +16,8 @@ export default function SubPage() {
         위니브의 부트캠프를 수강했던 수강생의 생생한 후기를 살펴보세요.
       </p>
       <ul className={styles.container}>
-        {reviews.map((review) => (
-          <ReviewItem data={review} />
+        {reviews.map((review, i) => (
+          <ReviewItem key={i} data={review} />
         ))}
       </ul>
     </>

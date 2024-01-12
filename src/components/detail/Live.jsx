@@ -25,7 +25,7 @@ export default function Live() {
           <Image
             width={790}
             height={402}
-            src="/images/camps/python/zoom.jpg"
+            src="/images/camps/zoom.webp"
             alt=""
           />
           <figcaption>100% 라이브로 진행되는 강의</figcaption>
@@ -70,7 +70,7 @@ export default function Live() {
           <Image
             width={790}
             height={402}
-            src="/images/camps/python/discord.jpg"
+            src="/images/camps/discord.webp"
             alt=""
           />
           <figcaption>디스코드 커뮤니티 운영</figcaption>

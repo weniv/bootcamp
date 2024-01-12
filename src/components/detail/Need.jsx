@@ -14,7 +14,7 @@ export default function Need({ title, contents }) {
             <Image
               width={160}
               height={160}
-              src={`/images/camps/python/img${i + 1}.png`}
+              src={`/images/camps/img${i + 1}.webp`}
               alt=""
             />
             {content}

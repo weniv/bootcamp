@@ -15,7 +15,7 @@ export default function React() {
         <Image
           width={790}
           height={830}
-          src="/images/camps/react/react.jpg"
+          src="/images/camps/react/react.webp"
           alt=""
         />
       </section>

@@ -8,7 +8,7 @@ export default function ReviewItem({ data }) {
       <Image
         width={86}
         height={68}
-        src={`/images/${character}.png`}
+        src={`/images/character/${character}.png`}
         alt="수강생"
       />
       <p className={styles.type}>#{type}</p>

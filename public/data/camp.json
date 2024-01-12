@@ -1,7 +1,7 @@
 [
   {
     "url": "/python",
-    "image": "/images/camps/python/thumbnail.jpg",
+    "image": "/images/camps/python/thumbnail.webp",
     "type": "백엔드",
     "title": "Python 부트캠프 1기",
     "subtitle": "기본 문법부터 코테까지",
@@ -170,7 +170,7 @@
   },
   {
     "url": "/javascript",
-    "image": "/images/camps/javascript/thumbnail.jpg",
+    "image": "/images/camps/javascript/thumbnail.webp",
     "type": "프론트엔드",
     "title": "JavaScript 부트캠프 1기",
     "subtitle": "기본 문법부터 코테까지",
@@ -304,7 +304,7 @@
   },
   {
     "url": "/react",
-    "image": "/images/camps/react/thumbnail.jpg",
+    "image": "/images/camps/react/thumbnail.webp",
     "type": "프론트엔드",
     "title": "React mini 부트캠프 1기",
     "subtitle": "기초부터 실무까지",

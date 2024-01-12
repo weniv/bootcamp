@@ -17,7 +17,7 @@ export default function Python() {
           <Image
             width={790}
             height={402}
-            src="/images/camps/python/tiobe.jpg"
+            src="/images/camps/python/tiobe.webp"
             alt=""
           />
           <figcaption>TIOBE</figcaption>
@@ -52,7 +52,7 @@ export function Python2() {
         <Image
           width={790}
           height={402}
-          src="/images/camps/python/wenivworld.jpg"
+          src="/images/camps/python/wenivworld.webp"
           alt=""
         />
         <p>
