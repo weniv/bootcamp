@@ -43,7 +43,7 @@
   }
 
   del {
-    color: var(--grayLv3);
+    color: var(--grayLv3A11y);
   }
 }
 
@@ -67,7 +67,7 @@ hr.short {
 }
 
 .fc-blue {
-  color: var(--primary);
+  color: var(--primaryA11y);
   font-weight: bold;
 }
 
@@ -134,7 +134,7 @@ hr.short {
       margin-left: 0.5em;
     }
     strong {
-      color: var(--primary);
+      color: var(--primaryA11y);
       margin-right: 1em;
     }
 
@@ -169,7 +169,7 @@ hr.short {
     margin: 0;
   }
   figcaption {
-    color: var(--grayLv3);
+    color: var(--grayLv3A11y);
     text-align: center;
     margin: 0.5em;
   }

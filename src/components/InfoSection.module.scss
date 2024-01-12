@@ -1,7 +1,7 @@
 @import '@/styles/var.scss';
 
 .info-box {
-  // @extend .fs16;
+  @extend .fs16;
   position: relative;
   background: var(--grayLv1);
   padding: 4rem;
@@ -17,7 +17,7 @@
   img {
     width: min(24rem, 30vw);
     aspect-ratio: 1/1;
-    border-radius: 50%;
+    border-radius: 50% !important;
     object-fit: cover;
   }
 
