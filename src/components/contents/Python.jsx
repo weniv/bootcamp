@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 import SVGCode from '@/svg/SVGCode';
 import SVGPencil from '@/svg/SVGPencil';
 
@@ -12,35 +14,15 @@ export default function Python() {
         </h4>
 
         <figure className="figure">
-          <img src="/images/camps/python/tiobe.jpg" alt="" />
+          <Image
+            width={790}
+            height={402}
+            src="/images/camps/python/tiobe.jpg"
+            alt=""
+          />
           <figcaption>TIOBE</figcaption>
         </figure>
       </section>
-
-      {/* <section>
-        <div className="header">
-          <p>Python 부트캠프는</p>
-          <h4>이런분들에게 꼭! 필요합니다</h4>
-        </div>
-        <ul className="flex-ul">
-          <li>
-            <img src="/images/camps/python/img1.png" alt="" />
-            Python 기초 과정 이상을 속성으로 배워보고 싶으신 분
-          </li>
-          <li>
-            <img src="/images/camps/python/img2.png" alt="" />
-            밀도 있는 실시간 온라인 코딩 강의를 찾고 있으신 분
-          </li>
-          <li>
-            <img src="/images/camps/python/img3.png" alt="" />
-            코딩테스트 대비를 어떻게 해야 할지 막막하신 분
-          </li>
-        </ul>
-      </section> */}
-
-      {/* <div className="tobe">
-        <SVGTobe />
-      </div> */}
     </>
   );
 }
@@ -67,7 +49,12 @@ export function Python2() {
         <h4 className="title">
           Python 교육 플랫폼 개발자에게 직접 배워보세요!
         </h4>
-        <img src="/images/camps/python/wenivworld.jpg" alt="" />
+        <Image
+          width={790}
+          height={402}
+          src="/images/camps/python/wenivworld.jpg"
+          alt=""
+        />
         <p>
           별도의 설치 없이, 어디서나 접속 가능한 웹 기반 파이썬 코딩 교육 플랫폼{' '}
           <a href="https://world.weniv.co.kr/" target="_blank">
