@@ -23,7 +23,7 @@
 
   .type {
     @extend .fs16;
-    color: var(--grayLv3);
+    color: var(--grayLv3A11y);
   }
 
   .title_wrap {
@@ -31,7 +31,7 @@
     .title {
       margin-top: 0.8rem;
       font-weight: bold;
-      color: var(--primary);
+      color: var(--primaryA11y);
     }
   }
 
