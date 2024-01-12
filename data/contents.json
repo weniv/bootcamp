@@ -50,28 +50,28 @@
       "title": "FLEXxGRID",
       "description": "Flex&Grid 시스템을 웹에서 실습해 볼 수 있는 서비스(PDF 자료 제공)",
       "type": "오픈소스 프로젝트",
-      "image": "/images/projects/flex-grid.png",
+      "image": "/images/projects/flex-grid.webp",
       "url": "https://flexngrid.com/"
     },
     {
       "title": "ALGO.VIEW",
       "description": "알고리즘 코딩 테스트 문제풀이 분석 서비스",
       "type": "오픈소스 프로젝트",
-      "image": "/images/projects/algo-view.png",
+      "image": "/images/projects/algo-view.webp",
       "url": "https://algoview.co.kr/"
     },
     {
       "title": "StopWar",
       "description": "우크라이나 전쟁관련 소식 제공 비영리 서비스",
       "type": "오픈소스 프로젝트",
-      "image": "/images/projects/stop-war.png",
+      "image": "/images/projects/stop-war.webp",
       "url": "https://stopwar.co.kr/"
     },
     {
       "title": "SQooL: SQL School",
       "description": "로그인, 설치 등 번거로운 과정 없이 웹에서 쉽게 SQL을 배울 수 있는 서비스",
       "type": "오픈소스 프로젝트",
-      "image": "/images/projects/SQooL.png",
+      "image": "/images/projects/SQooL.webp",
       "url": "https://sqlschool.co.kr/"
     }
   ],
@@ -79,7 +79,7 @@
     {
       "title": "알아서 잘 딱 깔끔하고 센스있게 정리하는 TypeScript 핵심 개념",
       "author": "김민석, 김민영 외 8명",
-      "image": "/images/books/typescript.jpg",
+      "image": "/images/books/typescript.webp",
       "url": "https://ridibooks.com/books/2773000057?_s=search&_q=%EC%95%8C%EC%95%84%EC%84%9C+%EC%9E%98+%EB%94%B1+%EA%B9%94%EB%81%94%ED%95%98%EA%B3%A0&_rdt_sid=search&_rdt_idx=1"
     },
     {
