@@ -17,7 +17,12 @@ export default function Python() {
               srcSet="/images/camps/python/tiobe_m.webp"
               media="(max-width: 640px)"
             />
-            <img src="/images/camps/python/tiobe.webp" alt="" />
+            <img
+              src="/images/camps/python/tiobe.webp"
+              alt=""
+              width="790px"
+              height="402px"
+            />
           </picture>
 
           <figcaption>TIOBE</figcaption>
@@ -49,7 +54,13 @@ export function Python2() {
         <h4 className="title">
           Python 교육 플랫폼 개발자에게 직접 배워보세요!
         </h4>
-        <img src="/images/camps/python/wenivworld.webp" alt="" loading="lazy" />
+        <img
+          src="/images/camps/python/wenivworld.webp"
+          alt=""
+          loading="lazy"
+          width="790px"
+          height="402px"
+        />
         <p>
           별도의 설치 없이, 어디서나 접속 가능한 웹 기반 파이썬 코딩 교육 플랫폼{' '}
           <a href="https://world.weniv.co.kr/" target="_blank">

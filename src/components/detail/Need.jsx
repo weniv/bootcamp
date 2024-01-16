@@ -10,7 +10,13 @@ export default function Need({ title, contents }) {
       <ul className={styles.flex_ul}>
         {contents.map((content, i) => (
           <li key={i}>
-            <img src={`/images/camps/img${i + 1}.webp`} alt="" loading="lazy" />
+            <img
+              width="160px"
+              height="160px"
+              src={`/images/camps/img${i + 1}.webp`}
+              alt=""
+              loading="lazy"
+            />
             {content}
           </li>
         ))}

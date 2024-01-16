@@ -20,7 +20,13 @@ export default function Live() {
         </p>
 
         <figure className="figure">
-          <img src="/images/camps/zoom.webp" alt="" loading="lazy" />
+          <img
+            src="/images/camps/zoom.webp"
+            alt=""
+            loading="lazy"
+            width="790px"
+            height="402px"
+          />
           <figcaption>100% 라이브로 진행되는 강의</figcaption>
         </figure>
 
@@ -60,7 +66,13 @@ export default function Live() {
         </ul>
 
         <figure className="figure">
-          <img src="/images/camps/discord.webp" alt="" loading="lazy" />
+          <img
+            src="/images/camps/discord.webp"
+            alt=""
+            loading="lazy"
+            width="790px"
+            height="402px"
+          />
           <figcaption>디스코드 커뮤니티 운영</figcaption>
         </figure>
       </section>

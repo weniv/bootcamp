@@ -20,6 +20,8 @@ export default function JavaScript() {
           <img
             src="/images/camps/javascript/javascript.webp"
             alt="자바스크립트로 할 수 있는 것: 웹페이지 제작, 게임 프로그래밍, 앱 개발, 서버 프로그래밍, 데스크톱 앱 개발 인터랙티브 콘텐츠 제작"
+            width="790px"
+            height="482px"
           />
         </picture>
       </section>
@@ -50,7 +52,13 @@ export function JavaScript2() {
         <h4 className="title">
           여러 교육 플랫폼을 개발한 개발자에게 직접 배워보세요!
         </h4>
-        <img src="/images/camps/javascript/jsalgo.webp" alt="" loading="lazy" />
+        <img
+          src="/images/camps/javascript/jsalgo.webp"
+          alt=""
+          loading="lazy"
+          width="790px"
+          height="402px"
+        />
         <p>
           JavaScript 알고리즘 테스트 서비스인{' '}
           <a href="https://jsalgo.co.kr/">'JS 알고리즘 베스트 20(JS Algo)'</a>의

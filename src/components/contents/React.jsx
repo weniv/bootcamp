@@ -18,6 +18,8 @@ export default function React() {
           <img
             src="/images/camps/react/react.webp"
             alt="재사용 가능한 컴포넌트, 가상돔 활용/효율적인 업데이트, 풍부하고 강력한 개발자 도구, React Native를 통한 네이트브 앱 개발 지원, 큰 규모의 커뮤니티와 생태계"
+            width="790px"
+            height="830px"
           />
         </picture>
       </section>

@@ -39,16 +39,16 @@ const Content = (props) => {
       </div>
 
       {thumbnail && (
-        <img
-          className={styles.thumbnail}
-          src={
-            windowWidth !== null && windowWidth < 640 && thumbnailMobile
-              ? thumbnailMobile
-              : thumbnail
-          }
-          alt=""
-          loading={index > 0 ? 'lazy' : null}
-        />
+        <picture>
+          <source srcSet={thumbnailMobile} media="(max-width: 640px)" />
+          <img
+            className={styles.thumbnail}
+            src={thumbnail}
+            alt=""
+            rel={index === 0 ? 'preload' : null}
+            loading={index > 0 ? 'lazy' : null}
+          />
+        </picture>
       )}
     </div>
   );

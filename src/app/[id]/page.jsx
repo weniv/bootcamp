@@ -68,12 +68,12 @@ export default function SubPage({ params }) {
       <section>
         <picture>
           <source
-            srcSet={campData?.image_m ? campData?.image_m : campData?.image}
+            srcSet={`/images/camps${campData?.url}/thumbnail_640.webp`}
             media="(max-width: 640px)"
           />
           <img
             className={styles.camp__thumnail}
-            src={campData?.image ? campData?.image : noimg}
+            src={`/images/camps${campData?.url}/thumbnail.webp`}
             alt=""
           />
         </picture>

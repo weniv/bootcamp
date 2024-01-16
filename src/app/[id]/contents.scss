@@ -4,6 +4,8 @@
   gap: 5.2rem;
 
   img {
+    width: 100%;
+    height: auto;
     border-radius: 1.6rem;
     & + .title {
       margin-top: 5rem;
@@ -167,6 +169,9 @@ hr.short {
   margin: 5.2rem 0 0 0;
   img {
     margin: 0;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 790/402;
   }
   figcaption {
     color: var(--grayLv3A11y);

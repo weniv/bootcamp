@@ -20,7 +20,12 @@ export default function SubPage() {
     <>
       <picture>
         <source srcSet="/images/subimg_m.webp" media="(max-width: 640px)" />
-        <img src="/images/subimg.webp" alt="" className={styles.sub__visual} />
+        <img
+          src="/images/subimg.webp"
+          alt=""
+          className={styles.sub__visual}
+          rel="preload"
+        />
       </picture>
 
       <div className={styles.container}>
