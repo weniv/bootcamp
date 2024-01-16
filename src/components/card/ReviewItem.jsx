@@ -8,6 +8,8 @@ export default function ReviewItem({ data }) {
         src={`/images/character/${character}.png`}
         alt="수강생 후기"
         loading="lazy"
+        width="86px"
+        height="68px"
       />
       <p className={styles.type}>#{type}</p>
 

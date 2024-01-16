@@ -74,6 +74,7 @@ export default function SubPage({ params }) {
           <img
             className={styles.camp__thumnail}
             src={`/images/camps${campData?.url}/thumbnail.webp`}
+            rel="preload"
             alt=""
           />
         </picture>

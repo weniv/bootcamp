@@ -45,6 +45,8 @@ const Content = (props) => {
             className={styles.thumbnail}
             src={thumbnail}
             alt=""
+            width="640px"
+            height="394px"
             rel={index === 0 ? 'preload' : null}
             loading={index > 0 ? 'lazy' : null}
           />
