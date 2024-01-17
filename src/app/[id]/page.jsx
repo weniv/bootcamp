@@ -12,7 +12,6 @@ import './contents.scss';
 import classNames from 'classnames';
 import Notice from '@/components/detail/Notice';
 
-import { noimg } from '@/utils/noimg';
 import Python, { Python2 } from '@/components/contents/Python';
 import JavaScript, { JavaScript2 } from '@/components/contents/JavaScript';
 import React, { React2 } from '@/components/contents/React';
@@ -47,8 +46,18 @@ export async function generateMetadata({ params }) {
 
   return {
     title: `${title}위니브 부트캠프`,
-    description: `위니브 campData.description`,
+    description: campData.description,
+    siteName: `${title}위니브 부트캠프`,
     openGraph: {
+      title: `${title}위니브 부트캠프`,
+      description: campData.description,
+      url: `https://bootcamp.weniv.co.kr/${id}`,
+      type: 'website',
+      images: [campData.image],
+      locale: 'ko_KR',
+    },
+    twitter: {
+      card: 'summary',
       title: `${title}위니브 부트캠프`,
       description: campData.description,
       images: [campData.image],

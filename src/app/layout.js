@@ -23,6 +23,13 @@ export const metadata = {
     images: ['/images/OG.png'],
     locale: 'ko_KR',
   },
+  twitter: {
+    card: 'summary',
+    title: '위니브 부트캠프',
+    description:
+      '위니브의 실무 경험을 바탕으로 만들어진 현실 도달 가능한 커리큘럼과 프로젝트, 멘토링을 제공합니다.',
+    images: ['/images/OG.png'],
+  },
 
   robots: {
     index: true,

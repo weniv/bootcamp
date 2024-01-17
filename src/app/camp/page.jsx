@@ -9,6 +9,10 @@ import SVGPeoples from '@/svg/SVGPeoples';
 import SVGtime from '@/svg/SVGtime';
 import SVGBook from '@/svg/SVGBook';
 
+export const metadata = {
+  title: '소개 | 위니브 부트캠프',
+};
+
 export default function SubPage() {
   const {
     messages,
