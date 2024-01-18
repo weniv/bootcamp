@@ -5,8 +5,14 @@ import ReviewItem from '@/components/card/ReviewItem';
 
 export const metadata = {
   title: '수강생 후기 | 위니브 부트캠프',
+  openGraph: {
+    title: '수강생 후기 | 위니브 부트캠프',
+  },
+  twitter: {
+    card: 'summary',
+    title: '수강생 후기 | 위니브 부트캠프',
+  },
 };
-
 export default function SubPage() {
   const reviews = require('/public/data/reviews.json');
 

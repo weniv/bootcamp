@@ -11,6 +11,13 @@ import SVGBook from '@/svg/SVGBook';
 
 export const metadata = {
   title: '소개 | 위니브 부트캠프',
+  openGraph: {
+    title: '소개 | 위니브 부트캠프',
+  },
+  twitter: {
+    card: 'summary',
+    title: '소개 | 위니브 부트캠프',
+  },
 };
 
 export default function SubPage() {
