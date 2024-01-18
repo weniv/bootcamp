@@ -26,6 +26,8 @@ export default function CardItem({ data, share, titleStart }) {
       <picture>
         <source srcSet={image_m ? image_m : image} media="(max-width: 640px)" />
         <img
+          width="380px"
+          height="200px"
           src={image ? image : noimg}
           alt=""
           className={styles['item-thumbnail']}
