@@ -20,7 +20,7 @@ export default function Step({ day, curriculum }) {
   return (
     <section>
       <div className="header">
-        🥲
+        😥
         <p>빠르게 학습하고 싶지만 수 개월의 시간을 투자하기 어려우신가요?</p>
         <h4>작심 {day}일이면 '큰 그림'을 그리기엔 충분합니다!</h4>
       </div>

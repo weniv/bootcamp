@@ -9,7 +9,7 @@ export default function Live() {
       {' '}
       <section>
         <div className="header">
-          🥲
+          😥
           <p>그렇지만... 혼자 공부하기 두려우신가요?</p>
           <h4>100% 라이브로 함께해요!</h4>
         </div>

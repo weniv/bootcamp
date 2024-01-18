@@ -31,8 +31,10 @@ export default function Benefit(props) {
               className="fc-blue">
               제주코딩베이스캠프
             </a>{' '}
-            강의 중 Python 토픽 인기 유료 강의 5개를 모든 수강생에게 무료로
-            제공합니다.
+            강의 중 {type === 'python' && 'Python'}
+            {type === 'javascript' && ' Front-End 개발, JavaScript'}
+            {type === 'react' && 'Front-End'} 토픽 인기 유료 강의 5개를 모든
+            수강생에게 무료로 제공합니다.
           </strong>{' '}
           캠프가 끝나더라도 VOD 강의를 통해 효과적으로 반복 학습할 수 있습니다.
         </p>
