@@ -1,5 +1,18 @@
 [
   {
+    "bgColor": "#7DDCFC",
+    "categoryColor": "#fff",
+    "categoryBg": "#121314",
+    "thumbnail": "/images/banner/main-banner-react.webp",
+    "thumbnailMobile": "/images/banner/main-banner-react-m.webp",
+    "category": "신규 부트캠프 오픈",
+    "title": ["React mini 부트캠프 1기", ": 기초부터 실무까지"],
+    "description": [
+      "React 기초부터 실무까지, 5일이면 ‘큰 그림’을 그리기에 충분합니다!"
+    ],
+    "link": "/react"
+  },
+  {
     "bgColor": "#FFE76F",
     "categoryColor": "#fff",
     "categoryBg": "#121314",
