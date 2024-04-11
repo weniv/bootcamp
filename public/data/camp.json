@@ -1,5 +1,25 @@
 [
   {
+    "url": "https://camp.orm.im/backend-ai",
+    "image": "/images/camps/kdt01.png",
+    "image_m": "/images/camps/kdt01.png",
+    "type": "KDT",
+    "title": "인공지능(AI) 모델 활용 백엔드 개발 과정",
+    "subtitle": "모두의연구소 X 제주코딩베이스캠프",
+    "description": "AI 트렌드를 읽고 활용하는 넓은 시야의 백엔드 개발자를 양성합니다.",
+    "trainingPeriod": "2024.06.04(월) ~ 2024.9.27(금)"
+  },
+  {
+    "url": "https://estfamily.career.greetinghr.com/o/104790",
+    "image": "/images/camps/kdt02.png",
+    "image_m": "/images/camps/kdt02.png",
+    "type": "KDT",
+    "title": "백엔드 개발자 오르미 양성 과정 5기",
+    "subtitle": "이스트소프트 X 위니브",
+    "description": "실속 있는 커리큘럼과 검증된 교육 과정으로 백엔드 개발자 커리어를 시작해 보세요.",
+    "trainingPeriod": "2024.05.02(목) ~ 2024.09.13(금)"
+  },
+  {
     "url": "/python",
     "image": "/images/camps/python/thumbnail.webp",
     "image_m": "/images/camps/python/thumbnail_m.webp",

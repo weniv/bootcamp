@@ -1,16 +1,17 @@
-'use client';
-import { useState } from 'react';
-import Banner from '@/components/banner/Banner';
-import CategoryList from '@/components/category/CategoryList';
-import CampList from '@/components/card/CampList';
-import Header from '@/components/header/Header';
-import Footer from '@/components/footer/Footer';
+"use client";
+import { useState } from "react";
+import Banner from "@/components/banner/Banner";
+import CategoryList from "@/components/category/CategoryList";
+import CampList from "@/components/card/CampList";
+import Header from "@/components/header/Header";
+import Footer from "@/components/footer/Footer";
 
 export const CATEGORIES = [
-  { id: 0, text: '전체' },
-  { id: 1, text: '프론트엔드' },
-  { id: 2, text: '백엔드' },
-  { id: 3, text: '데이터분석' },
+  { id: 0, text: "전체" },
+  { id: 4, text: "KDT" },
+  { id: 1, text: "프론트엔드" },
+  { id: 2, text: "백엔드" },
+  { id: 3, text: "데이터분석" },
 ];
 
 export default function Home() {
