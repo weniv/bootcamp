@@ -1,5 +1,16 @@
 [
   {
+    "url": "https://estfamily.career.greetinghr.com/o/114650",
+    "image": "/images/camps/kdt03.png",
+    "image_m": "/images/camps/kdt03.png",
+    "type": "KDT",
+    "title": "프론트엔드 개발자 양성 과정 2기 모집",
+    "subtitle": "이스트소프트 X 위니브",
+    "description": "실속 있는 커리큘럼과 검증된 교육 과정으로 프론트엔드 개발자 커리어를 시작해 보세요.",
+    "trainingPeriod": "2024.08.05(월) ~ 2024.12.20(금)",
+    "open": true
+  },
+  {
     "url": "https://camp.orm.im/backend-ai",
     "image": "/images/camps/kdt01.png",
     "image_m": "/images/camps/kdt01.png",
@@ -7,17 +18,8 @@
     "title": "인공지능(AI) 모델 활용 백엔드 개발 과정",
     "subtitle": "모두의연구소 X 제주코딩베이스캠프",
     "description": "AI 트렌드를 읽고 활용하는 넓은 시야의 백엔드 개발자를 양성합니다.",
-    "trainingPeriod": "2024.06.04(월) ~ 2024.9.27(금)"
-  },
-  {
-    "url": "https://estfamily.career.greetinghr.com/o/108906",
-    "image": "/images/camps/kdt03.png",
-    "image_m": "/images/camps/kdt03.png",
-    "type": "KDT",
-    "title": "프론트엔드 개발자 양성 과정 1기 모집",
-    "subtitle": "이스트소프트 X 위니브",
-    "description": "실속 있는 커리큘럼과 검증된 교육 과정으로 프론트엔드 개발자 커리어를 시작해 보세요.",
-    "trainingPeriod": "2024.06.03(월) ~ 2024.10.21(월)"
+    "trainingPeriod": "2024.06.04(월) ~ 2024.9.27(금)",
+    "open": false
   },
   {
     "url": "https://estfamily.career.greetinghr.com/o/104790",
@@ -27,7 +29,8 @@
     "title": "백엔드 개발자 오르미 양성 과정 5기",
     "subtitle": "이스트소프트 X 위니브",
     "description": "실속 있는 커리큘럼과 검증된 교육 과정으로 백엔드 개발자 커리어를 시작해 보세요.",
-    "trainingPeriod": "2024.05.02(목) ~ 2024.09.13(금)"
+    "trainingPeriod": "2024.05.02(목) ~ 2024.09.13(금)",
+    "open": false
   },
   {
     "url": "/python",
@@ -197,7 +200,8 @@
           "... 저의 인생에 있어 코딩이란 분야의 '교육판'을 뒤집어 주셔서, 진심으로 감사드립니다.🙏"
         ]
       }
-    ]
+    ],
+    "open": false
   },
   {
     "url": "/javascript",
@@ -332,7 +336,8 @@
       "JavaScript 기초 과정 이상을 배워보고 싶으신 분",
       "밀도 있는 실시간 온라인 코딩 강의를 찾고 있으신 분",
       "코딩테스트 대비를 어떻게 해야 할지 막막하신 분"
-    ]
+    ],
+    "open": false
   },
   {
     "url": "/react",
@@ -454,6 +459,7 @@
       "React 기본 개념을 잡아보고 싶으신 분",
       "밀도 있는 실시간 온라인 코딩 강의를 찾고 있으신 분",
       "실제 프로젝트처럼 React를 경험해 보고 싶으신 분"
-    ]
+    ],
+    "open": false
   }
 ]
