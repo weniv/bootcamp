@@ -19,6 +19,7 @@ export default function CardItem({ data, share, titleStart }) {
     subtitle,
     description,
     trainingPeriod,
+    open,
   } = data;
 
   return (
@@ -81,6 +82,12 @@ export default function CardItem({ data, share, titleStart }) {
         href={url}
         target={share || url.includes("http") ? "_blank" : "_self"}
         title={share || url.includes("http") ? "새창" : ""}
+        onClick={(e) => {
+          if (open === false && url.includes("http")) {
+            alert("모집이 마감되었습니다");
+            e.preventDefault();
+          }
+        }}
       >
         <span className="a11y-hidden">{title}로 이동하기</span>
       </Link>
