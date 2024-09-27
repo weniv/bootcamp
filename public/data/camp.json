@@ -15,6 +15,7 @@
     "price": "전액 무료 + 별도 훈련 지원금 지원",
     "open": true,
     "applyUrl": "https://estfamily.career.greetinghr.com/o/122126",
+    "nav": ["캠프 소개", "커리큘럼", "강사 소개", "지원 절차 및 안내", "FAQ"],
     "curriculum": ["curri1"],
     "need": ["need1"]
   },

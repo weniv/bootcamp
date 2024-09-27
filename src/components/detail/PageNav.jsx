@@ -1,14 +1,20 @@
-'use client';
-import { useState } from 'react';
-import styles from './PageNav.module.scss';
-import useIntersectionObservation from '@/utils/useIntersectionObservation';
-import SVGArrow from '@/svg/SVGArrow';
+"use client";
+import { useState } from "react";
+import styles from "./PageNav.module.scss";
+import useIntersectionObservation from "@/utils/useIntersectionObservation";
+import SVGArrow from "@/svg/SVGArrow";
 
-export default function PageNav({ url }) {
-  const [activeId, setActiveId] = useState('section1');
-  useIntersectionObservation(setActiveId, '.section');
+export default function PageNav({ url, nav }) {
+  const [activeId, setActiveId] = useState("section1");
+  useIntersectionObservation(setActiveId, ".section");
 
-  const navList = ['캠프 소개', '수료생 혜택', '커리큘럼', '강사소개', 'FAQ'];
+  const navList = nav || [
+    "캠프 소개",
+    "수료생 혜택",
+    "커리큘럼",
+    "강사소개",
+    "FAQ",
+  ];
 
   return (
     <nav className={styles.nav}>
@@ -18,8 +24,9 @@ export default function PageNav({ url }) {
             <a
               href={`#section${index + 1}`}
               className={
-                activeId === `section${index + 1}` ? styles.active : ''
-              }>
+                activeId === `section${index + 1}` ? styles.active : ""
+              }
+            >
               {list}
             </a>
           </li>
