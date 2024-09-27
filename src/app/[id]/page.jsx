@@ -1,46 +1,54 @@
-import CampInfo from '@/components/detail/CampInfo';
+import CampInfo from "@/components/detail/CampInfo";
 
-import PageNav from '@/components/detail/PageNav';
-import TeacherInfo from '@/components/detail/TeacherInfo';
-import TeacherDetail from '@/components/detail/TeacherDetail';
-import ToggleList from '@/components/detail/ToggleList';
-import Benefit from '@/components/detail/Benefit';
+import PageNav from "@/components/detail/PageNav";
+import TeacherInfo from "@/components/detail/TeacherInfo";
+import TeacherDetail from "@/components/detail/TeacherDetail";
+import ToggleList from "@/components/detail/ToggleList";
+import Benefit from "@/components/detail/Benefit";
 
-import styles from './page.module.scss';
-import './contents.scss';
+import styles from "./page.module.scss";
+import "./contents.scss";
 
-import classNames from 'classnames';
-import Notice from '@/components/detail/Notice';
+import classNames from "classnames";
+import Notice from "@/components/detail/Notice";
 
-import Python, { Python2 } from '@/components/contents/Python';
-import JavaScript, { JavaScript2 } from '@/components/contents/JavaScript';
-import React, { React2 } from '@/components/contents/React';
-import Live from '@/components/detail/Live';
-import Need from '@/components/detail/Need';
-import KDT100 from '@/components/detail/KDT100';
-import Step from '@/components/detail/Step';
-import SVGTobe from '@/svg/SVGTobe';
+import Python, { Python2 } from "@/components/contents/Python";
+import JavaScript, { JavaScript2 } from "@/components/contents/JavaScript";
+import React, { React2 } from "@/components/contents/React";
+import Live from "@/components/detail/Live";
+import Need from "@/components/detail/Need";
+import KDT100 from "@/components/detail/KDT100";
+import Step from "@/components/detail/Step";
+import SVGTobe from "@/svg/SVGTobe";
 
 export async function generateStaticParams() {
-  return [{ id: 'python' }, { id: 'javascript' }, { id: 'react' }];
+  return [
+    { id: "python" },
+    { id: "javascript" },
+    { id: "react" },
+    { id: "frontend-est" },
+  ];
 }
 
 export async function generateMetadata({ params }) {
   const { id } = params;
-  const campData = require('/public/data/camp.json').find(
-    (camp) => camp.url === `/${id}`,
+  const campData = require("/public/data/camp.json").find(
+    (camp) => camp.url === `/${id}`
   );
 
-  let title = ' ';
+  let title = " ";
   switch (id) {
-    case 'python':
-      title = '파이썬 | ';
+    case "python":
+      title = "파이썬 | ";
       break;
-    case 'javascript':
-      title = '자바스크립트 | ';
+    case "javascript":
+      title = "자바스크립트 | ";
       break;
-    case 'react':
-      title = '리액트 | ';
+    case "react":
+      title = "리액트 | ";
+      break;
+    case "frontend-est":
+      title = "프론트엔드 오르미 | 이스트소프트 X ";
       break;
   }
 
@@ -52,12 +60,12 @@ export async function generateMetadata({ params }) {
       title: `${title}위니브 부트캠프`,
       description: campData.description,
       url: `https://bootcamp.weniv.co.kr/${id}`,
-      type: 'website',
+      type: "website",
       images: [campData.image],
-      locale: 'ko_KR',
+      locale: "ko_KR",
     },
     twitter: {
-      card: 'summary',
+      card: "summary",
       title: `${title}위니브 부트캠프`,
       description: campData.description,
       images: [campData.image],
@@ -68,12 +76,12 @@ export async function generateMetadata({ params }) {
 export default function SubPage({ params }) {
   const { id } = params;
 
-  const campData = require('/public/data/camp.json').find(
-    (camp) => camp.url === `/${id}`,
+  const campData = require("/public/data/camp.json").find(
+    (camp) => camp.url === `/${id}`
   );
 
   return (
-    <div className={classNames('sub-max-width', styles.camp)}>
+    <div className={classNames("sub-max-width", styles.camp)}>
       <section>
         <picture>
           <source
@@ -97,7 +105,7 @@ export default function SubPage({ params }) {
 
         <p className={styles.camp__desc}>{campData?.description}</p>
 
-        <TeacherInfo name={campData?.teacher} />
+        {campData?.teacher && <TeacherInfo name={campData?.teacher} />}
         <CampInfo data={campData} />
       </section>
       <PageNav url={campData?.applyUrl} />
@@ -106,9 +114,9 @@ export default function SubPage({ params }) {
         <section id="section1" className="section">
           <h3 className="a11y-hidden">캠프 소개</h3>
 
-          {id === 'python' && <Python />}
-          {id === 'javascript' && <JavaScript />}
-          {id === 'react' && <React />}
+          {id === "python" && <Python />}
+          {id === "javascript" && <JavaScript />}
+          {id === "react" && <React />}
         </section>
 
         {/* 작심 5일 */}
@@ -129,9 +137,9 @@ export default function SubPage({ params }) {
         <Live />
 
         {/* 괜찮습니다 */}
-        {id === 'python' && <Python2 />}
-        {id === 'javascript' && <JavaScript2 />}
-        {id === 'react' && <React2 />}
+        {id === "python" && <Python2 />}
+        {id === "javascript" && <JavaScript2 />}
+        {id === "react" && <React2 />}
 
         {/* 혜택 */}
         <Benefit id="section2" className="section" type={id} />
