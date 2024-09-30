@@ -1,4 +1,4 @@
-@import '@/styles/var.scss';
+@import "@/styles/var.scss";
 
 .toggleList {
   display: flex;
@@ -45,7 +45,9 @@
       letter-spacing: -0.05em;
     }
     .q,
-    .day {
+    .p,
+    .day,
+    .recruit {
       color: var(--primaryA11y);
       font-weight: 600;
       @extend .fs24;
@@ -55,6 +57,18 @@
       &.day {
         width: 2.5em;
       }
+    }
+
+    .p-subject {
+      @extend .fs16;
+      padding: 0.6rem 1.6rem;
+      background-color: var(--activation);
+      color: var(--primary);
+      font-weight: 600;
+      border-radius: 0.8rem;
+    }
+    .recruit {
+      color: var(--grayLv3);
     }
     .tech {
       @extend .fs14;
@@ -83,6 +97,11 @@
     display: none;
   }
 
+  .content__title {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: var(--grayLv4);
+  }
   .btnToggle {
     display: flex;
     align-items: center;
@@ -109,7 +128,7 @@
   .notice {
     color: var(--primaryA11y);
     &::before {
-      content: '※ ';
+      content: "※ ";
     }
   }
 }

@@ -12,7 +12,10 @@
         "제주코딩베이스캠프 운영진",
         "제주알고리즘베이스캠프 운영진"
       ],
-      "prev": ["신한금융그룹 신한데이터시스템 정보보안 담당"]
+      "prev": [
+        "제주스타트업협회 부회장",
+        "신한금융그룹 신한데이터시스템 정보보안 담당"
+      ]
     },
     "education": [
       "누적 수강생 7만 명 이상",
@@ -43,5 +46,45 @@
       "prev": ["국민은행 데이터 분석가", "고려대학교 경제통계학 박사과정 수료"]
     },
     "education": ["멋쟁이사자처럼 테킷(TECHIT) 데이터분석 스쿨 1기 주강사"]
+  },
+  "rosy": {
+    "image": "/images/teacher/rosy.webp",
+    "image_m": "/images/teacher/rosy.webp",
+    "korName": "김민승",
+    "engName": "Minseung Kim",
+    "position": "프론트엔드 개발",
+    "career": {
+      "now": ["주식회사 위니브 / 프론트엔드 개발 담당"]
+    }
+  },
+  "zeezee": {
+    "image": "/images/teacher/zeezee.webp",
+    "image_m": "/images/teacher/zeezee.webp",
+    "korName": "전유진",
+    "engName": "Youjin Jeon",
+    "position": "프론트엔드 개발",
+    "career": {
+      "now": ["주식회사 위니브 / 프론트엔드 개발 담당"]
+    }
+  },
+  "hati": {
+    "image": "/images/teacher/hati.webp",
+    "image_m": "/images/teacher/hati.webp",
+    "korName": "백경현",
+    "engName": "Gyeonghyeon Baek",
+    "position": "프론트엔드 개발",
+    "career": {
+      "now": ["주식회사 위니브 / 프론트엔드 개발 담당"]
+    }
+  },
+  "soulgom": {
+    "image": "/images/teacher/soulgom.webp",
+    "image_m": "/images/teacher/soulgom.webp",
+    "korName": "차경림",
+    "engName": "Kyungrim Cha",
+    "position": "디자이너",
+    "career": {
+      "now": ["주식회사 위니브 / CDO, 디자이너"]
+    }
   }
 }

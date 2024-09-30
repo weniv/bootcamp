@@ -14,6 +14,8 @@ import KDT100 from "@/components/detail/KDT100";
 import Step from "@/components/detail/Step";
 import SVGTobe from "@/svg/SVGTobe";
 
+import styles from "@/app/[id]/page.module.scss";
+
 export default function OwnCampContent({ id, campData }) {
   return (
     <>

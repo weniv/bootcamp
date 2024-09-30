@@ -1,4 +1,4 @@
-import styles from './Need.module.scss';
+import styles from "./Need.module.scss";
 
 export default function Need({ title, contents }) {
   return (

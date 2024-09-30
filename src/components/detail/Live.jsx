@@ -1,12 +1,12 @@
-import SVGCodeBox from '@/svg/SVGCodeBox';
-import SVGLocation from '@/svg/SVGLocation';
-import SVGPeoples from '@/svg/SVGPeoples';
-import SVGTalk from '@/svg/SVGTalk';
+import SVGCodeBox from "@/svg/SVGCodeBox";
+import SVGLocation from "@/svg/SVGLocation";
+import SVGPeoples from "@/svg/SVGPeoples";
+import SVGTalk from "@/svg/SVGTalk";
 
 export default function Live() {
   return (
     <>
-      {' '}
+      {" "}
       <section>
         <div className="header">
           😥
@@ -49,7 +49,7 @@ export default function Live() {
           <li>
             <SVGLocation />
             <p>
-              장소에 제약 없이{' '}
+              장소에 제약 없이{" "}
               <strong className="fc-blue">자신의 환경에서 편안하게 학습</strong>
               할 수 있습니다.
             </p>
@@ -57,7 +57,7 @@ export default function Live() {
           <li>
             <SVGTalk />
             <p>
-              온라인 커뮤니티에서 강사, 수강생이 모두 모여{' '}
+              온라인 커뮤니티에서 강사, 수강생이 모두 모여{" "}
               <strong className="fc-blue">자유롭게 네트워킹</strong>할 수
               있습니다.
               <br />※ 디스코드 커뮤니티를 운영합니다.

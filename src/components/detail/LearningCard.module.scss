@@ -1,0 +1,39 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 5.2rem;
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  text-align: center;
+
+  h4 {
+    font-size: 3.2rem;
+    font-weight: 700;
+  }
+}
+
+.callout {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  background-color: var(--grayLv1);
+  border-radius: 1.6rem;
+  min-height: 8rem;
+  padding: 2.4rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+
+  box-sizing: border-box;
+
+  @media screen and (max-width: 640px) {
+    flex-direction: column;
+  }
+}

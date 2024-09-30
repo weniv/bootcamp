@@ -9,6 +9,7 @@ import "./contents.scss";
 import classNames from "classnames";
 
 import OwnCampContent from "@/components/contents/OwnCampContent";
+import FrontendEst from "@/components/contents/FrontendEst";
 
 export async function generateStaticParams() {
   return [
@@ -98,8 +99,13 @@ export default function SubPage({ params }) {
         <CampInfo data={campData} />
       </section>
       <PageNav url={campData?.applyUrl} nav={campData?.nav} />
+
       <div className="camp_contents">
-        <OwnCampContent id={id} campData={campData} />
+        {id === "frontend-est" ? (
+          <FrontendEst id={id} campData={campData} />
+        ) : (
+          <OwnCampContent id={id} campData={campData} />
+        )}
       </div>
     </div>
   );

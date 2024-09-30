@@ -63,6 +63,12 @@ hr.short {
   border-bottom: 0;
   margin: 0 auto;
 }
+hr.dashed {
+  width: 100%;
+  border-top: 2px dashed var(--grayLv2);
+  border-bottom: 0;
+  margin: 5.2rem 0;
+}
 
 .fc-text {
   color: var(--surface) !important;
@@ -71,6 +77,14 @@ hr.short {
 .fc-blue {
   color: var(--primaryA11y);
   font-weight: bold;
+}
+
+.fw-bold {
+  font-weight: bold;
+}
+
+.mt-6 {
+  margin-top: 6rem;
 }
 
 .bg-ul {
@@ -139,7 +153,6 @@ hr.short {
       color: var(--primaryA11y);
       margin-right: 1em;
     }
-
     @media screen and (max-width: 640px) {
       padding: 2rem 3rem;
       p {
@@ -152,7 +165,7 @@ hr.short {
   }
 
   li:not(:last-child)::after {
-    content: '';
+    content: "";
     display: block;
     width: 2.4rem;
     height: 1.2rem;
@@ -162,6 +175,18 @@ hr.short {
     bottom: -3rem;
     left: 50%;
     transform: translateX(-50%);
+  }
+}
+.step.recruit {
+  li {
+    font-size: 1.8rem;
+    flex-direction: column;
+    text-align: center;
+    gap: 0.5em;
+  }
+  .desc {
+    font-size: 1.6rem;
+    font-weight: normal;
   }
 }
 
