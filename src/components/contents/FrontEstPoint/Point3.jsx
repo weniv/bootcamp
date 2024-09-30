@@ -71,6 +71,7 @@ export default function Point3() {
             <li key={index}>
               <figure className="figure">
                 <iframe width="100%" height="315" src={conf.link}></iframe>
+                <figcaption>{conf.desc}</figcaption>
               </figure>
             </li>
           ))}
