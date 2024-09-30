@@ -1,3 +1,6 @@
+@import "@/styles/var.scss";
+@import "@/styles/function.scss";
+
 .container {
   width: 100%;
 }
@@ -56,6 +59,76 @@ a.lecture__btn {
     &:not(:disabled):hover {
       color: var(--primary);
       background-color: var(--grayLv1);
+    }
+  }
+}
+
+.blockquote {
+  background: var(--grayLv1) url(/images/blockquote.svg) no-repeat 50% 5rem;
+
+  padding: 8.3rem 7.5rem 5rem;
+  margin: 5.2rem 0 0 0;
+  border-radius: 1.6rem;
+
+  @media screen and (max-width: 640px) {
+    background-position: 50% 4rem;
+    padding: 7rem 3rem 3rem;
+  }
+
+  .title {
+    margin-bottom: 2.4rem;
+  }
+  strong {
+    font-weight: 600;
+    color: var(--primaryA11y);
+  }
+
+  footer {
+    text-align: center;
+    margin-top: 2.4rem;
+  }
+}
+
+.project__section {
+  text-align: center;
+  margin: 5.2rem auto;
+}
+
+.text_desc {
+  color: var(--grayLv4A11y);
+  margin: 1.6rem auto 4rem !important;
+}
+.project__container {
+  @include grid(28rem);
+
+  @media (min-width: 530px) and (max-width: 640px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+.book__container {
+  @include grid(24.6rem);
+  a {
+    color: var(--surface);
+    text-decoration: none;
+  }
+  @media (min-width: 300px) and (max-width: 640px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.conf__container {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  li {
+    height: fit-content;
+
+    .figure {
+      width: 100%;
+
+      iframe {
+        width: 100%;
+      }
     }
   }
 }

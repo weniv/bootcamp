@@ -131,5 +131,15 @@
       "text": "더오름 인프런 강의 목록",
       "url": "https://www.inflearn.com/users/200714"
     }
+  ],
+  "conferences": [
+    {
+      "link": "https://www.youtube.com/embed/sHP-PL3WAKI?si=1pY1PsLcRaBKDgXe&amp;controls=0",
+      "desc": "2022 제주 웹 컨퍼런스 스케치 영상"
+    },
+    {
+      "link": "https://www.youtube.com/embed/MN8I2tMAGDs?si=QT4oL2QsnV3kF8tT",
+      "desc": "2024 제주 AI 컨퍼런스 스케치 영상"
+    }
   ]
 }

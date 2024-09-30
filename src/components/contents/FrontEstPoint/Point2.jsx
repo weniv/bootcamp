@@ -19,6 +19,7 @@ export default function Point2() {
           데 사용되는 웹 기반 도구
         </p>
       </div>
+      <ul className="figma-list"></ul>
     </section>
   );
 }
