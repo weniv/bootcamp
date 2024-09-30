@@ -1,0 +1,61 @@
+.container {
+  width: 100%;
+}
+
+.title__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 1.2rem;
+  margin: 5.2rem auto;
+
+  color: var(--surface);
+  font-weight: 600;
+  font-size: 1.6rem;
+
+  .text_desc {
+    color: var(--grayLv4A11y);
+  }
+
+  .text_additional {
+    color: var(--grayLv3A11y);
+    font-size: 1.4rem;
+    font-weight: 500;
+  }
+
+  h4 {
+    font-size: 3.2rem;
+    font-weight: bold;
+  }
+}
+
+a.lecture__btn {
+  @extend .fs14 !optional;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+
+  width: fit-content;
+  height: 4.2rem;
+  padding: 0 2rem;
+  border-radius: 1rem;
+  margin: 5.2rem auto 0;
+
+  box-sizing: border-box;
+  border: 1px solid var(--grayLv2);
+
+  color: var(--surface);
+  text-decoration: none;
+
+  transition: all 0.3s;
+  // hover
+  @media (hover: hover) {
+    &:not(:disabled):hover {
+      color: var(--primary);
+      background-color: var(--grayLv1);
+    }
+  }
+}

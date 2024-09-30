@@ -1,13 +1,13 @@
-import Link from 'next/link';
-import classNames from 'classnames';
+import Link from "next/link";
+import classNames from "classnames";
 
-import styles from './Btn.module.scss';
+import styles from "./Btn.module.scss";
 
-export default function Btn(props) {
+export default function xBtn(props) {
   const {
     children,
     href,
-    type = 'button',
+    type = "button",
     className,
     solid,
     bordernone,
@@ -18,7 +18,7 @@ export default function Btn(props) {
     solid && styles.solid,
     bordernone && styles.borderNone,
     className,
-    styles.btn,
+    styles.btn
   );
 
   if (href) {
@@ -27,7 +27,8 @@ export default function Btn(props) {
         {...props}
         href={href}
         className={btnStyle}
-        title={target === '_blank' ? '새창' : ''}>
+        title={target === "_blank" ? "새창" : ""}
+      >
         {children}
       </Link>
     );

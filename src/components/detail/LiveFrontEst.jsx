@@ -32,6 +32,18 @@ export default function LiveFrontEst() {
           <figcaption>100% 라이브로 진행되는 강의</figcaption>
         </figure>
 
+        <figure className="figure">
+          <img
+            src="/images/camps/discord.webp"
+            alt=""
+            loading="lazy"
+            width="790px"
+            height="402px"
+          />
+          <figcaption>
+            디스코드 커뮤니티에서 소통하는 수강생과 강사, 멘토진
+          </figcaption>
+        </figure>
         <h5 className="title">“온라인 라이브 강의의 장점은요?”</h5>
         <ul className="bg-ul columns">
           <li>
@@ -65,17 +77,6 @@ export default function LiveFrontEst() {
             </p>
           </li>
         </ul>
-
-        <figure className="figure">
-          <img
-            src="/images/camps/discord.webp"
-            alt=""
-            loading="lazy"
-            width="790px"
-            height="402px"
-          />
-          <figcaption>디스코드 커뮤니티 운영</figcaption>
-        </figure>
       </section>
     </>
   );

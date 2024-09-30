@@ -6,8 +6,6 @@ import SVGArrowDown from "./svg/SVGArrowDown";
 import classNames from "classnames";
 
 export default function ToggleCurriculumn({ data }) {
-  console.log(data);
-
   const olRef = useRef();
 
   const toggleAnswer = (e) => {
