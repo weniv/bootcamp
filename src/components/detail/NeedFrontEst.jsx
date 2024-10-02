@@ -26,23 +26,24 @@ export default function NeedFrontEst() {
         <li>
           <SVGReset />
           <p>
-            <span className="fc-blue">직무 전환</span>을 계획 중이지만 시작이
-            막연한 분{" "}
+            <span className="fc-blue">직무 전환</span>&nbsp;을 계획 중이지만
+            시작이 막연한 분{" "}
           </p>
         </li>
         <li>
           <SVGPeoples />
           <p>
             IT 분야
-            <span className="fc-blue"> 취업 정보와 커뮤니티</span>가 필요한
-            전공자
+            <span className="fc-blue"> 취업 정보와 커뮤니티</span>&nbsp;가
+            필요한 전공자
           </p>
         </li>{" "}
         <li>
           <SVGPencil />
           <p>
             프론트엔드
-            <span className="fc-blue">개발 독학에 어려움</span>을 느끼는 분
+            <span className="fc-blue">&nbsp;개발 독학에 어려움</span>을 느끼는
+            분
           </p>
         </li>
       </ul>

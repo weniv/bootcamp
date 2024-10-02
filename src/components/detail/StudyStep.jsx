@@ -19,7 +19,7 @@ export default function StudyStep() {
           <li>
             <p>
               <span className="fw-bold fc-primary">
-                검증된 커리큘럼, 검증된 강사님의
+                검증된 커리큘럼, 검증된 강사님의&nbsp;
               </span>
               LIVE 강의로
               <br />
@@ -30,7 +30,7 @@ export default function StudyStep() {
             <p>
               API 명세를 활용해
               <span className="fw-bold fc-primary">
-                실제 동작하는 서비스를 개발
+                &nbsp;실제 동작하는 서비스를 개발
               </span>
               해 볼 수 있는
               <br />
@@ -41,7 +41,7 @@ export default function StudyStep() {
             <p>
               다양한
               <span className="fw-bold fc-primary">
-                웹/앱 서비스 UI 디자인을 직접 구현
+                &nbsp;웹/앱 서비스 UI 디자인을 직접 구현
               </span>
               해보면서 <br />
               프론트엔드
@@ -55,13 +55,15 @@ export default function StudyStep() {
               오픈소스/책 출판 프로젝트, 컨퍼런스 연사 참여 등 다양한 경험으로
               <br />
               남들과 다른
-              <span className="fw-bold">차별화된 포트폴리오 제작했어요</span>
+              <span className="fw-bold">
+                &nbsp;차별화된 포트폴리오 제작했어요
+              </span>
             </p>
           </li>
           <li>
             <p>
               <span className="fw-bold fc-primary">현직 개발자 멘토 </span>에게
-              <span className="fw-bold">이력서 피드백을 받았어요</span>
+              <span className="fw-bold">&nbsp;이력서 피드백을 받았어요</span>
             </p>
           </li>
           <li className="bg-primary fw-bold">

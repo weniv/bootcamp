@@ -14,8 +14,8 @@ export default function Point4() {
         </p>
         <h4>
           약 100만 원 상당 VOD 강의 <br />
-          30여개를
-          <span className="fc-primary">무료</span>로 제공합니다(소장 가능)
+          30여 개를<span className="fc-primary">&nbsp;무료</span>로
+          제공합니다(소장 가능)
         </h4>
       </div>
       <img
@@ -28,10 +28,10 @@ export default function Point4() {
       <p className="mt-52">
         <strong>
           모든 수강생에게는
-          <span className="fc-primary">제주코딩베이스캠프</span>(인프런)의
+          <span className="fc-primary"> 제주코딩베이스캠프</span>(인프런)의
           유·무료 강의 30여 개가 제공됩니다.
         </strong>
-        수강 후에도 VOD 강의를 통해 지속적으로 복습하며 학습을 이어나갈 수
+        &nbsp;수강 후에도 VOD 강의를 통해 지속적으로 복습하며 학습을 이어나갈 수
         있습니다.
       </p>
       <Link
