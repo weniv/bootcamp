@@ -38,6 +38,7 @@ export default function Point4() {
         href="https://www.inflearn.com/users/170213/@jejucoding"
         className={styles.lecture__btn}
         title={"_blank"}
+        target="_blank"
       >
         제주코딩베이스캠프 강의 살펴보기
       </Link>

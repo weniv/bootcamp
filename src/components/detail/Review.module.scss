@@ -1,0 +1,46 @@
+@import "@/styles/var.scss";
+@import "@/styles/function.scss";
+
+.container {
+  margin-top: 6rem;
+  column-width: 38rem;
+  column-gap: 2.4rem;
+  column-fill: balance;
+}
+
+a.lecture__btn {
+  font-size: 1.4rem;
+  @extend .fs14 !optional;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+
+  width: fit-content;
+  height: 4.2rem;
+  padding: 0 2rem;
+  border-radius: 1rem;
+  margin: 5.2rem auto 0;
+
+  box-sizing: border-box;
+  border: 1px solid var(--grayLv2);
+
+  color: var(--surface);
+  text-decoration: none;
+
+  transition: all 0.3s;
+  // hover
+  @media (hover: hover) {
+    &:not(:disabled):hover {
+      color: var(--primary);
+      background-color: var(--grayLv1);
+    }
+  }
+}
+
+.tit3 {
+  @extend .fs32;
+  text-align: center;
+  font-weight: bold;
+  margin-top: 5.2rem;
+}

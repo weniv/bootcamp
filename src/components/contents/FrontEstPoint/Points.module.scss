@@ -35,6 +35,7 @@
 }
 
 a.lecture__btn {
+  font-size: 1.4rem;
   @extend .fs14 !optional;
   display: flex;
   align-items: center;
@@ -97,9 +98,10 @@ a.lecture__btn {
 
 .text_desc {
   color: var(--grayLv4A11y);
-  margin: 1.6rem auto 4rem !important;
 }
 .project__container {
+  text-align: left;
+
   @include grid(28rem);
 
   @media (min-width: 530px) and (max-width: 640px) {
@@ -107,6 +109,7 @@ a.lecture__btn {
   }
 }
 .book__container {
+  text-align: left;
   @include grid(24.6rem);
   a {
     color: var(--surface);
@@ -121,6 +124,8 @@ a.lecture__btn {
   display: flex;
   flex-direction: column;
   gap: 4rem;
+  margin-top: 5.2rem;
+
   li {
     height: fit-content;
 

@@ -36,7 +36,7 @@ export default function TeacherDetail({ name, detail }) {
         {detail?.career?.now
           ? detail?.career?.prev?.map((career, index) => (
               <li key={index}>
-                <span className="fc-primary">現</span> {career}
+                <span className="fc-gray3">前</span> {career}
               </li>
             ))
           : data?.career.prev?.map((career, index) => (

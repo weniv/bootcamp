@@ -1,8 +1,9 @@
 import Point from "@/components/detail/Point";
 import React from "react";
 import styles from "./Points.module.scss";
+import ImageGrid from "@/components/detail/ImageGrid";
 
-export default function Point2() {
+export default function Point2({ campData }) {
   return (
     <section>
       <div className={styles.title__container}>
@@ -18,8 +19,8 @@ export default function Point2() {
           *피그마(Figma): 디자이너와 개발자가 UI/UX 디자인 작업을 하며 협업하는
           데 사용되는 웹 기반 도구
         </p>
+        <ImageGrid data={campData.figma} type="figma" />
       </div>
-      <ul className="figma-list"></ul>
     </section>
   );
 }

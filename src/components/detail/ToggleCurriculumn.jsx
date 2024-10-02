@@ -34,10 +34,20 @@ export default function ToggleCurriculumn({ data }) {
               <span className={styles.p}>{cont.period}</span>
               <span className={styles["p-subject"]}>{cont.subject}</span>
             </p>
-            <p className={classNames("cont", styles.list__content)}>
+            <div className={classNames("cont", styles.list__content)}>
               <span className={styles.content__title}>강의 내용</span>
-              {cont.content}
-            </p>{" "}
+              {Array.isArray(cont.content) ? (
+                <div>
+                  {cont.content.map((content, index) => (
+                    <p className={styles.list__content__item} key={index}>
+                      {content}
+                    </p>
+                  ))}
+                </div>
+              ) : (
+                <p>{cont.content}</p>
+              )}
+            </div>
             <button
               value={index}
               type="button"

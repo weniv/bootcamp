@@ -68,7 +68,15 @@ hr.dashed {
   border-top: 2px dashed var(--grayLv2);
   border-bottom: 0;
 }
-
+.m-52 {
+  margin: 5.2rem auto;
+}
+.mt-52 {
+  margin-top: 5.2rem;
+}
+.mb-52 {
+  margin-bottom: 5.2rem;
+}
 .fc-text {
   color: var(--surface) !important;
 }

@@ -5,7 +5,7 @@ import TeacherDetailHorizon from "@/components/detail/TeacherDetailHorizon";
 import styles from "./FrontendEst.module.scss";
 import LearningCard from "../detail/LearningCard";
 import LiveFrontEst from "../detail/LiveFrontEst";
-import BenefitFrontEst from "../detail/BenefitFrontEst";
+
 import NeedFrontEst from "../detail/NeedFrontEst";
 import SVGTobe from "@/svg/SVGTobe";
 import Point1 from "./FrontEstPoint/Point1";
@@ -14,12 +14,18 @@ import Point3 from "./FrontEstPoint/Point3";
 import Point4 from "./FrontEstPoint/Point4";
 import KDT100 from "../detail/KDT100";
 import Review from "../detail/Review";
+import BenefitFrontEst from "../detail/BenefitFrontEst";
 
 export default function FrontendEst({ id, campData }) {
   return (
     <>
-      <section id="section1" className="section">
+      <section id="section1" className={`className ${styles.top_section}`}>
         <h3 className="a11y-hidden">캠프 소개</h3>
+        <div className={`m-52 ${styles.center}`}>
+          <SVGTobe width={90} height={36} />
+        </div>
+        <BenefitFrontEst type="check" content={campData.benefit} />
+        <hr className="dashed m-52" />
         <KDT100 />
         <Review content={campData?.review} />
       </section>
@@ -27,9 +33,11 @@ export default function FrontendEst({ id, campData }) {
         <h3 className="a11y-hidden">커리큘럼</h3>
         <hr className="dashed" />
         <NeedFrontEst contents={campData.need} />
-        <SVGTobe />
+        <div className={`${styles.center}`}>
+          <SVGTobe width={90} height={36} />
+        </div>
         <Point1 campData={campData} />
-        <Point2 />
+        <Point2 campData={campData} />
         <Point3 />
         <Point4 />
         <hr className="dashed" />

@@ -1,5 +1,5 @@
-@import '@/styles/var.scss';
-@import '@/styles/theme.scss';
+@import "@/styles/var.scss";
+@import "@/styles/theme.scss";
 
 /* reset ------------------------------------------------------- */
 body,
@@ -65,25 +65,25 @@ address {
 
 /* 폰트 ------------------------------------------------------- */
 @font-face {
-  font-family: 'Pretendard';
-  src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff')
-    format('woff');
+  font-family: "Pretendard";
+  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff")
+    format("woff");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: 'Pretendard';
-  src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-SemiBold.woff')
-    format('woff');
+  font-family: "Pretendard";
+  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-SemiBold.woff")
+    format("woff");
   font-weight: 600;
   font-style: bold;
   font-display: swap;
 }
 @font-face {
-  font-family: 'Pretendard';
-  src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Bold.woff')
-    format('woff');
+  font-family: "Pretendard";
+  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Bold.woff")
+    format("woff");
   font-weight: 700;
   font-style: bold;
   font-display: swap;
@@ -97,7 +97,7 @@ body {
   min-width: 320px;
   font-size: fcSize(15, 18);
   line-height: 1.6;
-  font-family: 'Pretendard', sans-serif;
+  font-family: "Pretendard", sans-serif;
   color: var(--surface);
   background-color: var(--background);
 }
