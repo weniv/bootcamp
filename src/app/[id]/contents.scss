@@ -1,3 +1,5 @@
+@import "@/styles/var.scss";
+
 .camp_contents {
   display: flex;
   flex-direction: column;
@@ -98,6 +100,8 @@ hr.dashed {
 }
 
 .bg-ul {
+  @extend .fs18;
+  font-size: 1.8rem;
   display: flex;
   flex-direction: column;
   gap: 2.4rem;
@@ -141,8 +145,9 @@ hr.dashed {
   display: flex;
   flex-direction: column;
   gap: 4.4rem;
+  text-align: center;
 
-  li {
+  > li {
     min-height: 8rem;
     padding: 2rem;
     border: 1px solid var(--primary);
@@ -174,7 +179,7 @@ hr.dashed {
     }
   }
 
-  li:not(:last-child)::after {
+  > li:not(:last-child)::after {
     content: "";
     display: block;
     width: 2.4rem;
@@ -187,6 +192,27 @@ hr.dashed {
     transform: translateX(-50%);
   }
 }
+.step.arrow {
+  gap: 6.4rem;
+
+  > li {
+    padding: 2.8rem;
+  }
+
+  > li:not(:last-child)::after {
+    content: "";
+    display: block;
+    width: 2.4rem;
+    height: 2.6rem;
+    background: url(/images/step_diamond_arrow.png) no-repeat 50% 50% / contain;
+
+    position: absolute;
+    bottom: -4.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
 .step.recruit {
   li {
     font-size: 1.8rem;

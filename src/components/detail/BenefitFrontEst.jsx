@@ -1,5 +1,5 @@
 import BaseItem from "../card/BaseItem";
-import styles from "./BenefitFrontEst.module.scss";
+import styles from "./FrontEst.module.scss";
 import ImageGrid from "./ImageGrid";
 
 export default function BenefitFrontEst(props) {

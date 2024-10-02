@@ -12,21 +12,33 @@ import Point1 from "./FrontEstPoint/Point1";
 import Point2 from "./FrontEstPoint/Point2";
 import Point3 from "./FrontEstPoint/Point3";
 import Point4 from "./FrontEstPoint/Point4";
-import KDT100 from "../detail/KDT100";
 import Review from "../detail/Review";
 import BenefitFrontEst from "../detail/BenefitFrontEst";
+import StudyStep from "../detail/StudyStep";
+import FEEst from "../detail/FEEst";
+import Competition from "../detail/Competition";
+import Roadmap from "../detail/Roadmap";
+import KDT100Est from "../detail/KDT100Est";
 
 export default function FrontendEst({ id, campData }) {
   return (
     <>
       <section id="section1" className={`className ${styles.top_section}`}>
         <h3 className="a11y-hidden">캠프 소개</h3>
+        <FEEst />
+        <Competition />
+        <div className={`m-52 ${styles.center}`}>
+          <SVGTobe width={90} height={36} />
+        </div>
+        <Roadmap />
+        <hr className="dashed m-52" />
+        <StudyStep />
         <div className={`m-52 ${styles.center}`}>
           <SVGTobe width={90} height={36} />
         </div>
         <BenefitFrontEst type="check" content={campData.benefit} />
         <hr className="dashed m-52" />
-        <KDT100 />
+        <KDT100Est />
         <Review content={campData?.review} />
       </section>
       <section id="section2" className={`section ${styles["curri-section"]}`}>

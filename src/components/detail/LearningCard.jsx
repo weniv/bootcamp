@@ -29,7 +29,7 @@ export default function LearningCard() {
         <br />
         <br />
         발급 신청 및 자세한 발급 방법은{" "}
-        <a href="https://www.work24.go.kr/cm/main.do">
+        <a href="https://www.work24.go.kr/cm/main.do" target="_blank">
           고용노동부 직업훈련 포털
         </a>
         을 참고해 주세요.

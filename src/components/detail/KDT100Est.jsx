@@ -1,12 +1,12 @@
 import styles from "./KDT100.module.scss";
 
-export default function KDT100() {
+export default function KDT100Est() {
   return (
     <section>
       <h4 className="title">
-        KDT 100% 수료율 달성 신화를 만든
+        <span className="fc-primary">KDT 100% 수료율 달성 신화</span>를 만든
         <br />
-        위니브 부트캠프와 함께하세요
+        위니브의 강사진이 여러분과 함께합니다
       </h4>
       <ul className={styles.box_ul}>
         <li>

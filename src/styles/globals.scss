@@ -221,6 +221,10 @@ hr {
   color: var(--grayLv3);
 }
 
+.bg-primary {
+  color: var(--background);
+  background-color: var(--primary);
+}
 .header,
 .title {
   @extend .fs32;
