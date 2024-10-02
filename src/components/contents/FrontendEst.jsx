@@ -12,12 +12,16 @@ import Point1 from "./FrontEstPoint/Point1";
 import Point2 from "./FrontEstPoint/Point2";
 import Point3 from "./FrontEstPoint/Point3";
 import Point4 from "./FrontEstPoint/Point4";
+import KDT100 from "../detail/KDT100";
+import Review from "../detail/Review";
 
 export default function FrontendEst({ id, campData }) {
   return (
     <>
       <section id="section1" className="section">
         <h3 className="a11y-hidden">캠프 소개</h3>
+        <KDT100 />
+        <Review content={campData?.review} />
       </section>
       <section id="section2" className={`section ${styles["curri-section"]}`}>
         <h3 className="a11y-hidden">커리큘럼</h3>

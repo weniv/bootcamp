@@ -73,9 +73,27 @@ export default function ToggleList({ data, type = "faq" }) {
                   <span className={styles.q}>Q{index + 1}.</span>
                   {cont.question}
                 </p>
-                <p className={classNames("cont", styles.list__content)}>
-                  {cont.answer}
-                </p>
+                {Array.isArray(cont.answer) ? (
+                  <div className={classNames("cont", styles.list__content)}>
+                    {cont.answer.map((list, index) => (
+                      <>
+                        {Array.isArray(list) ? (
+                          <div key={index}>
+                            {list.map((item, idx) => (
+                              <p key={idx}>{item}</p>
+                            ))}
+                          </div>
+                        ) : (
+                          <p key={index}>{list}</p>
+                        )}
+                      </>
+                    ))}
+                  </div>
+                ) : (
+                  <p className={classNames("cont", styles.list__content)}>
+                    {cont.answer}
+                  </p>
+                )}
               </>
             )}
             {type === "recruitment" && (
