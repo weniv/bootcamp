@@ -50,8 +50,8 @@ a.lecture__btn {
   box-sizing: border-box;
   border: 1px solid var(--grayLv2);
 
-  color: var(--surface);
-  text-decoration: none;
+  color: var(--surface) !important;
+  text-decoration: none !important;
 
   transition: all 0.3s;
   // hover

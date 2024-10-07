@@ -1,8 +1,9 @@
 import React from "react";
+import styles from "./FrontendEst.module.scss";
+
 import ToggleList from "@/components/detail/ToggleList";
 import TeacherDetail from "@/components/detail/TeacherDetail";
 import TeacherDetailHorizon from "@/components/detail/TeacherDetailHorizon";
-import styles from "./FrontendEst.module.scss";
 import LearningCard from "../detail/LearningCard";
 import LiveFrontEst from "../detail/LiveFrontEst";
 

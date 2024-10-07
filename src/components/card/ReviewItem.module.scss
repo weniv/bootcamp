@@ -1,4 +1,4 @@
-@import '@/styles/var.scss';
+@import "@/styles/var.scss";
 
 .card {
   display: inline-flex;
@@ -17,7 +17,7 @@
   box-sizing: border-box;
 
   img {
-    width: 8.6rem;
+    max-width: 8.6rem;
     height: auto;
     margin-bottom: -1.6rem;
   }
