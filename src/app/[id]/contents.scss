@@ -194,7 +194,7 @@ hr.dashed {
   }
 }
 .step.arrow {
-  width: clamp(30rem, 90%, 60rem);
+  width: clamp(90%, 90%, 60rem);
   gap: 6.4rem;
 
   > li {

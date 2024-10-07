@@ -7,7 +7,9 @@ export default function Point1({ campData }) {
   return (
     <section>
       <div className={styles.title__container}>
-        <p className="text-desc">개발자 커리어를 시작하려는 바로 그 시점</p>
+        <p className={styles["text-desc"]}>
+          개발자 커리어를 시작하려는 바로 그 시점
+        </p>
         <h4>
           오르미 교육 과정을
           <br />
@@ -16,7 +18,9 @@ export default function Point1({ campData }) {
       </div>
       <div className={styles.title__container}>
         <Point number={1} />
-        <p className="text-desc">주니어 프론트엔드 개발자라면 꼭 알아야 하는</p>
+        <p className={styles["text-desc"]}>
+          주니어 프론트엔드 개발자라면 꼭 알아야 하는
+        </p>
         <h4>
           <span className="fc-primary">핵.심.만 담은</span> 커리큘럼과
           함께합니다.

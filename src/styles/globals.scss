@@ -240,4 +240,8 @@ hr {
     @extend .fs18;
     color: var(--primaryA11y);
   }
+  p[class*="text-desc"] {
+    @extend .fs16;
+    color: var(--grayLv4);
+  }
 }

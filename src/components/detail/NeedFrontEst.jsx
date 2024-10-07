@@ -1,18 +1,15 @@
 import SVGPencil from "@/svg/SVGPencil";
-import styles from "./Need.module.scss";
-import SVGCheck from "@/svg/SVGCheck";
-import SVGCode from "@/svg/SVGCode";
 import SVGCodeBox from "@/svg/SVGCodeBox";
-import SVGTobe from "@/svg/SVGTobe";
 import SVGPeoples from "@/svg/SVGPeoples";
-import SVGArrow from "@/svg/SVGArrow";
 import SVGReset from "@/svg/SVGReset";
+
+import styles from "@/components/contents/FrontendEst.module.scss";
 
 export default function NeedFrontEst() {
   return (
     <section>
       <div className="header">
-        <p className="fc-text">교육 과정 추천</p>
+        <p className={styles["text-desc"]}>교육 과정 추천</p>
         <h4>이런분들에게 추천합니다.</h4>
       </div>
       <ul className="bg-ul">

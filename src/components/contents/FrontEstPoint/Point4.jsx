@@ -1,7 +1,6 @@
 import Point from "@/components/detail/Point";
 import React from "react";
 import styles from "./Points.module.scss";
-import Btn from "@/components/button/Btn";
 import Link from "next/link";
 
 export default function Point4() {
@@ -9,7 +8,7 @@ export default function Point4() {
     <section className={styles.container}>
       <div className={styles.title__container}>
         <Point number={4} />
-        <p className={styles.text_desc}>
+        <p className={styles["text-desc"]}>
           교육 과정이 끝나도 걱정 마세요! 오직 부트캠프 수강생에게만 드리는 혜택
         </p>
         <h4>

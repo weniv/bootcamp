@@ -18,10 +18,6 @@
   font-weight: 600;
   font-size: fcSize(14, 16);
 
-  .text_desc {
-    color: var(--grayLv4A11y);
-  }
-
   .text_additional {
     color: var(--grayLv3A11y);
     font-size: fcSize(13, 14);
@@ -137,4 +133,11 @@ a.lecture__btn {
       }
     }
   }
+}
+
+.text-desc {
+  color: var(--grayLv4A11y) !important;
+  margin-bottom: 1.2rem;
+  font-size: fcSize(14, 16) !important;
+  font-weight: 600;
 }

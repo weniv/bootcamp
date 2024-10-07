@@ -20,8 +20,11 @@ export default function Roadmap() {
               이스트소프트 X 위니브
             </p>
             <h5 className={styles.tit5}>
-              프론트엔드 개발자 양성 과정 오르미
-              <span className="fc-primary"> 로드맵</span>
+              프론트엔드 개발자 양성 과정
+              <span>
+                &nbsp;오르미
+                <span className="fc-primary"> 로드맵</span>
+              </span>
             </h5>
           </div>
           <ol className="step arrow">

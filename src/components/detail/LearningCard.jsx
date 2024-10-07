@@ -6,7 +6,7 @@ export default function LearningCard() {
   return (
     <div className={styles.container}>
       <div className={styles["text-container"]}>
-        <p className="fc-text">수강료 전액 국비 지원</p>
+        <p className={styles["text-desc"]}>수강료 전액 국비 지원</p>
         <h4 className="tit4">내일배움카드란?</h4>
       </div>
       <div className={styles.callout}>

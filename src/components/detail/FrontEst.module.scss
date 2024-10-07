@@ -5,8 +5,10 @@
   margin: 5.2rem auto;
 }
 .text-desc {
-  color: var(--grayLv34) !important;
+  color: var(--grayLv4A11y) !important;
   margin-bottom: 1.2rem;
+  font-size: fcSize(14, 16) !important;
+  font-weight: 600;
 }
 .mb-8 {
   margin-bottom: 0.8rem;
@@ -74,14 +76,16 @@
   text-align: center;
   margin-bottom: 4rem;
 }
+
 .roadmap__section {
-  padding: 6rem 0;
+  padding: 6rem 2rem;
   // padding: 6rem 9.5rem;
   background-color: var(--grayLv1);
   border-radius: 1.6rem;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 
   @media screen and (max-width: 640px) {
     padding: 2.4rem 0;
@@ -91,4 +95,13 @@
     font-size: fcSize(20, 24);
     font-weight: bold;
   }
+}
+.tit5 {
+  font-size: fcSize(16, 18);
+  margin: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  word-break: keep-all;
 }

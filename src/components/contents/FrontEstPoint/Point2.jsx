@@ -8,7 +8,7 @@ export default function Point2({ campData }) {
     <section>
       <div className={styles.title__container}>
         <Point number={2} />
-        <p className={styles.text_desc}>
+        <p className={styles["text-desc"]}>
           실무와 동일한 환경에서 디자인 구현 능력을 키울 수 있도록
         </p>
         <h4>
