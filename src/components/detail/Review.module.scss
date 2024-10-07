@@ -9,8 +9,7 @@
 }
 
 a.lecture__btn {
-  font-size: 1.4rem;
-  @extend .fs14 !optional;
+  font-size: fcSize(13, 14);
   display: flex;
   align-items: center;
   justify-content: center;

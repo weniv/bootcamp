@@ -16,7 +16,7 @@
 
   color: var(--surface);
   font-weight: 600;
-  font-size: 1.6rem;
+  font-size: fcSize(14, 16);
 
   .text_desc {
     color: var(--grayLv4A11y);
@@ -24,19 +24,18 @@
 
   .text_additional {
     color: var(--grayLv3A11y);
-    font-size: 1.4rem;
+    font-size: fcSize(13, 14);
     font-weight: 500;
   }
 
   h4 {
-    font-size: 3.2rem;
+    font-size: fcSize(22, 32);
     font-weight: bold;
   }
 }
 
 a.lecture__btn {
-  font-size: 1.4rem;
-  @extend .fs14 !optional;
+  font-size: fcSize(13, 14);
   display: flex;
   align-items: center;
   justify-content: center;

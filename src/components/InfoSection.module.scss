@@ -32,10 +32,9 @@
     align-items: center;
     gap: 0.5em;
     span {
-      // @extend .fs16;
+      @extend .fs16;
       font-weight: normal;
       color: var(--grayLv3A11y);
-      font-size: 1.6rem;
     }
     & + * {
       margin-top: 2.4rem;

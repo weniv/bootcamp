@@ -101,10 +101,11 @@ hr.dashed {
 
 .bg-ul {
   @extend .fs18;
-  font-size: 1.8rem;
+  font-size: fcSize(15, 18);
   display: flex;
   flex-direction: column;
   gap: 2.4rem;
+  text-align: center;
 
   li {
     background-color: var(--grayLv1);
@@ -170,7 +171,7 @@ hr.dashed {
     }
     @media screen and (max-width: 640px) {
       padding: 2rem 3rem;
-      p {
+      > p {
         flex-basis: 100%;
         text-align: center;
         word-break: keep-all;
@@ -193,6 +194,7 @@ hr.dashed {
   }
 }
 .step.arrow {
+  width: clamp(30rem, 90%, 60rem);
   gap: 6.4rem;
 
   > li {
@@ -215,13 +217,13 @@ hr.dashed {
 
 .step.recruit {
   li {
-    font-size: 1.8rem;
+    font-size: fcSize(15, 18);
     flex-direction: column;
     text-align: center;
     gap: 0.5em;
   }
   .desc {
-    font-size: 1.6rem;
+    font-size: fcSize(14, 16);
     font-weight: normal;
   }
 }

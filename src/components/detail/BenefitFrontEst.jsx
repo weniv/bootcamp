@@ -9,7 +9,7 @@ export default function BenefitFrontEst(props) {
     <>
       <section>
         <div className="header">
-          <p class={styles["text-desc"]}>
+          <p className={styles["text-desc"]}>
             ‘프론트엔드 개발자 양성 과정 오르미’ 부트캠프에서는
           </p>
           <h4 className={styles.tit4}>

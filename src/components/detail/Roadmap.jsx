@@ -15,8 +15,8 @@ export default function Roadmap() {
           </h4>
         </div>
         <section className={styles.roadmap__section}>
-          <div class={styles.header}>
-            <p class={`${styles["text-desc"]} ${styles["mb-8"]}`}>
+          <div className={styles.header}>
+            <p className={`${styles["text-desc"]} ${styles["mb-8"]}`}>
               이스트소프트 X 위니브
             </p>
             <h5 className={styles.tit5}>

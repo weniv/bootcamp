@@ -8,7 +8,7 @@ export default function ImageGrid({ data, type = "check" }) {
       {type === "check" && (
         <>
           {data.map((el, idx) => (
-            <li class={styles.grid__item}>
+            <li className={styles.grid__item}>
               <SVGCheckFill />
               <strong>{el.content}</strong>
               <div className={styles.img__container}>
@@ -21,7 +21,7 @@ export default function ImageGrid({ data, type = "check" }) {
       {type === "figma" && (
         <>
           {data.map((el, idx) => (
-            <li class={styles.grid__item}>
+            <li className={styles.grid__item}>
               <div className={styles.img__container}>
                 <img src={el.img} alt="" />
               </div>

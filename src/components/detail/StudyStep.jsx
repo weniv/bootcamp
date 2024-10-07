@@ -6,13 +6,13 @@ export default function StudyStep() {
     <>
       <section>
         <div className="header">
-          <p class={styles["text-desc"]}>
+          <p className={styles["text-desc"]}>
             비전공자, 무경력자, 직무 전환자라 개발이 처음이신가요?
           </p>
           <h4 className={styles.tit4}>
             프론트엔드 개발자 취업에 성공한 비전공자
             <br />
-            <span class="fc-primary">이 순서로 공부했어요</span>
+            <span className="fc-primary">이 순서로 공부했어요</span>
           </h4>
         </div>
         <ol className={`step ${styles.fs__medium}`}>

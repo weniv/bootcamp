@@ -8,9 +8,9 @@ export default function Competition() {
   return (
     <section className={styles.section}>
       <div className="header">
-        <p class={styles["text-desc"]}>프론트엔드 개발자가 되기 위해서는</p>
+        <p className={styles["text-desc"]}>프론트엔드 개발자가 되기 위해서는</p>
         <h4 className={styles.tit4}>
-          다음 세 가지의 <span class="fc-primary">핵심 역량</span>이 반드시
+          다음 세 가지의 <span className="fc-primary">핵심 역량</span>이 반드시
           필요합니다
         </h4>
       </div>
