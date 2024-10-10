@@ -5,8 +5,8 @@ import CategoryList from "@/components/category/CategoryList";
 import CampList from "@/components/card/CampList";
 import Header from "@/components/header/Header";
 import Footer from "@/components/footer/Footer";
-import collectPageView from "@/utils/hadleAnalyticsPageView";
 import { usePathname, useSearchParams } from "next/navigation";
+import handleAnalyticsPageView from "@/utils/handleAnalyticsPageView";
 
 export const CATEGORIES = [
     { id: 0, text: "전체" },
@@ -25,7 +25,7 @@ export default function Home() {
     useEffect(() => {
         // 페이지뷰 수집
         const url = pathname + searchParams.toString();
-        collectPageView(url);
+        handleAnalyticsPageView(url);
     }, [pathname, searchParams]);
 
     return (

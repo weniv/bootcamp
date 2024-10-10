@@ -1,5 +1,5 @@
-export default async function collectPageView() {
-    const session_id = localStorage.getItem("session_id");
+export default async function handleAnalyticsPageView() {
+    const session_id = sessionStorage.getItem("session_id");
     const this_page_url = window.location.href;
 
     try {
@@ -18,7 +18,7 @@ export default async function collectPageView() {
         const data = await response.json();
 
         if (!session_id) {
-            localStorage.setItem("session_id", data.session_id);
+            sessionStorage.setItem("session_id", data.session_id);
         }
     } catch (error) {
         console.error("페이지뷰 데이터 수집 에러:", error);
