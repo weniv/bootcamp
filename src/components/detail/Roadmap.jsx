@@ -3,7 +3,7 @@ import styles from "./FrontEst.module.scss";
 import SVGCheckOutline from "@/svg/SVGCheckOutline";
 
 export default function Roadmap() {
-  const roadmap = require("/public/data/ESTFEROadmap.json");
+  const roadmap = require("/public/data/ESTFERoadmap.json");
   return (
     <>
       <section className={styles.section}>
