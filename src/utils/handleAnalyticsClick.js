@@ -23,9 +23,6 @@ export default async function handleAnalyticsClick(event, text) {
 
         if (!response.ok) {
             throw new Error("Network response was not ok");
-        } else {
-            const data = await response.json();
-            console.log(data);
         }
     } catch (error) {
         console.error("Error:", error);

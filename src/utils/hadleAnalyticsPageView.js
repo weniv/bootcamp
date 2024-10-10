@@ -20,8 +20,6 @@ export default async function collectPageView() {
         if (!session_id) {
             localStorage.setItem("session_id", data.session_id);
         }
-
-        console.log("페이지뷰 데이터 수집 성공:", data);
     } catch (error) {
         console.error("페이지뷰 데이터 수집 에러:", error);
     }
