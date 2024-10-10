@@ -1,3 +1,5 @@
+"use client";
+
 import handleAnalyticsClick from "@/utils/handleAnalyticsClick";
 
 import styles from "./ListSNS.module.scss";
