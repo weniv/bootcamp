@@ -1,34 +1,34 @@
-import styles from './page.module.scss';
+import styles from "./page.module.scss";
 
-import CardItem from '@/components/card/CardItem';
-import BookItem from '@/components/card/BookItem';
-import InfoSection from '@/components/InfoSection';
-import MessageSection from '@/components/MessageSection';
-import SVGPencil from '@/svg/SVGPencil';
-import SVGPeoples from '@/svg/SVGPeoples';
-import SVGtime from '@/svg/SVGtime';
-import SVGBook from '@/svg/SVGBook';
+import CardItem from "@/components/card/CardItem";
+import BookItem from "@/components/card/BookItem";
+import InfoSection from "@/components/InfoSection";
+import MessageSection from "@/components/MessageSection";
+import SVGPencil from "@/svg/SVGPencil";
+import SVGPeoples from "@/svg/SVGPeoples";
+import SVGTime from "@/svg/SVGTime";
+import SVGBook from "@/svg/SVGBook";
 
 export const metadata = {
-  title: '소개 | 위니브 부트캠프',
+  title: "소개 | 위니브 부트캠프",
   description:
-    '위니브의 실무 경험을 바탕으로 만들어진 현실 도달 가능한 커리큘럼과 프로젝트, 멘토링을 제공합니다.',
+    "위니브의 실무 경험을 바탕으로 만들어진 현실 도달 가능한 커리큘럼과 프로젝트, 멘토링을 제공합니다.",
   openGraph: {
-    title: '소개 | 위니브 부트캠프',
+    title: "소개 | 위니브 부트캠프",
     description:
-      '위니브의 실무 경험을 바탕으로 만들어진 현실 도달 가능한 커리큘럼과 프로젝트, 멘토링을 제공합니다.',
-    url: 'https://bootcamp.weniv.co.kr',
-    type: 'website',
-    siteName: '위니브 부트캠프',
-    images: ['/images/OG.png'],
-    locale: 'ko_KR',
+      "위니브의 실무 경험을 바탕으로 만들어진 현실 도달 가능한 커리큘럼과 프로젝트, 멘토링을 제공합니다.",
+    url: "https://bootcamp.weniv.co.kr",
+    type: "website",
+    siteName: "위니브 부트캠프",
+    images: ["/images/OG.png"],
+    locale: "ko_KR",
   },
   twitter: {
-    card: 'summary',
-    title: '소개 | 위니브 부트캠프',
+    card: "summary",
+    title: "소개 | 위니브 부트캠프",
     description:
-      '위니브의 실무 경험을 바탕으로 만들어진 현실 도달 가능한 커리큘럼과 프로젝트, 멘토링을 제공합니다.',
-    images: ['/images/OG.png'],
+      "위니브의 실무 경험을 바탕으로 만들어진 현실 도달 가능한 커리큘럼과 프로젝트, 멘토링을 제공합니다.",
+    images: ["/images/OG.png"],
   },
 };
 
@@ -38,7 +38,7 @@ export default function SubPage() {
     projects,
     books,
     links,
-  } = require('/public/data/contents.json');
+  } = require("/public/data/contents.json");
   return (
     <>
       <picture>
@@ -64,7 +64,7 @@ export default function SubPage() {
           </p>
           <div className={styles.blue__box}>
             <strong className="fs24">"부트캠프 수료율 100%"</strong>
-            믿기지 않는 수치가 가능했던 이유는 수강생을 향한{' '}
+            믿기지 않는 수치가 가능했던 이유는 수강생을 향한{" "}
             <strong>'진심'</strong>이었습니다.
           </div>
           <p>
@@ -104,7 +104,7 @@ export default function SubPage() {
             </ul>
           </InfoSection>
           <p>
-            100% 온라인 과정으로 진행되는 단기 부트캠프에서{' '}
+            100% 온라인 과정으로 진행되는 단기 부트캠프에서{" "}
             <strong>
               위니브의 실무 경험을 바탕으로 만들어진 현실 도달 가능한 커리큘럼과
               프로젝트, 멘토링을 제공합니다.
@@ -122,7 +122,7 @@ export default function SubPage() {
               모두에게 필요한 부분을 세심하게 채울 수 있도록 레벨별 스터디 운영
             </li>
             <li>
-              <SVGtime />
+              <SVGTime />
               강의와 과외활동의 적절한 배치로 모두가 만족하며 성장하는 경험 제공
             </li>
             <li>
