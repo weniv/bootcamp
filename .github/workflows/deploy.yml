@@ -35,9 +35,6 @@ jobs:
         run: npm ci
         if: steps.cache.outputs.cache-hit != 'true'
 
-      - name: Set PUBLIC_URL
-        run: echo "PUBLIC_URL=https://bootcamp.weniv.co.kr/" > .env
-
       - name: Build
         run: |
           CI='false' npm run build
