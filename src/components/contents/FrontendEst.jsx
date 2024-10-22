@@ -106,17 +106,17 @@ export default function FrontendEst({ id, campData }) {
         <ol className="step fw-bold recruit">
           <li>
             서류 접수
-            <span className="desc">2024.08.12(월) ~ 10.18(금) 23:59PM</span>
+            <span className="desc">2024.08.12(월) ~ 11.04(월) 23:59PM</span>
           </li>
           <li>서류 접수 후 3일 이내 결과 안내</li>
           <li>내일배움카드 발급 및 HRD-Net 수강 신청</li>
           <li>
             교육생 온보딩
-            <span className="desc">(개강 1주일 전 온보딩 메일 발송 예정)</span>
+            <span className="desc">(개강 2주일 전 온보딩 메일 발송 예정)</span>
           </li>
           <li>
             <span className="fc-primary">개강 및 오리엔테이션</span>
-            <span className="desc">2024.10.23(월)</span>
+            <span className="desc">2024.11.06(수)</span>
           </li>
         </ol>
         <h3 className="title2 tac mt-6">지원 안내</h3>
