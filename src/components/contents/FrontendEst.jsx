@@ -26,17 +26,6 @@ export default function FrontendEst({ id, campData }) {
     <>
       <section id="section1" className={`className ${styles.top_section}`}>
         <h3 className="a11y-hidden">캠프 소개</h3>
-        <a
-          className={styles.webinar}
-          href="https://forms.office.com/pages/responsepage.aspx?id=K0jd943FW0CuYFn2rDb-747GRJgjy8NEjXHtzkdRax1UQ04xTzhMMk9ZT1BPRlUyMElERkdIU1ZCWS4u&route=shorturl"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <img
-            src="/images/camps/estfe-webinar.webp"
-            alt="프론트엔드 개발자 양성 과정 웨비나"
-          />
-        </a>
         <FEEst />
         <Competition />
         <div className={`m-52 ${styles.center}`}>
