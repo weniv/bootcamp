@@ -1,5 +1,5 @@
 1:HL["https://bootcamp.weniv.co.kr/_next/static/css/60e9be0f94aa055d.css","style",{"crossOrigin":""}]
-0:["F8ULApKArKKKWQxDst_Bt",[[["",{"children":[["id","python","d"],{"children":["__PAGE__?{\"id\":\"python\"}",{}]}]},"$undefined","$undefined",true],"$L2",[[["$","link","0",{"rel":"stylesheet","href":"https://bootcamp.weniv.co.kr/_next/static/css/60e9be0f94aa055d.css","precedence":"next","crossOrigin":""}]],"$L3"]]]]
+0:["nCbEBlC9kEYjI5BRttcbR",[[["",{"children":[["id","python","d"],{"children":["__PAGE__?{\"id\":\"python\"}",{}]}]},"$undefined","$undefined",true],"$L2",[[["$","link","0",{"rel":"stylesheet","href":"https://bootcamp.weniv.co.kr/_next/static/css/60e9be0f94aa055d.css","precedence":"next","crossOrigin":""}]],"$L3"]]]]
 4:HL["https://bootcamp.weniv.co.kr/_next/static/css/9268c1e396db94ce.css","style",{"crossOrigin":""}]
 5:HL["https://bootcamp.weniv.co.kr/_next/static/css/d15d771bcc9bf7dd.css","style",{"crossOrigin":""}]
 6:I[6954,[],""]
