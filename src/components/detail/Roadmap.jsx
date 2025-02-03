@@ -28,8 +28,9 @@ export default function Roadmap() {
             </h5>
           </div>
           <ol className="step arrow">
-            {roadmap.map((el) => (
+            {roadmap.map((el, index) => (
               <RoadmapItem
+                key={index}
                 month={el.month}
                 title={el.title}
                 content={el.content}
