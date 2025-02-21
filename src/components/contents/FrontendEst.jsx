@@ -95,7 +95,7 @@ export default function FrontendEst({ id, campData }) {
         <ol className="step fw-bold recruit">
           <li>
             서류 접수
-            <span className="desc">2024.08.12(월) ~ 11.04(월) 23:59PM</span>
+            <span className="desc">{campData.recruitmentPeriod}</span>
           </li>
           <li>서류 접수 후 3일 이내 결과 안내</li>
           <li>내일배움카드 발급 및 HRD-Net 수강 신청</li>
@@ -105,7 +105,9 @@ export default function FrontendEst({ id, campData }) {
           </li>
           <li>
             <span className="fc-primary">개강 및 오리엔테이션</span>
-            <span className="desc">2024.11.06(수)</span>
+            <span className="desc">
+              {campData.trainingPeriod.split("~")[0].trim()}
+            </span>
           </li>
         </ol>
         <h3 className="title2 tac mt-6">지원 안내</h3>
