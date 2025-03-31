@@ -12,7 +12,7 @@ export default async function handleAnalyticsClick(event, text) {
     const target_tar = ANCHOR.target || "_self";
 
     try {
-        const response = await fetch("https://www.analytics.weniv.co.kr/collect/anchor-click", {
+        const response = await fetch("https://dev.wenivops.co.kr/api/weniv_analytics/collect/anchor-click", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
