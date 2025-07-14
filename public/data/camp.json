@@ -1,16 +1,5 @@
 [
   {
-    "url": "https://camp.orm.im/backend-ai",
-    "image": "/images/camps/kdt01.png",
-    "image_m": "/images/camps/kdt01.png",
-    "type": "KDT",
-    "title": "인공지능(AI) 모델 활용 백엔드 개발 과정",
-    "subtitle": "모두의연구소 X 제주코딩베이스캠프",
-    "description": "AI 트렌드를 읽고 활용하는 넓은 시야의 백엔드 개발자를 양성합니다.",
-    "trainingPeriod": "2024.06.04(월) ~ 2024.9.27(금)",
-    "open": false
-  },
-  {
     "url": "/python",
     "image": "/images/camps/python/thumbnail.webp",
     "image_m": "/images/camps/python/thumbnail_m.webp",
@@ -179,6 +168,17 @@
         ]
       }
     ],
+    "open": false
+  },
+  {
+    "url": "https://camp.orm.im/backend-ai",
+    "image": "/images/camps/kdt01.png",
+    "image_m": "/images/camps/kdt01.png",
+    "type": "KDT",
+    "title": "인공지능(AI) 모델 활용 백엔드 개발 과정",
+    "subtitle": "모두의연구소 X 제주코딩베이스캠프",
+    "description": "AI 트렌드를 읽고 활용하는 넓은 시야의 백엔드 개발자를 양성합니다.",
+    "trainingPeriod": "2024.06.04(월) ~ 2024.9.27(금)",
     "open": false
   }
 ]

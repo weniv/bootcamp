@@ -9,14 +9,10 @@ import "./contents.scss";
 import classNames from "classnames";
 
 import OwnCampContent from "@/components/contents/OwnCampContent";
-import FrontendEst from "@/components/contents/FrontendEst";
 
 export async function generateStaticParams() {
   return [
     { id: "python" },
-    { id: "javascript" },
-    { id: "react" },
-    { id: "frontend-est" },
   ];
 }
 
@@ -30,15 +26,6 @@ export async function generateMetadata({ params }) {
   switch (id) {
     case "python":
       title = "파이썬 | ";
-      break;
-    case "javascript":
-      title = "자바스크립트 | ";
-      break;
-    case "react":
-      title = "리액트 | ";
-      break;
-    case "frontend-est":
-      title = "프론트엔드 오르미 | 이스트소프트 X ";
       break;
   }
 
@@ -101,11 +88,7 @@ export default function SubPage({ params }) {
       <PageNav url={campData?.applyUrl} nav={campData?.nav} />
 
       <div className="camp_contents">
-        {id === "frontend-est" ? (
-          <FrontendEst id={id} campData={campData} />
-        ) : (
-          <OwnCampContent id={id} campData={campData} />
-        )}
+        <OwnCampContent id={id} campData={campData} />
       </div>
     </div>
   );
