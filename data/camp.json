@@ -1,10 +1,10 @@
 [
   {
     "url": "https://camp.modulabs.co.kr/backend",
-    "image": "/images/camps/kdt01.png",
-    "image_m": "/images/camps/kdt01.png",
+    "image": "/images/camps/kdt02.png",
+    "image_m": "/images/camps/kdt02.png",
     "type": "KDT",
-    "title": "백엔드 개발 과정",
+    "title": "백엔드 액티브러닝 캠프",
     "subtitle": "모두의연구소 X 위니브",
     "description": "AI 트렌드를 읽고 활용하는 넓은 시야의 백엔드 개발자를 양성합니다.",
     "trainingPeriod": "상시",
@@ -15,7 +15,7 @@
     "image": "/images/camps/kdt01.png",
     "image_m": "/images/camps/kdt01.png",
     "type": "KDT",
-    "title": "프론트엔드 개발 과정",
+    "title": "프론트엔드 액티브러닝 캠프",
     "subtitle": "모두의연구소 X 위니브",
     "description": "AI 트렌드를 읽고 활용하는 넓은 시야의 프론트엔드 개발자를 양성합니다.",
     "trainingPeriod": "상시",
